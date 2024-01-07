@@ -1,0 +1,131 @@
+name	costMoonstone	costGold	requiredTier	description	qty	attunement
+Silvered Weapon	1	175	1			n
+Charlatan's Die	1	175	1			n
+Driftglobe	1	175	1			n
+Enduring Spellbook	1	175	1			n
+Masque Charm	1	175	1			n
+Moon Touched Blade	1	175	1			n
+Mystery Key	1	175	1			n
+Oil of Slipperiness	1	175	1			n
+Orb of Direction	1	175	1			n
+Perfume of Bewitching	1	175	1			n
+Pipe of Smoke Monsters	1	175	1			n
+Pole of Angling	1	175	1			n
+Potion of Climbing	1	175	1			n
+Rope of Mending	1	175	1			n
+Shield of Expression	1	175	1			n
+Smoldering Armor	1	175	1			n
+Staff of Adornment	1	175	1			n
+Staff of Bird Calls	1	175	1			n
+Staff of Flowers	1	175	1			n
+Talking Doll	1	175	1			n
+Veterans Cane	1	175	1			n
+Wand of Conducting	1	175	1			n
+Wand of Pyrotechnics	1	175	1			n
+Wand of Scowls	1	175	1			n
+Wand of Smiles	1	175	1			n
+Alchemy Jug	3	600	1			n
+Bag of Holding 	3	600	1			n
+Cast off Armor	3	600	1			n
+Clockwork Amulet	3	600	1			n
+Lock of Trickery	3	600	1			n
+Periapt of Health	3	600	1			n
+Potion of Heroism	3	600	1			n
+Potion of Clairvoyance	3	600	1			n
+Walloping Ammunition X10	3	600	1			n
+Boots of Winterlands	5	900	1			n
+Eyes of Minute Seeing	5	900	1			n
+Eyes of the Eagle	5	900	1			n
+Goggles of Night	5	900	1			n
+Hat of Disguise	5	900	1			n
+Nature's Mantle	5	900	1			y
+Pipes of Haunting	5	900	1			n
+Potion of Gaseous Form	5	900	1			n
+Potion of Hill Giant Strength	5	900	1			n
+Ring of Swimming	5	900	1			n
+Ring of Warmth	5	900	1			n
+Rope of Climbing	5	900	1			n
+Sending Stones	5	900	1			n
+Wand of Magic Detection	5	900	1			n
+Wand of Secrets	5	900	1			n
+Weapon of Warning	5	900	1			n
+Wind Fan	5	900	1			n
+Circlet of Blasting	7	1200	1			n
+Cap of Waterbreathing	7	1200	1			n
+Fine  weapons (+1)	7	1200	1			n
+Fine Shield (+1)	7	1200	1			n
+Sentinel Shield	7	1200	1			n
+Saddle of the Cavalier	7	1200	1			n
+Scroll of Protection	7	1200	1			n
+Pearl of Power	7	1200	1			y
+Robe of Useful Items	7	1200	1			n
+Trident of Fish Command	7	1200	1			n
+Amulet of the Devout +1 	10	1800	1			y
+Boots of Elvenkind	10	1800	1			n
+Cloak of Protection	10	1800	1			n
+Eldritch Claw Tattoo	10	1800	1			n
+Lantern of Revealing	10	1800	1			n
+Mithral Armor	10	1800	1			n
+Moon Sickle +1	10	1800	1			n
+Pipes of the Sewers	10	1800	1			y
+Rhythm Maker's Drum (+1)	10	1800	1			y
+Rod of the Pact Keeper +1	10	1800	1			y
+Ring of Protection	10	1800	1			n
+Ring of Jumping	10	1800	1			n
+Staff of the Python	10	1800	1			y
+Stone of Good Luck	10	1800	1			n
+Wand of Enemy Detection	10	1800	1			n
+Wand of Fear	10	1800	1			n
+Wand of the War Mage (+1)	10	1800	1			y
+Cantrip x2	1	120	1			n
+1st level spell scroll	2	240	1			n
+2nd level spell scrolls	3	355	1			n
+Boots of Striding and Springing 	5	1150	2			n
+Chime of Opening 	5	1150	2			n
+Gloves of Missile Snaring	5	1150	2			n
+Keoghtom's Ointment	5	1150	2			n
+Medallion of Thoughts	5	1150	2			n
+Necklace of Adaptation	5	1150	2			n
+Potion of Invulnerability	5	1150	2			n
+Portable Hole	5	1150	2			n
+Vicious Weapon	5	1150	2			n
+light armor fine (+1)	7	1580	2			n
+medium and heavy armor fine  (+1)	7	1580	2			n
+Oil of Etherealness	7	1580	2			n
+Cloak of the Manta Ray	7	1580	2			n
+Boots of Levitation	10	1725	2			n
+Bracers of Archery	10	1725	2			n
+Bracers of Defense	10	1725	2			n
+Mariner's Armor	10	1725	2			n
+Ring of Animal Influence	10	1725	2			n
+Ring of Mind Shielding	10	1725	2			n
+Rope of Entanglement	10	1725	2			n
+Slippers of Spider Climbing	10	1725	2			n
+Tentacle Rod	10	1725	2			n
+Wand of Binding	10	1725	2			y
+Wand of Paralysis	10	1725	2			y
+Armor of Resistance	13	2300	2			n
+Cloak of Displacement	13	2300	2			n
+Headband of Intellect	13	2300	2			n
+Ring of the Ram	13	2300	2			n
+Ring of Resistence	13	2300	2			n
+Winged Boots	13	2300	2			n
+Wings of Flying	13	2300	2			n
+Adamantime Armor	15	2875	2			n
+Boots of Speed	15	2875	2			n
+Broom of Flying	15	2875	2			n
+Dagger of Venom	15	2875	2			n
+Mantle of Spell Resistance	15	2875	2			n
+Ring of Evasion	15	2875	2			n
+Ring of Free Action	15	2875	2			n
+Ring of X-Ray Vision	15	2875	2			n
+Sword of Wounding	15	2875	2			n
+Wand of the War Mage (+2)	15	2875	2			y
+"Superior Weapons, +2"	20	3450	2			n
+"Superior Shield, +2"	20	3450	2			n
+Amulet of the Devout +2	20	3450	2			y
+Moon Sickle +2	20	3450	2			y
+Rhythm Maker's Drum (+2)	20	3450	2			y
+Rod of the Pact Keeper (+2)	20	3450	2			y
+3rd Level Spell Scroll	4	475	2			n
+4th Level Spell Scroll	5	600	2			n

@@ -1,0 +1,15 @@
+const {Client, Message} = require('discord.js');
+
+function doathing(param,param){
+
+}
+
+
+/**
+ * 
+ * @param client 
+ * @param message 
+ */
+module.exports= async(client,message) =>{
+
+}
