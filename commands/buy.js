@@ -3,8 +3,10 @@ const { SlashCommandBuilder } = require('discord.js');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('buy')
-		.setDescription('automatically buy items!'),
-	async execute(interaction) {
+		.setDescription('automatically buy items!')
+		.addStringOption(option=> option.setName('item').setDescription('Item name').setRequired(true)),
+
+		run: async({interaction,client, handler}) => {
 		await interaction.reply(`Thank you for testing this command! Eventually, this will allow our friendly shopkeep Wren to automatically sell items to adventurers. This will automatically tell the adventurer the full cost of the item and will subtract 1 count of the item to the shop inventory.`);
 	},
 };

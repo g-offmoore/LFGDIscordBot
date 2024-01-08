@@ -80,7 +80,7 @@ module.exports = {
 
   options: {
     userPermissions: ['Administrator'],
-    //deleted: true,
+    deleted: false,
   },
 
   

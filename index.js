@@ -22,10 +22,11 @@ new CommandKit ({
     client,
     devGuildIds: ['1192837863717474315'],
     devUserIds: ['613530842177994772'],
-    dmRoleID: ['1192978493382860940'],
-    eventsPath: `${__dirname}/events`,
-    commandsPath: `${__dirname}/commands`,
-    bulkRegister: true,
+    eventsPath: path.join(__dirname,'events'),
+    commandsPath: path.join(__dirname,'commands'),
+    validationsPath: path.join(__dirname, 'validations'),
+    skipBuiltInValidations: true,
+    bulkRegister: false,
 });
 
 /*
