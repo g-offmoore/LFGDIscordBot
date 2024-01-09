@@ -73,7 +73,7 @@ module.exports = async (interaction) => {
         targetSuggestion.downvotes.includes(interaction.user.id);
 
       if (hasVoted) {
-        await interaction.editReply('You have already casted your vote for this suggestion.');
+        await interaction.editReply('You have already cast your vote for this suggestion.');
         return;
       }
 
@@ -101,7 +101,7 @@ module.exports = async (interaction) => {
         targetSuggestion.downvotes.includes(interaction.user.id);
 
       if (hasVoted) {
-        await interaction.editReply('You have already casted your vote for this suggestion.');
+        await interaction.editReply('You have already cast your vote for this suggestion.');
         return;
       }
 
