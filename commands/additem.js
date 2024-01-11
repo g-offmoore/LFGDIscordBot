@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('discord.js');
 const itemSchema = require('../models/item.js');
-const adventurerSchema = require('../models/adventurer.js')
+const adventurerSchema = require('../models/adventurers.js')
 
 
   /**
@@ -27,7 +27,7 @@ module.exports = {
     run: async({interaction,client, handler}) => {
       
                 
-          const {options} = interaction;
+          const {options, member} = interaction;
           const string = options.getString('item');
           const moonstone = options.getInteger('moonstone');
           const gold = options.getInteger('gold');
@@ -35,7 +35,12 @@ module.exports = {
           const description = options.getString('description');
           const qty = options.getInteger('qty');
           const attunement = options.getString('attunement');
-  
+          const allowedRoleID = 1191001315262861392;
+
+          if (!member.roles.cache.has(1191001315262861392)) {
+            await interaction.reply({ content: 'You do not have the required role to use this command.', ephemeral: true });
+            return;
+        }  
                     
           const newItem = new itemSchema({
               name: string,

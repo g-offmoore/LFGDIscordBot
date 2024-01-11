@@ -56,7 +56,7 @@ module.exports = async (message, client)=>{
   if (message.channel.id !== process.env.MainChannel && !message.mentions.users.has(client.user.id))return;
    //Channel and message filters. Allows open response in main channel and @ or ! commands in others
 
-
+  console.log(message.member.user.tag);
   const discordThreadId = message.channel.id;
   const {webhookId, webhookToken} = generateWebhookURL(discordThreadId);
   const {assistantname, personality} = getBotConnections(discordThreadId);
