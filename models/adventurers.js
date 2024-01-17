@@ -26,17 +26,5 @@ const adventurer = new Schema({
       ],
       transactions: [{}],
 });
-    // transactions: [
-    //     {
-    //         type: String,
-    //         item: {
-    //             name: String,
-    //             costGold: Number,
-    //             costMoonstone: Number,
-    //         },
-    //         quantity: Number,
-    //         timestamp: { type: Date, default: Date.now },
-    //     },
-    // ],
 
 module.exports = model('adventurer', adventurer);

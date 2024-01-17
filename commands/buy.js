@@ -9,20 +9,23 @@ const adventurers = require('../models/adventurers');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('buy')
-		.setDescription('automatically buy items!')
-		.addStringOption(option=> option.setName('item').setDescription('Item name').setRequired(true))
+		.setDescription('Automatically buy items!')
+		.addStringOption(option=> option.setName('item').setDescription('Item name').setRequired(true).setAutocomplete(true))
 		.addIntegerOption(option=> option.setName('level').setDescription('Your character tier').setRequired(true).addChoices({ name: 'tier 1', value: 1 },
         { name: 'Tier 2', value: 2 },))
 		.addIntegerOption(option=> option.setName('gold').setDescription('Enter your current gold if changed since your last visit'))
 		.addIntegerOption(option=> option.setName('moonstones').setDescription('Enter your current moonstones if changed since your last visit')),
+		
+		
 
-		run: async({interaction,client, handler}) => {
+		run: async ({interaction,client, handler}) => {
 			try {
-				const {options} = interaction;
-				const item = options.getString('item');
-				const moonstones = options.getInteger('moonstones');
-				const gold = options.getInteger('gold');
-				const level = options.getInteger('level');
+
+				const item = interaction.options.getString('item');
+					console.log(item);
+				const moonstones = interaction.options.getInteger('moonstones');
+				const gold = interaction.options.getInteger('gold');
+				const level = interaction.options.getInteger('level');
 				const UNAME = interaction.member.user.tag;
 
 				        // Check if the interaction is in the allowed channel
@@ -160,8 +163,30 @@ module.exports = {
 						)
 				}
 
-	}catch(error){
+	}
+	catch(error){
 		console.log(error);
 	}
-}
+},
+autocomplete: async ({ interaction, client, handler }) => {
+    const focusedItemOption = interaction.options.getFocused(true);
+    const itemsModel = require('../models/item');
+
+    const choices = await itemsModel.find({});
+
+    const formattedChoices = choices.map(choice => ({
+        name: choice.name,
+        value: choice.name // You can adjust this based on your needs
+    }));
+
+    const filtered = formattedChoices.filter((choice) =>
+        choice.name && choice.name.toLowerCase().startsWith(focusedItemOption.value.toLowerCase())
+    );
+	console.log(filtered);
+    // Respond to the interaction with the formatted choices
+    interaction.respond(filtered.slice(0, 25));
+},
+
+
+
 };
