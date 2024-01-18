@@ -21,6 +21,8 @@ module.exports = async (interaction) => {
     const targetMessage = await interaction.channel.messages.fetch(targetSuggestion.messageId);
     const targetMessageEmbed = targetMessage.embeds[0];
 
+
+    // Handle approve
     if (action === 'approve') {
       if (!interaction.memberPermissions.has('Administrator')) {
         await interaction.editReply('You do not have permission to approve suggestions.');
@@ -44,6 +46,7 @@ module.exports = async (interaction) => {
       return;
     }
 
+    // Handle reject
     if (action === 'reject') {
       if (!interaction.memberPermissions.has('Administrator')) {
         await interaction.editReply('You do not have permission to reject suggestions.');
@@ -67,6 +70,7 @@ module.exports = async (interaction) => {
       return;
     }
 
+    //handle upvote
     if (action === 'upvote') {
       const hasVoted =
         targetSuggestion.upvotes.includes(interaction.user.id) ||
@@ -95,6 +99,7 @@ module.exports = async (interaction) => {
       return;
     }
 
+    //handle downvote
     if (action === 'downvote') {
       const hasVoted =
         targetSuggestion.upvotes.includes(interaction.user.id) ||
@@ -122,6 +127,38 @@ module.exports = async (interaction) => {
 
       return;
     }
+
+      // Handle Status Change Action
+      if (action === 'status') {
+        const newStatus = interaction.options.getString('status');
+        if (['in progress', 'pending', 'completed'].includes(newStatus.toLowerCase())) {
+          targetSuggestion.status = newStatus.toLowerCase();
+          await targetSuggestion.save();
+  
+          targetMessageEmbed.fields[1].value = `Status: ${newStatus}`;
+          interaction.editReply(`Suggestion status updated to "${newStatus}"!`);
+  
+          targetMessage.edit({
+            embeds: [targetMessageEmbed],
+            components: [targetMessage.components[0]],
+          });
+          return;
+        } else {
+          await interaction.editReply('Invalid status option. Please choose "In Progress," "Pending," or "Completed."');
+          return;
+        }
+      }
+  
+      // Handle Developer Notes Action
+      if (action === 'notes') {
+        const developerNotes = interaction.options.getString('notes');
+        targetSuggestion.developerNotes = developerNotes;
+        await targetSuggestion.save();
+  
+        interaction.editReply('Developer notes updated!');
+        return;
+      }
+
   } catch (error) {
     console.log(error);
   }

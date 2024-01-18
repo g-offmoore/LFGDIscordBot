@@ -26,6 +26,9 @@ const suggestionSchema = new Schema({
         type: String,
         default: "pending",
     },
+    developerNotes: {
+        type: String, default: ''
+    },
     upvotes: {
         type: [String],
         default: [],

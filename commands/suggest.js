@@ -133,16 +133,21 @@ const {
           .setLabel('Reject')
           .setStyle(ButtonStyle.Danger)
           .setCustomId(`suggestion.${newSuggestion.suggestionId}.reject`);
+        
   
         // Rows
         const firstRow = new ActionRowBuilder().addComponents(upvoteButton, downvoteButton);
         const secondRow = new ActionRowBuilder().addComponents(approveButton, rejectButton);
+       
   
         suggestionMessage.edit({
           content: `${interaction.user} Suggestion created!`,
           embeds: [suggestionEmbed],
           components: [firstRow, secondRow],
         });
+
+        await suggestionMessage.pin();
+
       } catch (error) {
         console.error(error);
         console.log(`Error in /suggest: ${error}`);
