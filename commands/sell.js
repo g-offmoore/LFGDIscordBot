@@ -6,13 +6,13 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('sell')
         .setDescription('Sell items from your inventory')
-        .addStringOption(option => option.setName('item').setDescription('Item name').setRequired(true))
+        .addStringOption(option => option.setName('item').setDescription('Item name').setRequired(true).setAutocomplete(true))
         .addIntegerOption(option => option.setName('quantity').setDescription('Quantity of items to sell').setRequired(true)),
 
     run: async ({ interaction, client, handler }) => {
         try {
             const { options } = interaction;
-            const itemName = options.getString('item');
+            const itemName = options.get('item').value;
             const sellQuantity = options.getInteger('quantity');
             const UNAME = interaction.member.user.tag;
 
@@ -55,7 +55,7 @@ module.exports = {
                 item: {
                     name: soldItem.name,
                     costGold: sellPrice,
-                    costMoonstone: 0, // Assuming no cost in moonstones for selling
+                    costMoonstone: sellPriceM,
                 },
                 quantity: sellQuantity,
                 timestamp: new Date(),
@@ -84,5 +84,31 @@ module.exports = {
             console.error(error);
             await interaction.reply('An error occurred while processing the sell command.');
         }
-    }
+    },
+    autocomplete: async ({ interaction, client, handler }) => {
+        const focusedItemOption = interaction.options.getFocused(true);
+        const adventurerModel = require('../models/adventurers');
+        const UNAME = interaction.member.user.tag;
+    
+        const userAdventurerModel = await adventurerModel.findOne({ userid: UNAME });
+        const choices = userAdventurerModel ? userAdventurerModel.items : [];
+        
+        console.log(choices);
+    
+        const formattedChoices = choices.map(choice => ({
+            name: choice.name,
+            value: choice.name // You can adjust this based on your needs
+        }));
+    
+        const filtered = formattedChoices.filter((choice) =>
+            choice.name && choice.name.toLowerCase().startsWith(focusedItemOption.value.toLowerCase())
+        );
+        console.log(filtered);
+        // Respond to the interaction with the formatted choices
+        interaction.respond(filtered.slice(0, 25));
+    },
+    options: {
+        deleted: false,
+      },
+    
 };

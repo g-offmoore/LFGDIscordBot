@@ -28,5 +28,9 @@ module.exports = {
       await interaction.reply('An unexpected error occurred.');
     }
   },
+  options: {
+    userPermissions: ['Administrator'],
+    deleted: true,
+  },
 };
 

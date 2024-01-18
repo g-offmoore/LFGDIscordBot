@@ -32,5 +32,7 @@ new CommandKit ({
 mongoose.connect(process.env.mongoDB).then(()=>{
     console.log('Mongoose is chasing Wren around the shop');
     client.login(process.env.TOKEN);
+  }).catch(error => {
+    `Mongoose error: ${error}`
   });
   

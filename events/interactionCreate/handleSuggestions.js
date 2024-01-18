@@ -1,5 +1,5 @@
 const { Interaction } = require('discord.js');
-const Suggestion = require('../../models/Suggestion');
+const Suggestions = require('../../models/Suggestion');
 const formatResults = require('../../utils/formatResults');
 
 /**
@@ -10,15 +10,15 @@ module.exports = async (interaction) => {
   if (!interaction.isButton() || !interaction.customId) return;
 
   try {
-    const [type, suggestionId, action] = interaction.customId.split('.');
+    const [type, suggestionsId, action] = interaction.customId.split('.');
 
-    if (!type || !suggestionId || !action) return;
-    if (type !== 'suggestion') return;
+    if (!type || !suggestionsId || !action) return;
+    if (type !== 'suggestions') return;
 
     await interaction.deferReply({ ephemeral: true });
 
-    const targetSuggestion = await Suggestion.findOne({ suggestionId });
-    const targetMessage = await interaction.channel.messages.fetch(targetSuggestion.messageId);
+    const targetsuggestions = await suggestions.findOne({ suggestionsId });
+    const targetMessage = await interaction.channel.messages.fetch(targetsuggestions.messageId);
     const targetMessageEmbed = targetMessage.embeds[0];
 
 
@@ -29,12 +29,12 @@ module.exports = async (interaction) => {
         return;
       }
 
-      targetSuggestion.status = 'approved';
+      targetsuggestions.status = 'approved';
 
       targetMessageEmbed.data.color = 0x84e660;
       targetMessageEmbed.fields[1].value = '✅ Approved';
 
-      await targetSuggestion.save();
+      await targetsuggestions.save();
 
       interaction.editReply('Suggestion approved!');
 
@@ -53,12 +53,12 @@ module.exports = async (interaction) => {
         return;
       }
 
-      targetSuggestion.status = 'rejected';
+      targetsuggestions.status = 'rejected';
 
       targetMessageEmbed.data.color = 0xff6161;
       targetMessageEmbed.fields[1].value = '❌ Rejected';
 
-      await targetSuggestion.save();
+      await targetsuggestions.save();
 
       interaction.editReply('Suggestion rejected!');
 
@@ -73,23 +73,23 @@ module.exports = async (interaction) => {
     //handle upvote
     if (action === 'upvote') {
       const hasVoted =
-        targetSuggestion.upvotes.includes(interaction.user.id) ||
-        targetSuggestion.downvotes.includes(interaction.user.id);
+        targetsuggestions.upvotes.includes(interaction.user.id) ||
+        targetsuggestions.downvotes.includes(interaction.user.id);
 
       if (hasVoted) {
         await interaction.editReply('You have already cast your vote for this suggestion.');
         return;
       }
 
-      targetSuggestion.upvotes.push(interaction.user.id);
+      targetsuggestions.upvotes.push(interaction.user.id);
 
-      await targetSuggestion.save();
+      await targetsuggestions.save();
 
       interaction.editReply('Upvoted suggestion!');
 
       targetMessageEmbed.fields[2].value = formatResults(
-        targetSuggestion.upvotes,
-        targetSuggestion.downvotes
+        targetsuggestions.upvotes,
+        targetsuggestions.downvotes
       );
 
       targetMessage.edit({
@@ -102,23 +102,23 @@ module.exports = async (interaction) => {
     //handle downvote
     if (action === 'downvote') {
       const hasVoted =
-        targetSuggestion.upvotes.includes(interaction.user.id) ||
-        targetSuggestion.downvotes.includes(interaction.user.id);
+        targetsuggestions.upvotes.includes(interaction.user.id) ||
+        targetsuggestions.downvotes.includes(interaction.user.id);
 
       if (hasVoted) {
         await interaction.editReply('You have already cast your vote for this suggestion.');
         return;
       }
 
-      targetSuggestion.downvotes.push(interaction.user.id);
+      targetsuggestions.downvotes.push(interaction.user.id);
 
-      await targetSuggestion.save();
+      await targetsuggestions.save();
 
       interaction.editReply('Downvoted suggestion!');
 
       targetMessageEmbed.fields[2].value = formatResults(
-        targetSuggestion.upvotes,
-        targetSuggestion.downvotes
+        targetsuggestions.upvotes,
+        targetsuggestions.downvotes
       );
 
       targetMessage.edit({
@@ -132,8 +132,8 @@ module.exports = async (interaction) => {
       if (action === 'status') {
         const newStatus = interaction.options.getString('status');
         if (['in progress', 'pending', 'completed'].includes(newStatus.toLowerCase())) {
-          targetSuggestion.status = newStatus.toLowerCase();
-          await targetSuggestion.save();
+          targetsuggestions.status = newStatus.toLowerCase();
+          await targetsuggestions.save();
   
           targetMessageEmbed.fields[1].value = `Status: ${newStatus}`;
           interaction.editReply(`Suggestion status updated to "${newStatus}"!`);
@@ -152,8 +152,8 @@ module.exports = async (interaction) => {
       // Handle Developer Notes Action
       if (action === 'notes') {
         const developerNotes = interaction.options.getString('notes');
-        targetSuggestion.developerNotes = developerNotes;
-        await targetSuggestion.save();
+        targetsuggestions.developerNotes = developerNotes;
+        await targetsuggestions.save();
   
         interaction.editReply('Developer notes updated!');
         return;

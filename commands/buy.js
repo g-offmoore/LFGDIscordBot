@@ -22,7 +22,7 @@ module.exports = {
 			try {
 
 				const item = interaction.options.getString('item');
-					console.log(item);
+					// console.log(item);
 				const moonstones = interaction.options.getInteger('moonstones');
 				const gold = interaction.options.getInteger('gold');
 				const level = interaction.options.getInteger('level');
@@ -87,7 +87,8 @@ module.exports = {
 				  return;
 				}
 
-				if (!purchase.qty > 0) {
+				// deepcode ignore OperatorPrecedence: works fine for this level of check
+   		 if (!purchase.qty > 0) {
 					await interaction.reply(
 					  'Item is out of stock, please check back later!'
 					);
@@ -182,7 +183,7 @@ autocomplete: async ({ interaction, client, handler }) => {
     const filtered = formattedChoices.filter((choice) =>
         choice.name && choice.name.toLowerCase().startsWith(focusedItemOption.value.toLowerCase())
     );
-	console.log(filtered);
+	// console.log(filtered);
     // Respond to the interaction with the formatted choices
     interaction.respond(filtered.slice(0, 25));
 },

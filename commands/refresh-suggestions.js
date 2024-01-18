@@ -72,7 +72,7 @@ module.exports = {
   },
   options: {
     userPermissions: ['Administrator'],
-    deleted: false,
+    deleted: true,
   },
 };
    /*   const suggestions = await Suggestion.find();
