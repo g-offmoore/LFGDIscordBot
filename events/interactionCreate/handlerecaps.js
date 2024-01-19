@@ -171,8 +171,7 @@ targetMessage.edit({
   embeds: [targetMessageEmbed],
 });
       return;
-    
-
+  
   } catch (error) {
     console.log(error);
   }
