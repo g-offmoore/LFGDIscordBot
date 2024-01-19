@@ -10,8 +10,8 @@ const adventurers = require('../../models/adventurers');
  * @param {Interaction} interaction
  * @param {import('discord.js').Client} client
  */
-module.exports = async (interaction,client) => {
-  if (!interaction.isButton() || !interaction.customId) return;
+module.exports = async (interaction,client, handler) => {
+  if (!interaction.isButton() || !interaction.customId) return false;
 
   const guild = await client.guilds.fetch(process.env.guildID);
   const member = interaction.guild.members.cache.get(interaction.user.id);
@@ -23,8 +23,8 @@ module.exports = async (interaction,client) => {
   try {
     const [type, recapId, action] = interaction.customId.split('.');
 
-    if (!type || !recapId || !action) return;
-    if (type !== 'recap') return;
+    if (!type || !recapId || !action) return false;
+    if (type !== 'recap') return false;
 
     await interaction.deferReply({ ephemeral: true });
 
@@ -125,64 +125,53 @@ module.exports = async (interaction,client) => {
 
       return;
     }
+    //handle vote
+const hasUpvoted = targetrecap.upvotes.includes(interaction.user.id);
+const hasDownvoted = targetrecap.downvotes.includes(interaction.user.id);
 
-    //handle upvote
-    if (action === 'upvote') {
-      const hasVoted =
-        targetrecap.upvotes.includes(interaction.user.id) ||
-        targetrecap.downvotes.includes(interaction.user.id);
+if (action === 'upvote' && !hasUpvoted) {
+  // If the user has downvoted before, remove their downvote
+  if (hasDownvoted) {
+    targetrecap.downvotes = targetrecap.downvotes.filter((id) => id !== interaction.user.id);
+  }
 
-      if (hasVoted) {
-        await interaction.editReply('You have already cast your vote for this recap.');
-        return;
-      }
+  targetrecap.upvotes.push(interaction.user.id);
+  await targetrecap.save();
 
-      targetrecap.upvotes.push(interaction.user.id);
+  interaction.editReply('Upvoted recap!');
+} else if (action === 'downvote' && !hasDownvoted) {
+  // If the user has upvoted before, remove their upvote
+  if (hasUpvoted) {
+    targetrecap.upvotes = targetrecap.upvotes.filter((id) => id !== interaction.user.id);
+  }
 
-      await targetrecap.save();
+  targetrecap.downvotes.push(interaction.user.id);
+  await targetrecap.save();
 
-      interaction.editReply('Upvoted recap!');
+  interaction.editReply('Downvoted recap!');
+} else {
+  // If the user has already voted (either upvoted or downvoted), remove their vote
+  if (hasUpvoted) {
+    targetrecap.upvotes = targetrecap.upvotes.filter((id) => id !== interaction.user.id);
+  } else if (hasDownvoted) {
+    targetrecap.downvotes = targetrecap.downvotes.filter((id) => id !== interaction.user.id);
+  }
 
-      targetMessageEmbed.fields[2].value = formatResults(
-        targetrecap.upvotes,
-        targetrecap.downvotes
-      );
+  await targetrecap.save();
 
-      targetMessage.edit({
-        embeds: [targetMessageEmbed],
-      });
+  interaction.editReply('Vote removed!');
+}
 
+targetMessageEmbed.fields[2].value = formatResults(
+  targetrecap.upvotes,
+  targetrecap.downvotes
+);
+
+targetMessage.edit({
+  embeds: [targetMessageEmbed],
+});
       return;
-    }
-
-    //handle downvote
-    if (action === 'downvote') {
-      const hasVoted =
-        targetrecap.upvotes.includes(interaction.user.id) ||
-        targetrecap.downvotes.includes(interaction.user.id);
-
-      if (hasVoted) {
-        await interaction.editReply('You have already cast your vote for this recap.');
-        return;
-      }
-
-      targetrecap.downvotes.push(interaction.user.id);
-
-      await targetrecap.save();
-
-      interaction.editReply('Downvoted recap!');
-
-      targetMessageEmbed.fields[2].value = formatResults(
-        targetrecap.upvotes,
-        targetrecap.downvotes
-      );
-
-      targetMessage.edit({
-        embeds: [targetMessageEmbed],
-      });
-
-      return;
-    }
+    
 
   } catch (error) {
     console.log(error);

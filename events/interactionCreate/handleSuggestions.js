@@ -1,5 +1,5 @@
 const { Interaction } = require('discord.js');
-const Suggestions = require('../../models/Suggestion');
+const suggestion = require('../../models/Suggestion');
 const formatResults = require('../../utils/formatResults');
 
 /**
@@ -10,15 +10,15 @@ module.exports = async (interaction) => {
   if (!interaction.isButton() || !interaction.customId) return;
 
   try {
-    const [type, suggestionsId, action] = interaction.customId.split('.');
+    const [type, suggestionId, action] = interaction.customId.split('.');
 
-    if (!type || !suggestionsId || !action) return;
-    if (type !== 'suggestions') return;
+    if (!type || !suggestionId || !action) return;
+    if (type !== 'suggestion') return;
 
     await interaction.deferReply({ ephemeral: true });
 
-    const targetsuggestions = await suggestions.findOne({ suggestionsId });
-    const targetMessage = await interaction.channel.messages.fetch(targetsuggestions.messageId);
+    const targetsuggestion = await suggestion.findOne({ suggestionId });
+    const targetMessage = await interaction.channel.messages.fetch(targetsuggestion.messageId);
     const targetMessageEmbed = targetMessage.embeds[0];
 
 
@@ -29,12 +29,12 @@ module.exports = async (interaction) => {
         return;
       }
 
-      targetsuggestions.status = 'approved';
+      targetsuggestion.status = 'approved';
 
       targetMessageEmbed.data.color = 0x84e660;
       targetMessageEmbed.fields[1].value = '✅ Approved';
 
-      await targetsuggestions.save();
+      await targetsuggestion.save();
 
       interaction.editReply('Suggestion approved!');
 
@@ -53,12 +53,12 @@ module.exports = async (interaction) => {
         return;
       }
 
-      targetsuggestions.status = 'rejected';
+      targetsuggestion.status = 'rejected';
 
       targetMessageEmbed.data.color = 0xff6161;
       targetMessageEmbed.fields[1].value = '❌ Rejected';
 
-      await targetsuggestions.save();
+      await targetsuggestion.save();
 
       interaction.editReply('Suggestion rejected!');
 
@@ -70,94 +70,51 @@ module.exports = async (interaction) => {
       return;
     }
 
-    //handle upvote
-    if (action === 'upvote') {
-      const hasVoted =
-        targetsuggestions.upvotes.includes(interaction.user.id) ||
-        targetsuggestions.downvotes.includes(interaction.user.id);
+    // Handle upvote and downvote
+const hasUpvoted = targetsuggestion.upvotes.includes(interaction.user.id);
+const hasDownvoted = targetsuggestion.downvotes.includes(interaction.user.id);
 
-      if (hasVoted) {
-        await interaction.editReply('You have already cast your vote for this suggestion.');
-        return;
-      }
+if (action === 'upvote' && !hasUpvoted) {
+  // If the user has downvoted before, remove their downvote
+  if (hasDownvoted) {
+    targetsuggestion.downvotes = targetsuggestion.downvotes.filter((id) => id !== interaction.user.id);
+  }
 
-      targetsuggestions.upvotes.push(interaction.user.id);
+  targetsuggestion.upvotes.push(interaction.user.id);
+  await targetsuggestion.save();
 
-      await targetsuggestions.save();
+  interaction.editReply('Upvoted suggestion!');
+} else if (action === 'downvote' && !hasDownvoted) {
+  // If the user has upvoted before, remove their upvote
+  if (hasUpvoted) {
+    targetsuggestion.upvotes = targetsuggestion.upvotes.filter((id) => id !== interaction.user.id);
+  }
 
-      interaction.editReply('Upvoted suggestion!');
+  targetsuggestion.downvotes.push(interaction.user.id);
+  await targetsuggestion.save();
 
-      targetMessageEmbed.fields[2].value = formatResults(
-        targetsuggestions.upvotes,
-        targetsuggestions.downvotes
-      );
+  interaction.editReply('Downvoted suggestion!');
+} else {
+  // If the user has already voted (either upvoted or downvoted), remove their vote
+  if (hasUpvoted) {
+    targetsuggestion.upvotes = targetsuggestion.upvotes.filter((id) => id !== interaction.user.id);
+  } else if (hasDownvoted) {
+    targetsuggestion.downvotes = targetsuggestion.downvotes.filter((id) => id !== interaction.user.id);
+  }
 
-      targetMessage.edit({
-        embeds: [targetMessageEmbed],
-      });
+  await targetsuggestion.save();
 
-      return;
-    }
+  interaction.editReply('Vote removed!');
+}
 
-    //handle downvote
-    if (action === 'downvote') {
-      const hasVoted =
-        targetsuggestions.upvotes.includes(interaction.user.id) ||
-        targetsuggestions.downvotes.includes(interaction.user.id);
+targetMessageEmbed.fields[2].value = formatResults(
+  targetsuggestion.upvotes,
+  targetsuggestion.downvotes
+);
 
-      if (hasVoted) {
-        await interaction.editReply('You have already cast your vote for this suggestion.');
-        return;
-      }
-
-      targetsuggestions.downvotes.push(interaction.user.id);
-
-      await targetsuggestions.save();
-
-      interaction.editReply('Downvoted suggestion!');
-
-      targetMessageEmbed.fields[2].value = formatResults(
-        targetsuggestions.upvotes,
-        targetsuggestions.downvotes
-      );
-
-      targetMessage.edit({
-        embeds: [targetMessageEmbed],
-      });
-
-      return;
-    }
-
-      // Handle Status Change Action
-      if (action === 'status') {
-        const newStatus = interaction.options.getString('status');
-        if (['in progress', 'pending', 'completed'].includes(newStatus.toLowerCase())) {
-          targetsuggestions.status = newStatus.toLowerCase();
-          await targetsuggestions.save();
-  
-          targetMessageEmbed.fields[1].value = `Status: ${newStatus}`;
-          interaction.editReply(`Suggestion status updated to "${newStatus}"!`);
-  
-          targetMessage.edit({
-            embeds: [targetMessageEmbed],
-            components: [targetMessage.components[0]],
-          });
-          return;
-        } else {
-          await interaction.editReply('Invalid status option. Please choose "In Progress," "Pending," or "Completed."');
-          return;
-        }
-      }
-  
-      // Handle Developer Notes Action
-      if (action === 'notes') {
-        const developerNotes = interaction.options.getString('notes');
-        targetsuggestions.developerNotes = developerNotes;
-        await targetsuggestions.save();
-  
-        interaction.editReply('Developer notes updated!');
-        return;
-      }
+targetMessage.edit({
+  embeds: [targetMessageEmbed],
+});
 
   } catch (error) {
     console.log(error);
