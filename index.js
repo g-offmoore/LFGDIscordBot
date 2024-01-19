@@ -19,7 +19,7 @@ const client = new Client({
 
 new CommandKit ({
     client,
-    devGuildIds: ['1192837863717474315'],
+    //devGuildIds: ['1192837863717474315', '1191000746683015260'],
     devUserIds: ['613530842177994772'],
     eventsPath: path.join(__dirname,'events'),
     commandsPath: path.join(__dirname,'commands'),
