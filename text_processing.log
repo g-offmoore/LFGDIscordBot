@@ -1,0 +1,1358 @@
+2024-04-12 11:59:26,415:INFO:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-04-12 11:59:37,127:INFO:Use pytorch device_name: cpu
+2024-04-12 11:59:37,148:INFO:HTTP Request: GET http://45.79.213.234:6333/collections "HTTP/1.1 200 OK"
+2024-04-12 12:06:34,858:INFO:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-04-12 12:06:37,580:INFO:Use pytorch device_name: cpu
+2024-04-12 12:06:37,597:INFO:HTTP Request: GET http://45.79.213.234:6333/collections "HTTP/1.1 200 OK"
+2024-04-12 12:10:57,219:INFO:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-04-12 12:10:59,773:INFO:Use pytorch device_name: cpu
+2024-04-12 12:10:59,808:INFO:HTTP Request: GET http://45.79.213.234:6333/collections "HTTP/1.1 200 OK"
+2024-04-12 12:10:59,868:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,022:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,083:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,147:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,197:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,245:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,299:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,324:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,436:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,533:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,644:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,749:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,817:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,840:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,907:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:00,962:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,020:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,054:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,117:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,152:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,224:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,281:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,321:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,369:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,436:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,489:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,542:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,594:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,648:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,702:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,743:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,824:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,877:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,940:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:01,973:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,046:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,099:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,156:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,212:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,272:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,332:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,386:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,434:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,495:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,547:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,597:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,646:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,712:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,765:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,821:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,872:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:02,956:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,004:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,090:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,144:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,199:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,252:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,307:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,364:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,417:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,469:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,526:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,588:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,651:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,707:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,765:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,817:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,872:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,926:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:03,980:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,036:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,091:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,143:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,201:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,252:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,306:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,368:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,428:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,486:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,542:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,602:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,656:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,714:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,767:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,825:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,877:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,935:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:04,999:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,054:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,106:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,165:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,219:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,273:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,346:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,403:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,428:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,492:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,538:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,596:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,621:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,695:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,747:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,801:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,852:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,907:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:05,963:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,016:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,068:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,121:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,179:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,234:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,289:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,343:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,398:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,452:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,505:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,557:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,611:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,662:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,716:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,769:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,818:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,857:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,924:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:06,976:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,028:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,071:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,140:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,188:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,240:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,311:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,364:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,417:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,476:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,534:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,586:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,635:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,675:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,745:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,799:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,856:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,917:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:07,982:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,008:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,073:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,122:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,159:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,229:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,284:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,331:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,382:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,433:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,504:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,555:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,607:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,662:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,709:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,791:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,844:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,896:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:08,951:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,005:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,096:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,147:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,200:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,250:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,299:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,359:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,417:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,475:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,529:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,582:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,631:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,685:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,733:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,780:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,849:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,895:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,948:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:09,998:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,051:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,099:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,153:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,207:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,262:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,319:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,381:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,439:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,491:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,547:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,602:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,654:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,702:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,760:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,809:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,856:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,906:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:10,963:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,019:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,070:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,123:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,172:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,226:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,277:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,330:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,382:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,463:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,531:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,582:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,636:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 12:11:11,673:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:34:54,340:INFO:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-04-12 20:35:47,366:INFO:Use pytorch device_name: cpu
+2024-04-12 20:35:47,382:INFO:HTTP Request: GET http://45.79.213.234:6333/collections "HTTP/1.1 200 OK"
+2024-04-12 20:35:47,438:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect "HTTP/1.1 200 OK"
+2024-04-12 20:35:47,468:ERROR:Failed to read or process file 8 - Loot Galore Oddities, Trinkets, and More.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,477:ERROR:Failed to read or process file Ancient Dragons of Tovaren-summary.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,487:ERROR:Failed to read or process file Ancient Dragons of Tovaren.xlsx: name 'stop_words' is not defined
+2024-04-12 20:35:47,500:ERROR:Failed to read or process file Astrology.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,520:ERROR:Failed to read or process file Bezos Regime.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,533:ERROR:Failed to read or process file Black Blood Clan variant curse for PCs.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,547:ERROR:Failed to read or process file Central Tension.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,558:ERROR:Failed to read or process file Continents.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,572:ERROR:Failed to read or process file D&Ddnd-rules-and-expectations.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,587:ERROR:Failed to read or process file Dawnera Major Locations.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,602:ERROR:Failed to read or process file Factions.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,614:ERROR:Failed to read or process file final_output.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,626:ERROR:Failed to read or process file LFG or Luck Factory Games Rules and Expectations.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,665:ERROR:Failed to read or process file Locations.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,681:ERROR:Failed to read or process file Military Ranks.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,707:ERROR:Failed to read or process file Moonstone Dragonbone Armor.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,724:ERROR:Failed to read or process file Nobility and Peerage of Továren.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,745:ERROR:Failed to read or process file Pantheon.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,767:ERROR:Failed to read or process file The Lost History of Tovaren Vol. II.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,802:ERROR:Failed to read or process file The Rival Colleges of Magic in Dawnera.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,834:ERROR:Failed to read or process file Thistle Bottom Three Wing Detective Agency.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,875:ERROR:Failed to read or process file Tovaren Lore Cliff Notes.txt: name 'stop_words' is not defined
+2024-04-12 20:35:47,921:ERROR:Failed to read or process file World Info.txt: name 'stop_words' is not defined
+2024-04-12 20:40:51,413:INFO:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-04-12 20:40:54,390:INFO:Use pytorch device_name: cpu
+2024-04-12 20:40:54,407:INFO:HTTP Request: GET http://45.79.213.234:6333/collections "HTTP/1.1 200 OK"
+2024-04-12 20:40:54,457:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect "HTTP/1.1 200 OK"
+2024-04-12 20:40:54,465:ERROR:Failed to read or process file 8 - Loot Galore Oddities, Trinkets, and More.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,466:ERROR:Failed to read or process file Ancient Dragons of Tovaren-summary.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,469:ERROR:Failed to read or process file Ancient Dragons of Tovaren.xlsx: name 'stop_words' is not defined
+2024-04-12 20:40:54,470:ERROR:Failed to read or process file Astrology.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,471:ERROR:Failed to read or process file Bezos Regime.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,472:ERROR:Failed to read or process file Black Blood Clan variant curse for PCs.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,473:ERROR:Failed to read or process file Central Tension.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,473:ERROR:Failed to read or process file Continents.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,476:ERROR:Failed to read or process file D&Ddnd-rules-and-expectations.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,479:ERROR:Failed to read or process file Dawnera Major Locations.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,481:ERROR:Failed to read or process file Factions.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,483:ERROR:Failed to read or process file final_output.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,485:ERROR:Failed to read or process file LFG or Luck Factory Games Rules and Expectations.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,501:ERROR:Failed to read or process file Locations.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,504:ERROR:Failed to read or process file Military Ranks.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,513:ERROR:Failed to read or process file Moonstone Dragonbone Armor.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,515:ERROR:Failed to read or process file Nobility and Peerage of Továren.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,519:ERROR:Failed to read or process file Pantheon.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,521:ERROR:Failed to read or process file The Lost History of Tovaren Vol. II.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,523:ERROR:Failed to read or process file The Rival Colleges of Magic in Dawnera.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,524:ERROR:Failed to read or process file Thistle Bottom Three Wing Detective Agency.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,526:ERROR:Failed to read or process file Tovaren Lore Cliff Notes.txt: name 'stop_words' is not defined
+2024-04-12 20:40:54,546:ERROR:Failed to read or process file World Info.txt: name 'stop_words' is not defined
+2024-04-12 20:41:27,468:INFO:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-04-12 20:41:30,216:INFO:Use pytorch device_name: cpu
+2024-04-12 20:41:30,233:INFO:HTTP Request: GET http://45.79.213.234:6333/collections "HTTP/1.1 200 OK"
+2024-04-12 20:41:30,240:ERROR:Failed to read or process file 8 - Loot Galore Oddities, Trinkets, and More.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,243:ERROR:Failed to read or process file Ancient Dragons of Tovaren-summary.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,245:ERROR:Failed to read or process file Ancient Dragons of Tovaren.xlsx: name 'stop_words' is not defined
+2024-04-12 20:41:30,246:ERROR:Failed to read or process file Astrology.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,247:ERROR:Failed to read or process file Bezos Regime.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,248:ERROR:Failed to read or process file Black Blood Clan variant curse for PCs.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,249:ERROR:Failed to read or process file Central Tension.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,250:ERROR:Failed to read or process file Continents.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,252:ERROR:Failed to read or process file D&Ddnd-rules-and-expectations.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,253:ERROR:Failed to read or process file Dawnera Major Locations.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,257:ERROR:Failed to read or process file Factions.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,258:ERROR:Failed to read or process file final_output.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,260:ERROR:Failed to read or process file LFG or Luck Factory Games Rules and Expectations.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,274:ERROR:Failed to read or process file Locations.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,275:ERROR:Failed to read or process file Military Ranks.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,284:ERROR:Failed to read or process file Moonstone Dragonbone Armor.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,285:ERROR:Failed to read or process file Nobility and Peerage of Továren.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,289:ERROR:Failed to read or process file Pantheon.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,291:ERROR:Failed to read or process file The Lost History of Tovaren Vol. II.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,293:ERROR:Failed to read or process file The Rival Colleges of Magic in Dawnera.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,295:ERROR:Failed to read or process file Thistle Bottom Three Wing Detective Agency.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,297:ERROR:Failed to read or process file Tovaren Lore Cliff Notes.txt: name 'stop_words' is not defined
+2024-04-12 20:41:30,316:ERROR:Failed to read or process file World Info.txt: name 'stop_words' is not defined
+2024-04-12 20:43:33,611:INFO:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-04-12 20:43:36,440:INFO:Use pytorch device_name: cpu
+2024-04-12 20:43:36,458:INFO:HTTP Request: GET http://45.79.213.234:6333/collections "HTTP/1.1 200 OK"
+2024-04-12 20:43:36,532:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:36,599:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:36,656:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:36,703:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:36,754:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:36,813:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:36,858:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:36,903:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:36,963:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,053:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,138:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,195:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,274:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,339:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,399:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,453:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,491:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,535:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,590:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,648:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,691:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,712:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,765:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,801:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,856:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,910:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,940:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:37,968:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,010:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,071:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,164:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,188:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,250:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,300:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,347:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,406:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,464:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,518:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,573:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,632:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,690:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,743:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,803:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,853:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,904:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:38,975:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,041:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,099:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,129:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,183:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,229:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,270:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,329:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,385:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,453:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,487:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,540:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,599:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,672:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,699:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,759:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,821:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,866:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,925:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:39,984:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,038:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,095:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,133:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,158:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,210:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,256:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,295:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,323:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,347:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,424:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,481:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,528:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,596:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,653:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,714:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,760:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,821:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,869:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,924:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:40,976:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,038:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,086:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,146:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,206:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,271:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,309:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,372:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,398:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,455:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,514:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,580:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,608:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,680:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,745:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,783:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,847:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,911:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:41,948:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,000:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,039:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,106:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,166:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,219:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,288:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,319:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,374:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,421:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,472:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,540:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,602:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,662:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,718:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,770:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,849:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:42,941:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,005:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,051:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,112:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,183:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,243:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,287:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,360:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,430:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,503:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,566:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,621:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,679:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,749:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,803:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,868:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,928:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:43,984:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,014:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,066:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,125:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,182:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,246:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,296:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,363:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,429:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,474:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,535:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,597:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,666:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,731:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:43:44,820:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:44,820:ERROR:Failed to embed text chunk o there used to be a rather large structure made in his honorimage it has since been torn down and replaced by a very large hut structure made to house more of his people and act as a town center
+ shaman a green skinned grung
+o acts as adviser to king walg
+ kroark red skinned grung
+o elite warrior leader of the tribes warriors
+o has been gifted a shortsword of warning from lanthorn
+ 
+ 
+creature stat blocks
+ 
+monstrous snake
+ 
+giant leech
+ 
+giant venus flytrap
+ 
+giant mosquito
+ 
+shadowstone
+friday march 3 2023
+1043 am: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":0.000474699}'
+2024-04-12 20:43:44,880:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:44,881:ERROR:Failed to embed text chunk shadowstone
+friday march 3 2023
+1043 am
+ 
+shadowstone near the coast in between the shadowbrush and the granola valley was once a thriving city it is now more or less just a humble fishing town the structures in this town are centuries old made of stone and worn down by nature due to its port you can expect all walks of life here such as humans tabaxi dwarves wood elves and drow citizens hardly if ever venture into the shadowbrush people will warn of the dangers of the jungle large meat eating plants unnatural animals flying people terror folk aka pterafolk 
+ 
+npcs of note: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":8.35e-6}'
+2024-04-12 20:43:44,937:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:44,937:ERROR:Failed to embed text chunk npcs of note
+tybalt  very old dwarf who still has some life and call for adventure has a very long beard and a wooden peg leg he rescued ax from the shadowbrush when they crashed their ship that is also when tybalt had lost his leg he does not venutre into the shadowbrush often and usually does not go further than about 10 miles deep hes seen almost everything in the brush or so he thinks people of shadowstone think hes crazy and senile 
+tavern the watering hole
+ 
+sword blade mountains
+friday march 3 2023
+1244 pm: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":9.52e-6}'
+2024-04-12 20:43:44,997:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:44,998:ERROR:Failed to embed text chunk friday march 3 2023
+1244 pm
+ 
+this mountain range acts as the border between the kingdom of rynn and the elemental empire it is not a mineral rick mountain range and so mining is rarely attempted within it the poor mining and rocky nature have led to minimal settlement attempts leaving the area largely unexplored the mountains peter out into planes at the coast and the sulrakus river providing much easier passages between the kingdom of rynn and elemental empire these easier travel routes further lead to the unexplored nature of the mountain range 
+ 
+these mountains are inhabited by giants of all kinds including giant beasts 
+ 
+ 
+winterhold
+friday may 5 2023
+732 pm: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":0.00001277}'
+2024-04-12 20:43:45,062:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,063:ERROR:Failed to embed text chunk winterhold
+friday may 5 2023
+732 pm
+ 
+hierarchy of power  the five
+o edna hellmund lg
+ elderly female dwarf uses the noble stat
+ long snowy hair brown eyes and dresses in simple robes in muted colors
+ head of the department of archaeology mining and history
+o osil twoaxe lg
+ middleaged male dwarf uses the veteran stat
+ wears battled scale mail a hefty mace and a cornflowerblue cloak  he has inky black braided hair and beard
+ captain of the winterhold guard
+o kethra dyer n
+ female human uses the noble stat
+ pale willowy and wears fine clothes to compliment her soft features
+ winterholds master of trade
+o tharl merryheart ng
+ male gnome uses the commoner stat: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":0.00001033}'
+2024-04-12 20:43:45,120:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,121:ERROR:Failed to embed text chunk male gnome uses the commoner stat
+ kind eyes a slightly ruddy nose and neatly combed red wavy hair  often wears a quillshaped silver pin that his mentor once gave him
+ negotiator of foreign affairs
+o ulfrik jormund ln
+ middleages male dwarf uses the mage stat
+ tall for a dwarf and sports a black neatly trimmed beard with silver clips  dresses in long flowing robes embroidered with scrollwork and spiraling patterns in silver 
+ head of magic and sorcery
+ 
+ 
+ 
+tavern inn  
+o innkeeper 
+o bar keep  
+o bar maid
+o brew master 
+o criminal contact
+ 
+temple
+o priestess
+ 
+provisioner
+o clerk
+ 
+arcanary
+o alchemist
+o appraiserartificer
+ 
+infirmary
+o surgeon
+ 
+town hall
+o prefect
+o mayor: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":5.72e-6}'
+2024-04-12 20:43:45,145:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,146:ERROR:Failed to embed text chunk o surgeon
+ 
+town hall
+o prefect
+o mayor 
+ mayors assistant 
+ 
+garrison
+o captain
+ 
+livery stable
+o stable master 
+ current stock
+ 
+ 
+blacksmith 
+ 
+ 
+ 
+library: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":5.29e-6}'
+2024-04-12 20:43:45,191:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,191:ERROR:Failed to embed text chunk military ranks
+friday april 8 2022
+1111 am
+ 
+with this i am fudging a bit just as with modern times there were a plethora of military titles given during the middle ages i am not going to list all of them here as often these ranks fell in and out of favor over time and often their meaning and responsibilities changed and were not consistent as they are now in our current era but here goes 
+ 
+ground forces 
+ 
+field marshal or just marshall: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":3.68e-6}'
+2024-04-12 20:43:45,245:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,245:ERROR:Failed to embed text chunk ground forces 
+ 
+field marshal or just marshall
+the person given overall command of grand strategy and organization of a kingdomsnations armies this is a title that would be held by someone who is high up in the nobility hierarchy or was a connected and hopefully accomplished military strategist who oversees the operations multiple armed forces and possibly that of allied forces as well 
+ 
+general
+the commander of an army again someone who you hope is capable and would normally be a high ranking noble or prominent person but a general could be someone who has demonstrated they can lead others into the battle and has excellent organizational skills 
+ 
+warlord: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":3.66e-6}'
+2024-04-12 20:43:45,298:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,298:ERROR:Failed to embed text chunk warlord
+whether the leader of a small band of warriors or of a vast force this is someone who has attained such a title and position because they have fought their way to the top literally and have demonstrated they are a tested warrior and leader this is not exactly a formal military title 
+ 
+captain
+a professional soldier who has demonstrated skill and ability and commands a battle anywhere from 100300 men at arms or is the commander of a garrison 
+ 
+lieutenant
+commands and trains smaller units of men at arms or levies and could be responsible for 3050 such troops 
+ 
+sergent 
+always a professional soldier and veteran who commands and trains 30 or less men at arms or levies: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":5.41e-6}'
+2024-04-12 20:43:45,353:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,353:ERROR:Failed to embed text chunk man at arms 
+normally a professional soldier or mercenary who is capable and seen some action they either provide their own equipment and gear or are issued such these are the persons who make up standing forces and garrisons and can have a wide range of specializations such as rank and file spearmen crossbowmen archer etc
+ 
+specialist 
+someone skilled in a particular military art such as being a siege engineer quartermaster etc 
+ 
+levy
+a civiliancommoner who is thrown into the lines to fill the ranks is not a professional soldier and of dubious reliability often they are poorly equipped
+ 
+ 
+naval forces
+ 
+grand admiral: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":5.87e-6}'
+2024-04-12 20:43:45,410:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,410:ERROR:Failed to embed text chunk naval forces
+ 
+grand admiral 
+overall commander of a kingdoms or nations navies and would also command allied navies 
+ 
+admiral
+commander of a kingdoms or nations navy
+ 
+captain
+commander of a ship
+ 
+lieutenant
+second in command of a ship or may command a ship
+ 
+bosun
+a professional sailor who is in command of ships gear and training of sailors
+ 
+sailor  
+a professional seaman who is experienced with the duties and workings of a ship
+ 
+ 
+air forces
+ 
+well it is a fantasy world but i think in the case of say a military unit of griffin riders it would follow either a formal or inform ranking same as for the ground forces or in the case of sky ships the naval ranks would be used perhaps: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":0.00001025}'
+2024-04-12 20:43:45,480:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,481:ERROR:Failed to embed text chunk armor lore
+tuesday january 10 2023
+415 pm
+ 
+each piece of the armor will have a unique dormant ability that is always active after the pc is attuned to it this ability should be mildly powerful no greater than a rare magic item each piece of the armor will also have a unique activated ability that takes an action bonus action or reaction to activate and lasts a short time this ability should be supremely powerful like that of a legendary or artifact level magic item: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":8.65e-6}'
+2024-04-12 20:43:45,533:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,533:ERROR:Failed to embed text chunk all pieces will have the plague of mortals curse and the moonstone madness curse these curses cannot be removed but the symptoms can be managed the idea of these curses is to encourage the pcs to dawn the pieces of armor but make them reluctant to use the legendary ability it should also make them fearful to carry more than one piece of the armor
+
+ 
+all pieces of the armor when assembled on the same person become the mantle of amon this will summon a gemstone warforged colossus or something similar that we come up with as of right now this will also certainly consume the pc with madness: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":8.42e-6}'
+2024-04-12 20:43:45,574:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,574:ERROR:Failed to embed text chunk all piece of moonstone assembled becomes the mantle of amon summons something like a warforged colossus for some limited amount of time 1 hour
+
+ 
+plague of mortals curse once attuned you are unwilling to remove the moonstone item if you are convinced to remove the moonstone item advance the madness dc and make a charisma saving throw at that dc before removing it: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.43e-6}'
+2024-04-12 20:43:45,643:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,643:ERROR:Failed to embed text chunk the moonstone madness curse each time you activate the armors legendary ability you must make a charisma saving throw the dc starts at 15 but changes depending on success or failure on a failure you go berserk see berserk below on a failure the dc is increased by 1 and the failure is recorded if 3 failures are accumulated before 3 successes your character is entirely overcome with madness and is yielded to the dm team indefinitely if 3 successes are accumulated before 3 failures the dc is reduced to 12 add 3 to the dc for each other piece of the moonstone armor in your possession this curse is pc specific and not item specific for example if a player uses the helms ability and fails their: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":9.6e-6}'
+2024-04-12 20:43:45,683:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,683:ERROR:Failed to embed text chunk a player uses the helms ability and fails their charisma save the dc becomes 16 if the pc later removes the helm and again fails their saving throw the dc becomes 18 and they have accumulated 2 failures if they then equip the greaves and use the greaves ability and fail that is 3 failures and the pc is consumed by madness: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":6.76e-6}'
+2024-04-12 20:43:45,741:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,742:ERROR:Failed to embed text chunk berserk while berserk you must use your action each round to attack the creature nearest to you if you can make extra attacks as part of the action you use those extra attacks moving to attack the next nearest creature after you fell your current target if you have multiple possible targets you attack one at random you are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear after your berserk episode gain 1 level of exhaustion 
+
+
+
+ 
+moonstone greaves
+
+ 
+passive ability while you wear these greaves difficult terrain doesnt cost you extra movement in addition magic can neither reduce your speed nor cause you to be paralyzed or restrained: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.21e-6}'
+2024-04-12 20:43:45,798:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,798:ERROR:Failed to embed text chunk activated ability as a bonus action you can activate the boots once activated your speed is doubled you gain advantage on dexterity saving throws and gain an additional action on your turn that action can be used only to take the dash disengage hide or use an object action this ability lasts a number of rounds equal to your constitution modifier plus one minimum of 1 once the ability ends resolve the moonstone madness curse 
+
+ 
+plague of mortals curse once attuned unwilling to remove the moonstone item if you are convinced to advance the madness dc and make a charisma saving throw at that dc before removing it: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":8.67e-6}'
+2024-04-12 20:43:45,851:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,852:ERROR:Failed to embed text chunk the moonstone madness curse each time you activate the armors legendary ability you must make a charisma saving throw the dc starts at 15 but changes depending on success or failure on a failure see berserk on a failure the dc is increased by 1 and the failure is recorded if 3 failures are accumulated before 3 successes your character is entirely overcome with madness and is yielded to the dm team indefinitely if 3 successes are accumulated before 3 failures the dc is reset to 12 add 3 to the dc for each other piece of the moonstone armor in your possession: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.74e-6}'
+2024-04-12 20:43:45,901:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,903:ERROR:Failed to embed text chunk berserk while berserk you must use your action each round to attack the creature nearest to you if you can make extra attacks as part of the action you use those extra attacks moving to attack the next nearest creature after you fell your current target if you have multiple possible targets you attack one at random you are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear after your berserk episode gain 1 level of exhaustion: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.83e-6}'
+2024-04-12 20:43:45,976:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:45,976:ERROR:Failed to embed text chunk moonstone armor  list
+tuesday july 26 2022
+843 pm
+ 
+1 helm kim
+a lions pride has control
+b fenwick armet lanthorn high tiers
+2 breastplate lands end
+a held by kenlanthorn
+3 belt dawnera vault 726
+a held and worn by thanquil var
+b slowly seeping into moonstone madness
+4 gauntlets
+a held by copper unicorns 
+b held in the vault in dawnera
+c reginald griffor
+5 greaves held by members of the lions pride
+a leena took the greaves and put them in her bag of holding
+b leenas house hanging about the mantle
+6 pauldrons 
+a held by copper unicorns
+b reginald griffor
+7 shield nicks campaign
+a ken the dragonborn has the moonstone sword
+i nylar and the shield have been fused together: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.36e-6}'
+2024-04-12 20:43:46,009:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,010:ERROR:Failed to embed text chunk armor power layout
+tuesday january 10 2023
+416 pm
+ 
+passive ability duplicating the effect of a rare magic item like a ring of free action: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.04e-6}'
+2024-04-12 20:43:46,063:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,063:ERROR:Failed to embed text chunk activated ability this ability is activated through the use of an action bonus action or reaction and lasts for a number of rounds equal to your constitution modifier minimum 1 it should be similar in power to the effects of a third level spell  once the ability ends resolve the moonstone madness curse 
+
+ 
+plague of mortals curse once attuned unwilling to remove the moonstone item if you are convinced to remove it advance the madness dc by 2 and make a charisma saving throw at that dc before removing it on a failure you are unable to remove the armor: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.56e-6}'
+2024-04-12 20:43:46,120:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,120:ERROR:Failed to embed text chunk the moonstone madness curse each time you activate the armors legendary ability you must make a constitution saving throw the dc starts at 15 but changes depending on success or failure on a failure see berserk on a failure the dc is increased by 1 and the failure is recorded if 3 failures are accumulated before 3 successes your character is entirely overcome with madness and is yielded to the dm team indefinitely if 3 successes are accumulated before 3 failures the dc is reset to 12 add 3 to the dc for each other piece of the moonstone armor in your possession: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.22e-6}'
+2024-04-12 20:43:46,175:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,175:ERROR:Failed to embed text chunk berserk while berserk you must use your action each round to attack the creature nearest to you if you can make extra attacks as part of the action you use those extra attacks moving to attack the next nearest creature after you fell your current target if you have multiple possible targets you attack one at random you are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear after your berserk episode gain 1 level of exhaustion 
+ 
+ 
+ 
+moonstone greaves  currently held in a bag of holding in leenas possession 81323
+tuesday january 10 2023
+417 pm: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":6.74e-6}'
+2024-04-12 20:43:46,232:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,233:ERROR:Failed to embed text chunk tuesday january 10 2023
+417 pm
+passive ability while you wear these greaves difficult terrain doesnt cost you extra movement in addition magic can neither reduce your speed nor cause you to be paralyzed or restrained
+ 
+ 
+activated ability as a bonus action you can activate the boots once activated your speed is doubled you gain advantage on dexterity saving throws and gain an additional action on your turn that action can be used only to take the dash disengage hide or use an object action this ability lasts a number of rounds equal to your constitution modifier plus one minimum of 1 once the ability ends resolve the moonstone madness curse: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.19e-6}'
+2024-04-12 20:43:46,262:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,263:ERROR:Failed to embed text chunk plague of mortals curse once attuned unwilling to remove the moonstone item if you are convinced to advance the madness dc and make a charisma saving throw at that dc before removing it: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":5.1e-6}'
+2024-04-12 20:43:46,317:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,318:ERROR:Failed to embed text chunk the moonstone madness curse each time you activate the armors legendary ability you must make a charisma saving throw the dc starts at 15 but changes depending on success or failure on a failure see berserk on a failure the dc is increased by 1 and the failure is recorded if 3 failures are accumulated before 3 successes your character is entirely overcome with madness and is yielded to the dm team indefinitely if 3 successes are accumulated before 3 failures the dc is reset to 12 add 3 to the dc for each other piece of the moonstone armor in your possession: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":6.98e-6}'
+2024-04-12 20:43:46,366:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,366:ERROR:Failed to embed text chunk berserk while berserk you must use your action each round to attack the creature nearest to you if you can make extra attacks as part of the action you use those extra attacks moving to attack the next nearest creature after you fell your current target if you have multiple possible targets you attack one at random you are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear after your berserk episode gain 1 level of exhaustion: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":6.26e-6}'
+2024-04-12 20:43:46,428:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,429:ERROR:Failed to embed text chunk moonstone pauldrons  currently stored in alfas genie lamp 81323
+tuesday january 10 2023
+417 pm
+passive ability these pauldrons store spells cast into them holding them until the attuned wearer uses them the pauldrons can store up to 5 levels worth of spells at a time 
+any creature can cast a spell of 1st through 5th level into the pauldrons by touching them as the spell is cast the spell has no effect other than to be stored in the pauldrons if the pauldrons cant hold the spell the spell is expended without effect the level of the slot used to cast the spell determines how much space it uses: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":6.62e-6}'
+2024-04-12 20:43:46,487:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,488:ERROR:Failed to embed text chunk while wearing these pauldrons you can cast any spell stored in them the spell uses the slot level spell save dc spell attack bonus and spellcasting ability of the original caster but is otherwise treated as if you cast the spell the spell cast from the ring is no longer stored in it freeing up space
+ 
+activated ability as a reaction when a creature within 60 feet of you casts a spell you can cast counterspell at third level any spell countered in this way is then stored in the pauldrons after a number of rounds equal to your constitution modifier minimum 1 you make a constitution saving throw for the dc from the moonstone madness curse: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":4.61e-6}'
+2024-04-12 20:43:46,526:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,526:ERROR:Failed to embed text chunk plague of mortals curse once attuned unwilling to remove the moonstone item if you are convinced to remove it advance the madness dc by 2 and make a charisma saving throw at that dc before removing it on a failure you are unable to remove the armor: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":5.12e-6}'
+2024-04-12 20:43:46,581:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,581:ERROR:Failed to embed text chunk the moonstone madness curse each time you activate the armors legendary ability you must make a charisma saving throw the dc starts at 15 but changes depending on success or failure on a failure see berserk on a failure the dc is increased by 1 and the failure is recorded if 3 failures are accumulated before 3 successes your character is entirely overcome with madness and is yielded to the dm team indefinitely if 3 successes are accumulated before 3 failures the dc is reset to 12 add 3 to the dc for each other piece of the moonstone armor in your possession: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":4.78e-6}'
+2024-04-12 20:43:46,645:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,646:ERROR:Failed to embed text chunk berserk while berserk you must use your action each round to attack the creature nearest to you if you can make extra attacks as part of the action you use those extra attacks moving to attack the next nearest creature after you fell your current target if you have multiple possible targets you attack one at random you are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear after your berserk episode gain 1 level of exhaustion 
+ 
+ 
+ 
+moonstone gauntlets
+monday february 13 2023
+834 pm
+ 
+these gauntlets can be used a spellcasting focus for all spellcasters
+ 
+passive ability: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":0.00001424}'
+2024-04-12 20:43:46,681:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,683:ERROR:Failed to embed text chunk passive ability 
+these gauntlets crackle with magical energy even when not being worn you gain the following benefits while wearing these gauntlets once per turn when you roll damage for a spell attack not a save you can reroll the spells damage dice if you do so you must use the second total your spell attacks score a critical hit on a roll of 19 or 20 on the d20: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":5.65e-6}'
+2024-04-12 20:43:46,733:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,733:ERROR:Failed to embed text chunk activated ability  as an action you can activate the gauntlets once activated the magical energy in the gauntlets flows into you causing you to enter a magical trance for a number of rounds equal to 1  your con modifier while in this trance whenever you cast a cantrip you can use a bonus action on the same turn to cast that cantrip a second time 
+ 
+ 
+ 
+ 
+plague of mortals curse once attuned unwilling to remove the moonstone item if you are convinced to remove it advance the madness dc by 2 and make a charisma saving throw at that dc before removing it on a failure you are unable to remove the armor: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":6.69e-6}'
+2024-04-12 20:43:46,784:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,784:ERROR:Failed to embed text chunk the moonstone madness curse each time you activate the armors active ability you must make a constitution saving throw the dc starts at 15 but changes depending on success or failure on a failure see berserk on a failure the dc is increased by 1 and the failure is recorded if 3 failures are accumulated before 3 successes your character is entirely overcome with madness and is yielded to the dm team indefinitely if 3 successes are accumulated before 3 failures the dc is reset to 12 add 3 to the dc for each other piece of the moonstone armor in your possession: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":8.57e-6}'
+2024-04-12 20:43:46,873:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,873:ERROR:Failed to embed text chunk berserk while berserk you must use your action each round to attack the creature nearest to you if you can make extra attacks as part of the action you use those extra attacks moving to attack the next nearest creature after you fell your current target if you have multiple possible targets you attack one at random you are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear after your berserk episode gain 1 level of exhaustion  
+ 
+ 
+moonstone belt  currently wielded by thanquil var
+tuesday march 7 2023
+108 am
+ 
+this belt is sewn from dragon scales and has a large silver clasp with an image depicting two hands shaking on it: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":6.48e-6}'
+2024-04-12 20:43:46,928:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,928:ERROR:Failed to embed text chunk passive ability while wearing this belt you can understand any spoken language and any creature that knows at least one language can understand what you say you can suppress or resume this ability as a free action
+ 
+active ability 1day the moonstone belt can cast dominate monster which lasts for a number of rounds equal to your constitution modifier minimum of one after the spell ends resolve the moonstone madness curse
+ 
+ 
+ 
+ 
+ 
+plague of mortals curse once attuned unwilling to remove the moonstone item if you are convinced to advance the madness dc and make a charisma saving throw at that dc before removing it: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":8.71e-6}'
+2024-04-12 20:43:46,978:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:46,979:ERROR:Failed to embed text chunk the moonstone madness curse each time you activate the armors legendary ability you must make a charisma saving throw the dc starts at 15 but changes depending on success or failure on a failure see berserk on a failure the dc is increased by 1 and the failure is recorded if 3 failures are accumulated before 3 successes your character is entirely overcome with madness and is yielded to the dm team indefinitely if 3 successes are accumulated before 3 failures the dc is reset to 12 add 3 to the dc for each other piece of the moonstone armor in your possession: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":8.57e-6}'
+2024-04-12 20:43:47,055:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:47,055:ERROR:Failed to embed text chunk berserk while berserk you must use your action each round to attack the creature nearest to you if you can make extra attacks as part of the action you use those extra attacks moving to attack the next nearest creature after you fell your current target if you have multiple possible targets you attack one at random you are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear after your berserk episode gain 1 level of exhaustion 
+ 
+ 
+moonstone helm
+tuesday march 7 2023
+110 am: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.35e-6}'
+2024-04-12 20:43:47,109:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:47,109:ERROR:Failed to embed text chunk moonstone helm
+tuesday march 7 2023
+110 am
+ 
+the helm appears as great helm of carved and polished dragon bone in the shape of a dragon skull inlaid with moonstone gems set for the eyes depending on the wearers class the helm will conform to whatever headwear the wearer desires once they are attuned therefore hiding the helms true nature 
+ 
+passive ability while wearing the moonstone helm the creature gains advantage on any skill tests that require intelligence wisdom or charism: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":8.19e-6}'
+2024-04-12 20:43:47,174:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:47,174:ERROR:Failed to embed text chunk active ability 3 charges the moonstone helm can cast intellect fortress and has three charges expending one charge casts the spell at its base level you can expend extra charges to cast the spell one level higher for each additional charge
+for the duration 1 hour you or one willing creature you can see within range has resistance to psychic damage as well as advantage on intelligence wisdom and charisma saving throws
+at higher levels when you cast this spell using a spell slot of 4th level or higher you can target one additional creature for each slot level above 3rd the creatures must be within 30 feet of each other when you target them
+the helm regains d3 charges at dawn of the next day: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":8.37e-6}'
+2024-04-12 20:43:47,205:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:47,205:ERROR:Failed to embed text chunk plague of mortals curse once attuned unwilling to remove the moonstone item if you are convinced to advance the madness dc and make a charisma saving throw at that dc before removing it: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":9.01e-6}'
+2024-04-12 20:43:47,263:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:47,264:ERROR:Failed to embed text chunk the moonstone madness curse each time you activate the armors legendary ability you must make a charisma saving throw the dc starts at 15 but changes depending on success or failure on a failure see berserk on a failure the dc is increased by 1 and the failure is recorded if 3 failures are accumulated before 3 successes your character is entirely overcome with madness and is yielded to the dm team indefinitely if 3 successes are accumulated before 3 failures the dc is reset to 12 add 3 to the dc for each other piece of the moonstone armor in your possession: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":6.34e-6}'
+2024-04-12 20:43:47,316:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:47,316:ERROR:Failed to embed text chunk berserk while berserk you must use your action each round to attack the creature nearest to you if you can make extra attacks as part of the action you use those extra attacks moving to attack the next nearest creature after you fell your current target if you have multiple possible targets you attack one at random you are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear after your berserk episode gain 1 level of exhaustion 
+ 
+ 
+ 
+moonstone breastplate
+tuesday march 7 2023
+110 am: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.76e-6}'
+2024-04-12 20:43:47,371:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:47,371:ERROR:Failed to embed text chunk tuesday march 7 2023
+110 am
+ 
+this breastplate appears silver and polished with intricate designs covering its surface on the back are two simply engraved outlines each representing a wing on the front the designs form a ring showing a symbol of each of the elements fire acid lightning in the center is this ring is a large shieldlike emblem 
+ 
+passive ability while wearing this breastplate an attuned creature can choose either acid cold fire thunder or lightning damage at the end of a short or long rest they have resistance to that damage type as long as they are wearing the armor and havent chosen another damage type: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":8.1e-6}'
+2024-04-12 20:43:47,419:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:47,420:ERROR:Failed to embed text chunk active ability 1day when the wearer takes acid cold fire thunder or lightning damage they can use their reaction to instead take no damage and instead regain a number of hit points equal to the number of damage that would have been delt before applying resistances or other damage reductions
+ 
+ 
+ 
+ 
+plague of mortals curse once attuned unwilling to remove the moonstone item if you are convinced to advance the madness dc and make a charisma saving throw at that dc before removing it: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":6.96e-6}'
+2024-04-12 20:43:47,473:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:47,474:ERROR:Failed to embed text chunk the moonstone madness curse each time you activate the armors legendary ability you must make a charisma saving throw the dc starts at 15 but changes depending on success or failure on a failure see berserk on a failure the dc is increased by 1 and the failure is recorded if 3 failures are accumulated before 3 successes your character is entirely overcome with madness and is yielded to the dm team indefinitely if 3 successes are accumulated before 3 failures the dc is reset to 12 add 3 to the dc for each other piece of the moonstone armor in your possession: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.35e-6}'
+2024-04-12 20:43:47,528:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:47,529:ERROR:Failed to embed text chunk berserk while berserk you must use your action each round to attack the creature nearest to you if you can make extra attacks as part of the action you use those extra attacks moving to attack the next nearest creature after you fell your current target if you have multiple possible targets you attack one at random you are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear after your berserk episode gain 1 level of exhaustion 
+ 
+ 
+ 
+moonstone shield
+tuesday march 7 2023
+110 am
+ 
+ 
+this tall tower shield: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":7.06e-6}'
+2024-04-12 20:43:47,583:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:47,583:ERROR:Failed to embed text chunk 110 am
+ 
+ 
+this tall tower shield 
+ 
+ 
+passive ability while attuned to this tower shield you can use your reaction to impose disadvantage on an attack targeting you or a creature within 5 feet of you
+ 
+active ability 1day you can plant the shield into the ground as an action casting wall of force through it the wall must have at least one panel adjacent to where you planted the shield or if you form a dome it must encompass the shield after a number of rounds equal to 1your constitution modifier or until you remove the shield from the ground as a bonus action the wall of force fades and resolve the moonstone madness curse: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":6.88e-6}'
+2024-04-12 20:43:47,619:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 404 Not Found"
+2024-04-12 20:43:47,619:ERROR:Failed to embed text chunk plague of mortals curse once attuned unwilling to remove the moonstone item if you are convinced to advance the madness dc and make a charisma saving throw at that dc before removing it: Unexpected Response: 404 (Not Found)
+Raw response content:
+b'{"status":{"error":"Not found: Collection `LFGCollect` doesn\'t exist!"},"time":6.7e-6}'
+2024-04-12 20:44:09,503:INFO:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-04-12 20:44:12,119:INFO:Use pytorch device_name: cpu
+2024-04-12 20:44:12,137:INFO:HTTP Request: GET http://45.79.213.234:6333/collections "HTTP/1.1 200 OK"
+2024-04-12 20:44:12,191:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect "HTTP/1.1 200 OK"
+2024-04-12 20:44:12,279:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:12,363:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:12,418:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:12,467:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:12,518:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:12,617:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:12,673:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:12,725:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:12,788:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:12,873:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:12,960:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,019:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,101:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,168:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,226:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,275:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,317:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,366:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,430:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,485:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,531:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,552:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,609:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,652:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,727:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,784:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,819:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,846:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,887:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:13,949:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,031:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,055:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,113:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,166:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,217:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,275:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,336:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,389:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,447:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,499:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,557:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,608:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,669:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,720:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,771:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,847:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,909:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:14,971:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,003:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,098:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,144:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,188:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,244:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,299:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,365:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,401:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,454:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,521:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,594:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,632:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,711:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,783:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,834:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,896:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:15,951:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,006:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,068:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,108:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,130:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,181:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,226:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,267:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,294:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,317:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,379:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,439:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,483:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,540:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,601:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,656:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,710:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,772:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,821:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,871:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,924:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:16,993:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,042:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,102:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,184:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,244:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,279:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,345:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,367:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,422:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,477:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,539:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,564:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,629:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,697:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,736:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,799:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,866:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,904:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,958:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:17,998:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,063:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,129:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,180:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,247:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,277:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,333:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,381:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,443:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,508:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,565:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,616:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,681:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,739:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,794:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,857:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,905:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:18,949:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,004:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,072:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,129:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,175:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,250:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,306:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,365:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,421:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,465:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,540:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,609:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,671:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,739:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,804:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,865:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,899:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:19,946:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,001:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,085:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,150:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,201:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,271:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,334:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,380:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,438:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,491:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,556:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,614:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,674:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,734:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,790:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,852:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,919:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:20,985:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,011:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,061:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,119:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,177:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,233:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,293:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,343:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,399:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,440:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,505:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,548:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,611:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,671:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,730:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,777:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,850:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,878:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,930:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:21,983:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,066:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,121:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,152:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,208:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,257:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,316:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,375:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,409:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,463:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,519:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,555:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,623:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,685:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,754:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,813:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,870:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,926:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:22,983:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,053:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,086:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,145:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,201:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,260:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,310:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,368:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,422:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,482:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,515:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,570:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,617:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,681:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,745:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,803:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,866:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,914:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:23,972:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,018:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,043:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,106:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,139:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,175:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,237:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,289:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,375:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,403:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,445:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,491:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,555:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,591:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,649:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,715:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,773:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,846:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,880:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:24,937:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,003:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,072:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,116:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,182:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,206:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,257:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,283:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,348:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,411:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,450:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,509:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,539:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,609:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,636:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,697:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,771:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,827:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,875:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,899:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:25,967:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,000:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,058:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,105:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,162:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,223:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,289:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,326:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,367:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,423:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,489:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,510:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,594:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,660:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,704:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,773:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,840:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,903:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:26,964:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,036:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,104:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,163:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,225:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,289:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,354:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,422:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,489:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,554:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,615:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,667:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,716:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,760:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,818:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,875:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,929:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:27,994:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,024:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,079:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,115:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,175:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,246:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,271:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,327:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,368:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,424:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,490:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,513:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,569:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,621:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,688:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,746:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,802:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,850:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,905:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:28,971:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,017:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,071:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,129:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,177:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,238:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,297:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,350:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,411:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,441:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,473:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,527:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,574:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,640:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,670:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,715:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,759:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,823:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,857:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,909:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:29,971:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,026:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,099:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,133:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,196:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,266:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,334:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,383:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,445:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,468:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,528:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,567:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,600:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,648:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,712:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,760:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,804:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,824:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,869:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,910:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:30,966:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,027:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,087:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,145:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,209:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,272:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,341:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,406:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,469:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,523:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,581:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,621:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,659:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,723:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,785:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,821:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,866:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,924:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:31,990:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:32,011:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:32,073:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:32,133:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:32,200:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:32,264:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:32,355:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:32,412:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"
+2024-04-12 20:44:32,459:INFO:HTTP Request: PUT http://45.79.213.234:6333/collections/LFGCollect/points?wait=true "HTTP/1.1 200 OK"

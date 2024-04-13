@@ -1,4 +1,5 @@
 const {
+	ChatInputCommandInteraction,
 	ModalBuilder,
 	TextInputBuilder,
 	TextInputStyle,
@@ -8,14 +9,13 @@ const {
 	ButtonStyle,
 } = require('discord.js');
 const GuildConfiguration = require('../models/GuildConfiguration');
-const Suggestion = require('../models/Suggestion');
-const formatResults = require('../utils/formatResults');
 
 module.exports = {
 	data: {
-		name: 'suggest',
-		description: 'Create a suggestion.',
+		name: 'fireAle',
+		description: 'start the Fire Ale Contest!!!',
 		dm_permission: false,
+
 	},
 
 	/**
@@ -25,34 +25,11 @@ module.exports = {
      */
 	run: async ({ interaction }) => {
 		try {
-			const guildConfiguration = await GuildConfiguration.findOne({ guildId: interaction.guildId });
 
-			if (!guildConfiguration?.suggestionChannelIds.length) {
-				await interaction.reply(
-					'This server has not been configured to use suggestions yet.\nAsk an admin to run `/config-suggestions add` to set this up.',
-				);
-				return;
-			}
-
-			if (!guildConfiguration.suggestionChannelIds.includes(interaction.channelId)) {
-				await interaction.reply(
-					`This channel is not configured to use suggestions. Try one of these channels instead: ${guildConfiguration.suggestionChannelIds
-						.map((id) => `<#${id}>`)
-						.join(', ')}`,
-				);
-				return;
-			}
 
 			const modal = new ModalBuilder()
-				.setTitle('Create a suggestion')
-				.setCustomId(`suggestion-${interaction.user.id}`);
+				.setTitle('The fire Ale Contest!!!');
 
-			const textInput = new TextInputBuilder()
-				.setCustomId('suggestion-input')
-				.setLabel('What would you like to suggest?')
-				.setStyle(TextInputStyle.Paragraph)
-				.setRequired(true)
-				.setMaxLength(1000);
 
 			const actionRow = new ActionRowBuilder().addComponents(textInput);
 
@@ -155,6 +132,6 @@ module.exports = {
 		}
 	},
 	options: {
-		deleted: false,
+		deleted: true,
 	},
 };

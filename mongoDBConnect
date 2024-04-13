@@ -1,5 +1,0 @@
-// MongoDB connection
-const uri = process.env.mongoDb;
-const dbclient = new MongoClient(uri, /*{ useNewUrlParser: true, useUnifiedTopology: true }*/);
-const dbName = 'LFGInventory';
-const collectionName = 'MoonstoneInventory';

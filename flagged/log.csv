@@ -1,0 +1,65 @@
+prompt,output,flag,username,timestamp
+"'Fix this code:
+
+import os
+import pandas as pd
+from cleantext import clean
+import nltk
+from nltk.corpus import stopwords
+nltk.download('stopwords')
+nltk.download('punkt')
+
+# Directory containing your .txt files
+data_dir = 'data/raw/'
+
+# Initialize a DataFrame to store cleaned texts
+cleaned_texts_df = pd.DataFrame(columns=['filename', 'cleaned_text'])
+
+def clean_text(text):
+    return clean(text,
+                 fix_unicode=True,
+                 to_ascii=True,
+                 lower=True,
+                 no_line_breaks=True,
+                 no_urls=True,
+                 no_emails=True,
+                 no_phone_numbers=True,
+                 no_numbers=True,
+                 no_digits=True,
+                 no_currency_symbols=True,
+                 no_punct=True,
+                 replace_with_punct="""",
+                 replace_with_url=""<URL>"",
+                 replace_with_email=""<EMAIL>"",
+                 replace_with_phone_number=""<PHONE>"",
+                 replace_with_number=""<NUMBER>"",
+                 replace_with_digit=""0"",
+                 replace_with_currency_symbol=""<CUR>"",
+                 lang=""en""
+                )
+
+# Function to read, clean, and store text from each file
+def process_files(directory):
+    for filename in os.listdir(directory):
+        if filename.endswith("".txt""):
+            file_path = os.path.join(directory, filename)
+            with open(file_path, 'r', encoding='utf-8') as file:
+                text = file.read()
+                cleaned_text = clean_text(text)
+                
+                # Optionally, remove stopwords
+                stop_words = set(stopwords.words('english'))
+                cleaned_text = ' '.join([word for word in cleaned_text.split() if word not in stop_words])
+                
+                # Append the cleaned text to the DataFrame
+                global cleaned_texts_df
+                cleaned_texts_df = cleaned_texts_df.append({'filename': filename, 'cleaned_text': cleaned_text}, ignore_index=True)
+
+# Process all files in the directory
+process_files(data_dir)
+
+# Save the cleaned data to a CSV file
+cleaned_data_path = 'data/processed/cleaned_texts.csv'
+cleaned_texts_df.to_csv(cleaned_data_path, index=False)
+
+print(f""Processed and cleaned data from {len(cleaned_texts_df)} files saved to {cleaned_data_path}"")",,,,2024-03-03 16:47:40.276553

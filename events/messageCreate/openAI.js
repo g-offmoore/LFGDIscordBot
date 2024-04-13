@@ -1,200 +1,166 @@
-require('dotenv/config');
-const fs = require('node:fs');
-const path = require('node:path');
-const { MongoClient } = require('mongodb');
-const { Client, Collection, Events, GatewayIntentBits, WebhookClient, GuildChannel } = require('discord.js');
-// const { token } = require('./config.json');
-const { OpenAI } = require('openai');
-const { TIMEOUT } = require('node:dns');
-const prefix = '!';
-const openai = new OpenAI({
-    apiKey: process.env.openAPI_KEY,
-});
-const sleep = (ms) => {
-  return new Promise(resolve => setTimeout(resolve, ms))}
+// /* eslint-disable no-inline-comments */
+// require('dotenv/config');
+// const { WebhookClient } = require('discord.js');
+// // const fs = require('fs');
+// // const { handleDiscordMessage } = require('../../utils/route.js');
+// const logger = require('../../utils/logger.js');
+// // const axios = require('axios');
+// const mongoClientPromise = require('../../utils/mongodb.js');
+// const { exec } = require('child_process');
+// const OpenAI = require ('openai');
+// const openai = new OpenAI();
 
-const threadMap = {};
+// // Function to get conversation history
+// async function getConversationHistory(discordThreadId) {
+// 	const client = await mongoClientPromise;
+// 	const db = client.db('LFGInventory'); // Replace with your actual database name
+// 	const collection = db.collection('conversations');
 
-const getOpenAiThreadId = (discordThreadId) => {
-    // Replace this in-memory implementation with a database (e.g. DynamoDB, Firestore, Redis)
-    return threadMap[discordThreadId];
-}
+// 	const historyDocument = await collection.findOne({ discordThreadId: discordThreadId });
+// 	// Ensure that history is an array
+// 	const history = Array.isArray(historyDocument?.history) ? historyDocument.history : [];
+// 	return history;
+// }
 
-const addThreadToMap = (discordThreadId, openAiThreadId) => {
-    threadMap[discordThreadId] = openAiThreadId;
-}
+// // Function to save conversation history
+// async function saveConversationHistory(discordThreadId, history) {
+// 	const client = await mongoClientPromise;
+// 	const db = client.db('LFGInventory'); // Replace with your actual database name
+// 	const collection = db.collection('conversations');
 
-const terminalStates = ["cancelled", "failed", "completed", "expired", "active"];
-const statusCheckLoop = async (openAiThreadId, runId) => {
-    const run = await openai.beta.threads.runs.retrieve(
-        openAiThreadId,
-        runId
-    );
-      
-    if(terminalStates.indexOf(run.status) < 0){
-        await sleep(10);
-        return statusCheckLoop(openAiThreadId, runId);
-        
-    }
-    // console.log(run);
+// 	await collection.updateOne(
+// 		{ discordThreadId: discordThreadId },
+// 		{ $set: { history: history } },
+// 		{ upsert: true },
+// 	);
+// }
 
-    return run.status;
-}
+// module.exports = async (message, client) => {
+// 	if (message.author.bot || message.content === '') {
+// 		return;
+// 	}
 
-const addMessage = (threadId, content) => {
-    // console.log(content);
-    return openai.beta.threads.messages.create(
-        threadId,
-        { role: "user", content }
-    )
-}
+// 	if (message.channel.id !== process.env.MainChannel && !message.mentions.users.has(client.user.id)) {
+// 		return;
+// 	}
 
-// This event will run every time a message is received
-module.exports = async (message, client)=>{
-  if (message.author.bot || message.content === '') return; //Ignore bot messages
-  if (message.content.includes['Wren','wren', 'scruff', 'Scruff', 'Oracle', 'oracle']){console.log("I heard that!")};
-  if (message.channel.id !== process.env.MainChannel && !message.mentions.users.has(client.user.id))return;
-   //Channel and message filters. Allows open response in main channel and @ or ! commands in others
+// 	const discordThreadId = message.channel.id;
+// 	const { webhookId, webhookToken, AImodel } = generateWebhookURL(discordThreadId);
+// 	const webhookClient = new WebhookClient({ id: webhookId, token: webhookToken });
 
-  console.log(message.member.user.tag);
-  const discordThreadId = message.channel.id;
-  const {webhookId, webhookToken} = generateWebhookURL(discordThreadId);
-  const {assistantname, personality} = getBotConnections(discordThreadId);
-  const webhookClient = new WebhookClient({ id: webhookId, token: webhookToken });
-  
-  console.log(`channel ${discordThreadId}`);
-  console.log(message.channel.name);
+// 	// eslint-disable-next-line no-shadow
+// 	function generateWebhookURL(discordThreadId) {
 
-  function getBotConnections(discordThreadId) {
- 
-    switch (discordThreadId) {
-      case process.env.MainChannel:
-        return {
-          assistantname: process.env.ASSISTANT_ID_MAIN, 
-          personality: null
-        };
-      case process.env.Channel2:
-        return {
-          assistantname: process.env.ASSISTANT_ID_2
-        };
-        case process.env.Channel3:
-          return {
-            assistantname: process.env.ASSISTANT_ID_MAIN,
-            personality: process.env.personality3
-          };
-          case process.env.Channel4:
-            return {
-              assistantname: process.env.ASSISTANT_ID_MAIN,
-              personality: process.env.personality4
-            };
-            case process.env.Channel5:
-              return {
-                assistantname: process.env.ASSISTANT_ID_MAIN,
-                personality: process.env.personality5
-              };
-       };
-    };
-  
-    function generateWebhookURL(discordThreadId) {
- 
-      switch (discordThreadId) {
-        case process.env.MainChannel:
-          return {
-            webhookId: process.env.mainwebhookId,
-            webhookToken: process.env.mainwebhookToken
-          };
-        case process.env.Channel2:
-          return {
-            webhookId: process.env.webhookId_2,
-            webhookToken: process.env.webhookToken_2
-          };
-          case process.env.Channel3:
-          return {
-            webhookId: process.env.webhookId_3,
-            webhookToken: process.env.webhookToken_3
-          };
-          case process.env.Channel4:
-            return {
-              webhookId: process.env.webhookId_4,
-              webhookToken: process.env.webhookToken_4
-            };
-            case process.env.Channel5:
-              return {
-                webhookId: process.env.webhookId_5,
-                webhookToken: process.env.webhookToken_5
-              };
-        }
-    };
+// 		switch (discordThreadId) {
+// 		case process.env.MainChannel:
+// 			return {
+// 				webhookId: process.env.mainwebhookId,
+// 				webhookToken: process.env.mainwebhookToken,
+// 				AImodel: process.env.mainpersonality,
+// 			};
+// 		case process.env.Channel2:
+// 			return {
+// 				webhookId: process.env.webhookId_2,
+// 				webhookToken: process.env.webhookToken_2,
+// 				AImodel: process.env.moonstone_orca,
+// 			};
+// 		case process.env.Channel3:
+// 			return {
+// 				webhookId: process.env.webhookId_3,
+// 				webhookToken: process.env.webhookToken_3,
+// 				AImodel: process.env.scruff_model,
+// 			};
+// 		case process.env.Channel4:
+// 			return {
+// 				webhookId: process.env.webhookId_4,
+// 				webhookToken: process.env.webhookToken_4,
+// 				AImodel: process.env.gardenModel,
+// 			};
+// 		case process.env.Channel5:
+// 			return {
+// 				webhookId: process.env.webhookId_5,
+// 				webhookToken: process.env.webhookToken_5,
+// 				AImodel: process.env.forgeModel,
+// 			};
+// 		}
+// 	}
 
-  let openAiThreadId = getOpenAiThreadId(discordThreadId);
-  let messagesLoaded = false;
-  
-   if(!openAiThreadId){
-    
-        const thread = await openai.beta.threads.create();
-        openAiThreadId = thread.id;
-        addThreadToMap(discordThreadId, openAiThreadId);
+// 	function askQuestion(question) {
+// 		return new Promise((resolve, reject) => {
+// 			const pythonCommand = `python3 ./utils/langchainPythonRAG.py "${question.replace(/"/g, '\\"')}"`;
+// 			exec(pythonCommand, (error, stdout, stderr) => {
+// 				if (error) {
+// 					console.error(`exec error: ${error}`);
+// 					return reject(error);
+// 				}
+// 				// Log stderr output for information or warnings without rejecting
+// 				if (stderr) {
+// 					console.log(`Information or warning: ${stderr}`);
+// 				}
+// 				try {
+// 					// Parse the JSON output from the Python script
+// 					const results = JSON.parse(stdout);
+// 					resolve(results);
+// 				}
+// 				catch (parseError) {
+// 					console.error(`Parsing error: ${parseError}`);
+// 					reject(parseError);
+// 				}
+// 			});
+// 		});
+// 	}
 
-        if(message.channel.isThread()){
-            //Gather all thread messages to fill out the OpenAI thread since we haven't seen this one yet
-            const starterMsg = await message.channel.fetchStarterMessage();
-            const otherMessagesRaw = await message.channel.messages.fetch();
 
-            const otherMessages = Array.from(otherMessagesRaw.values())
-                .map(msg => msg.content)
-                .reverse(); //oldest first
+// 	try {
+// 		const question = message.content;
+// 		const result = await askQuestion(question);
 
-            const messages = [starterMsg.content, ...otherMessages]
-                .filter(msg => !!msg && msg !== '')
 
-            // console.log(messages);
-            await Promise.all(messages.map(msg => addMessage(openAiThreadId, msg)));
-            messagesLoaded = true;
-        }
-    }
+// 		const history = await getConversationHistory(discordThreadId);
+// 		history.push({ role: 'user', content: question });
 
-    if(!messagesLoaded){ //If this is for a thread, assume msg was loaded via .fetch() earlier
-      
-        await addMessage(openAiThreadId, message.content);
-    }
-   
-    try{
-    
-      await message.channel.sendTyping();
-    
+// 		// console.log('Result in openAI.js:', JSON.stringify(result, null, 2));
+// 		// const newMessage = { role: 'user', content: `Use only this information to respond: ${result}. If this information is not sufficient and the question is not about general D&D then you do not know` };
 
-    const run = await openai.beta.threads.runs.create(      
-        thread_id=openAiThreadId,
-       {assistant_id: assistantname,instructions: personality,}
-       )    
-    const status = await statusCheckLoop(openAiThreadId, run.id);
 
-    const messages = await openai.beta.threads.messages.list(openAiThreadId);
-    let responseMessage = messages.data[0].content[0].text.value;
+// 		await message.channel.sendTyping();
 
-    
-  const chunkSizeLimit = 2000;
+// 		const messagesForOpenAI = [
+// 			{ 'role': 'system', 'content': AImodel },
+// 			...history.map(item => ({ role: item.role, content: item.content })),
+// 			{ role: 'assistant', content: 'Use this information to answer the adventurures question' + result },
+// 			{ 'role': 'user', 'content': question },
+// 		];
 
-  for (let i = 0; i < responseMessage.length; i += chunkSizeLimit){
-    const chunk = responseMessage.substring(i,i+chunkSizeLimit);
+// 		const completion = await openai.chat.completions.create({
+// 			messages: messagesForOpenAI,
+// 			model: 'gpt-3.5-turbo-0125',
+// 		});
 
-    await webhookClient.send({content: chunk});
-  }}catch (error) {
 
-    webhookClient.send("bot hung, let it finish its current reply and try again. working a solution for multithreading to avoid this");
-    if (error instanceof OpenAI.APIError) {
-      console.error(error.status);  // e.g. 401
-      console.error(error.message); // e.g. The authentication token you passed was invalid...
-      console.error(error.code);  // e.g. 'invalid_api_key'
-      console.error(error.type);  // e.g. 'invalid_request_error'
-      console.error(error.param);
-      console.error(error.name);
-      console.error(error.headers);
-      console.error(error.stack);
+// 		const reply = completion.choices[0].message.content;
+// 		// console.log(reply);
 
-    } else {
-      // Non-API error
-      console.log(`non api error ${error}`);
-    }  
-  };
-};
+// 		if (reply.length > 2000) {
+// 			// Split reply into chunks and send each chunk separately
+// 			let index = 0;
+// 			const maxCharacters = 1995;
+// 			while (index < reply.length) {
+// 				const chunk = reply.slice(index, Math.min(index + maxCharacters, reply.length));
+// 				await webhookClient.send({ content: chunk });
+// 				index += maxCharacters;
+// 			}
+// 		}
+// 		else {
+// 			// Send reply if within Discord message character limit
+// 			await webhookClient.send({ content: reply });
+// 		}
+// 		// }
+// 		history.push({ role: 'assistant', content: reply });
+// 		await saveConversationHistory(discordThreadId, history);
+// 	}
+// 	catch (error) {
+// 		logger.error({ err: error }, 'An error occurred');
+// 		await webhookClient.send('Bot encountered an issue. Please wait a moment before trying again.');
+// 	}
+// };
