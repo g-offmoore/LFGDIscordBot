@@ -110,7 +110,7 @@ module.exports = async (message, client) => {
 				webhookId: process.env.webhookId_2,
 				webhookToken: process.env.webhookToken_2,
 				AImodel: process.env.moonstone_orca,
-				isShopChannel: true,
+				isShopChannel: false,
 			};
 		case process.env.Channel3:
 			return {
