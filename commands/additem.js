@@ -58,4 +58,7 @@ module.exports = {
 
 		await interaction.reply(`New item ${string} added to store inventory!`);
 	},
+	options: {
+		deleted: true,
+	},
 };

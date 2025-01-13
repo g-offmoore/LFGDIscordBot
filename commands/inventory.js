@@ -39,4 +39,7 @@ module.exports = {
 			await interaction.reply('An error occurred while processing the inventory command.');
 		}
 	},
+	options: {
+		deleted: true,
+	},
 };

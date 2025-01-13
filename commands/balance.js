@@ -33,4 +33,7 @@ module.exports = {
 			await interaction.reply('An error occurred while processing the balance command.');
 		}
 	},
+	options: {
+		deleted: true,
+	},
 };

@@ -83,5 +83,7 @@ module.exports = {
 		deleted: false,
 	},
 
-
+	options: {
+		deleted: true,
+	},
 };

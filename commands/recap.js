@@ -159,6 +159,6 @@ module.exports = {
 		}
 	},
 	options: {
-		deleted: false,
+		deleted: true,
 	},
 };

@@ -1,0 +1,3336 @@
+(node:35608) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:35608) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+stderr: /usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.2.1) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+WARNING:root:Unable to close http connection. Connection was interrupted on the server side
+
+(node:36251) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:36251) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+stderr: WARNING:root:Unable to close http connection. Connection was interrupted on the server side
+
+stderr: WARNING:root:Unable to close http connection. Connection was interrupted on the server side
+
+(node:36591) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:36591) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordBot/utils/langchainPythonRAG.py" "test"
+python3: can't open file '/home/g30ff/LFGDIscordBot/utils/langchainPythonRAG.py': [Errno 2] No such file or directory
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordBot/utils/langchainPythonRAG.py" "test"
+python3: can't open file '/home/g30ff/LFGDIscordBot/utils/langchainPythonRAG.py': [Errno 2] No such file or directory
+
+(node:37031) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:37031) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "test"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 8, in <module>
+    logging.basicConfig(level=logging.trace)
+AttributeError: module 'logging' has no attribute 'trace'
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "test"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 8, in <module>
+    logging.basicConfig(level=logging.trace)
+AttributeError: module 'logging' has no attribute 'trace'
+
+(node:37100) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:37100) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+stderr: INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 20427
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='/etc/ssl/certs/ca-certificates.crt'
+Sending request to Qdrant: test
+DEBUG:httpcore.connection:connect_tcp.started host='192.168.1.238' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x787b54f46c20>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Sat, 20 Apr 2024 15:11:43 GMT')])
+INFO:httpx:HTTP Request: POST http://192.168.1.238:6333/collections/LFGCollect/points/search "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+WARNING:root:Unable to close http connection. Connection was interrupted on the server side
+
+first tryINFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 20427
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: cuda
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='/etc/ssl/certs/ca-certificates.crt'
+Sending request to Qdrant: test
+DEBUG:httpcore.connection:connect_tcp.started host='192.168.1.238' port=6333 local_address=None timeout=5.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x787b54f46c20>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'transfer-encoding', b'chunked'), (b'content-type', b'application/json'), (b'content-encoding', b'gzip'), (b'vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'date', b'Sat, 20 Apr 2024 15:11:43 GMT')])
+INFO:httpx:HTTP Request: POST http://192.168.1.238:6333/collections/LFGCollect/points/search "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+WARNING:root:Unable to close http connection. Connection was interrupted on the server side
+
+(node:3071) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3071) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:6137) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6137) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+first tryReferenceError: formattedResults is not defined
+first tryReferenceError: formattedResults is not defined
+(node:6220) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6220) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:15967) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:15967) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+ReferenceError: axios is not defined
+    at module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:14:22)
+    at Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:39)
+    at Client.emit (node:events:518:28)
+    at module.exports [as GUILD_MEMBER_ADD] (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/handlers/GUILD_MEMBER_ADD.js:17:14)
+    at WebSocketManager.handlePacket (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:355:31)
+    at WebSocketManager.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:239:12)
+    at WebSocketManager.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+    at WebSocketShard.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/@discordjs/ws/dist/index.js:1173:51)
+    at WebSocketShard.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+    at WebSocketShard.onMessage (/home/g30ff/LFGDIscordbot/node_modules/@discordjs/ws/dist/index.js:988:14)
+(node:15999) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:15999) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:16129) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16129) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+AxiosError: Request failed with status code 400
+    at settle (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:1967:12)
+    at IncomingMessage.handleStreamEnd (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:3066:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:3877:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:17:22)
+    at async Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:33) {
+  code: 'ERR_BAD_REQUEST',
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/1.6.7',
+      'Content-Length': '133',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    method: 'post',
+    url: 'http://localhost:11434/api/chat',
+    data: '{"messages":"Welcome <@${member.id}>! to the server! be sure to use: <@${member.id}>! as their name!","stream":false,"temperature":0}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: '133',
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'localhost',
+      _closeAfterHandlingError: false,
+      _events: [Object],
+      _readableState: [ReadableState],
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _maxListeners: undefined,
+      _eventsCount: 6,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [Timeout],
+        _idleStart: 42661,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 651,
+        [Symbol(triggerId)]: 649
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    _header: 'POST /api/chat HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/1.6.7\r\n' +
+      'Content-Length: 133\r\n' +
+      'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+      'Host: localhost:11434\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 80,
+      protocol: 'http:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/api/chat',
+    _ended: true,
+    res: IncomingMessage {
+      _events: [Object],
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [Socket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      _eventsCount: 4,
+      responseUrl: 'http://localhost:11434/api/chat',
+      redirects: [],
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 6,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'localhost',
+    protocol: 'http:',
+    _redirectable: Writable {
+      _events: [Object],
+      _writableState: [WritableState],
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 133,
+      _requestBodyBuffers: [],
+      _eventsCount: 3,
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'http://localhost:11434/api/chat',
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      'accept-encoding': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: Object [AxiosHeaders] {
+      'content-type': 'application/json; charset=utf-8',
+      date: 'Sun, 07 Jul 2024 23:36:23 GMT',
+      'content-length': '105'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'post',
+      url: 'http://localhost:11434/api/chat',
+      data: '{"messages":"Welcome <@${member.id}>! to the server! be sure to use: <@${member.id}>! as their name!","stream":false,"temperature":0}'
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: '133',
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [Socket],
+      _header: 'POST /api/chat HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/1.6.7\r\n' +
+        'Content-Length: 133\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: localhost:11434\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/api/chat',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Writable],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: {
+      error: 'json: cannot unmarshal string into Go struct field ChatRequest.messages of type []api.Message'
+    }
+  }
+}
+(node:16153) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16153) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:16279) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16279) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+Error sending welcome message: AxiosError: Request failed with status code 400
+    at settle (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:1967:12)
+    at IncomingMessage.handleStreamEnd (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:3066:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:3877:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:25:26)
+    at async Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:33) {
+  code: 'ERR_BAD_REQUEST',
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/1.6.7',
+      'Content-Length': '154',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    method: 'post',
+    url: 'http://localhost:11434/api/chat',
+    data: '{"messages":[{"role":"user","content":"Welcome <@undefined>! to the server! Be sure to use: <@undefined> as their name!"}],"stream":false,"temperature":0}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: '154',
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'localhost',
+      _closeAfterHandlingError: false,
+      _events: [Object],
+      _readableState: [ReadableState],
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _maxListeners: undefined,
+      _eventsCount: 6,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [Timeout],
+        _idleStart: 40716,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 612,
+        [Symbol(triggerId)]: 610
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    _header: 'POST /api/chat HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/1.6.7\r\n' +
+      'Content-Length: 154\r\n' +
+      'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+      'Host: localhost:11434\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 80,
+      protocol: 'http:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/api/chat',
+    _ended: true,
+    res: IncomingMessage {
+      _events: [Object],
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [Socket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      _eventsCount: 4,
+      responseUrl: 'http://localhost:11434/api/chat',
+      redirects: [],
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 6,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'localhost',
+    protocol: 'http:',
+    _redirectable: Writable {
+      _events: [Object],
+      _writableState: [WritableState],
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 154,
+      _requestBodyBuffers: [],
+      _eventsCount: 3,
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'http://localhost:11434/api/chat',
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      'accept-encoding': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: Object [AxiosHeaders] {
+      'content-type': 'application/json; charset=utf-8',
+      date: 'Sun, 07 Jul 2024 23:44:56 GMT',
+      'content-length': '29'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'post',
+      url: 'http://localhost:11434/api/chat',
+      data: '{"messages":[{"role":"user","content":"Welcome <@undefined>! to the server! Be sure to use: <@undefined> as their name!"}],"stream":false,"temperature":0}'
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: '154',
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [Socket],
+      _header: 'POST /api/chat HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/1.6.7\r\n' +
+        'Content-Length: 154\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: localhost:11434\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/api/chat',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Writable],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: { error: 'model is required' }
+  }
+}
+(node:16348) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16348) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+Error sending welcome message: AxiosError: Request failed with status code 400
+    at settle (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:1967:12)
+    at IncomingMessage.handleStreamEnd (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:3066:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:3877:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:26:26)
+    at async Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:33) {
+  code: 'ERR_BAD_REQUEST',
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/1.6.7',
+      'Content-Length': '106',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    method: 'post',
+    url: 'http://localhost:11434/api/chat',
+    data: '{"messages":[{"role":"user","content":"Welcome undefined to the server!"}],"stream":false,"temperature":0}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: '106',
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'localhost',
+      _closeAfterHandlingError: false,
+      _events: [Object],
+      _readableState: [ReadableState],
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _maxListeners: undefined,
+      _eventsCount: 6,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [Timeout],
+        _idleStart: 24618,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 577,
+        [Symbol(triggerId)]: 575
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    _header: 'POST /api/chat HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/1.6.7\r\n' +
+      'Content-Length: 106\r\n' +
+      'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+      'Host: localhost:11434\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 80,
+      protocol: 'http:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/api/chat',
+    _ended: true,
+    res: IncomingMessage {
+      _events: [Object],
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [Socket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      _eventsCount: 4,
+      responseUrl: 'http://localhost:11434/api/chat',
+      redirects: [],
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 6,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'localhost',
+    protocol: 'http:',
+    _redirectable: Writable {
+      _events: [Object],
+      _writableState: [WritableState],
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 106,
+      _requestBodyBuffers: [],
+      _eventsCount: 3,
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'http://localhost:11434/api/chat',
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      'accept-encoding': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: Object [AxiosHeaders] {
+      'content-type': 'application/json; charset=utf-8',
+      date: 'Sun, 07 Jul 2024 23:48:12 GMT',
+      'content-length': '29'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'post',
+      url: 'http://localhost:11434/api/chat',
+      data: '{"messages":[{"role":"user","content":"Welcome undefined to the server!"}],"stream":false,"temperature":0}'
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: '106',
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [Socket],
+      _header: 'POST /api/chat HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/1.6.7\r\n' +
+        'Content-Length: 106\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: localhost:11434\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/api/chat',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Writable],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: { error: 'model is required' }
+  }
+}
+(node:16392) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16392) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+Error sending welcome message: AxiosError: Request failed with status code 400
+    at settle (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:1967:12)
+    at IncomingMessage.handleStreamEnd (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:3066:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:3877:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:26:26)
+    at async Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:33) {
+  code: 'ERR_BAD_REQUEST',
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/1.6.7',
+      'Content-Length': '112',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    method: 'post',
+    url: 'http://localhost:11434/api/chat',
+    data: '{"messages":[{"role":"user","content":"Welcome [object Object] to the server!"}],"stream":false,"temperature":0}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: '112',
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'localhost',
+      _closeAfterHandlingError: false,
+      _events: [Object],
+      _readableState: [ReadableState],
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _maxListeners: undefined,
+      _eventsCount: 6,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [Timeout],
+        _idleStart: 20117,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 537,
+        [Symbol(triggerId)]: 535
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    _header: 'POST /api/chat HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/1.6.7\r\n' +
+      'Content-Length: 112\r\n' +
+      'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+      'Host: localhost:11434\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 80,
+      protocol: 'http:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/api/chat',
+    _ended: true,
+    res: IncomingMessage {
+      _events: [Object],
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [Socket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      _eventsCount: 4,
+      responseUrl: 'http://localhost:11434/api/chat',
+      redirects: [],
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 6,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'localhost',
+    protocol: 'http:',
+    _redirectable: Writable {
+      _events: [Object],
+      _writableState: [WritableState],
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 112,
+      _requestBodyBuffers: [],
+      _eventsCount: 3,
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'http://localhost:11434/api/chat',
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      'accept-encoding': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: Object [AxiosHeaders] {
+      'content-type': 'application/json; charset=utf-8',
+      date: 'Sun, 07 Jul 2024 23:49:41 GMT',
+      'content-length': '29'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'post',
+      url: 'http://localhost:11434/api/chat',
+      data: '{"messages":[{"role":"user","content":"Welcome [object Object] to the server!"}],"stream":false,"temperature":0}'
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: '112',
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [Socket],
+      _header: 'POST /api/chat HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/1.6.7\r\n' +
+        'Content-Length: 112\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: localhost:11434\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/api/chat',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Writable],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: { error: 'model is required' }
+  }
+}
+(node:16446) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16446) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+Error sending welcome message: AxiosError: Request failed with status code 400
+    at settle (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:1967:12)
+    at IncomingMessage.handleStreamEnd (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:3066:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/home/g30ff/LFGDIscordbot/node_modules/axios/dist/node/axios.cjs:3877:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:26:26)
+    at async Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:33) {
+  code: 'ERR_BAD_REQUEST',
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/1.6.7',
+      'Content-Length': '112',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    method: 'post',
+    url: 'http://localhost:11434/api/chat',
+    data: '{"messages":[{"role":"user","content":"Welcome [object Object] to the server!"}],"stream":false,"temperature":0}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: '112',
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'localhost',
+      _closeAfterHandlingError: false,
+      _events: [Object],
+      _readableState: [ReadableState],
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _maxListeners: undefined,
+      _eventsCount: 6,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [Timeout],
+        _idleStart: 11146,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 451,
+        [Symbol(triggerId)]: 449
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    _header: 'POST /api/chat HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/1.6.7\r\n' +
+      'Content-Length: 112\r\n' +
+      'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+      'Host: localhost:11434\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 80,
+      protocol: 'http:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/api/chat',
+    _ended: true,
+    res: IncomingMessage {
+      _events: [Object],
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [Socket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      _eventsCount: 4,
+      responseUrl: 'http://localhost:11434/api/chat',
+      redirects: [],
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 6,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'localhost',
+    protocol: 'http:',
+    _redirectable: Writable {
+      _events: [Object],
+      _writableState: [WritableState],
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 112,
+      _requestBodyBuffers: [],
+      _eventsCount: 3,
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'http://localhost:11434/api/chat',
+      [Symbol(shapeMode)]: true,
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      'accept-encoding': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: Object [AxiosHeaders] {
+      'content-type': 'application/json; charset=utf-8',
+      date: 'Sun, 07 Jul 2024 23:51:54 GMT',
+      'content-length': '29'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'post',
+      url: 'http://localhost:11434/api/chat',
+      data: '{"messages":[{"role":"user","content":"Welcome [object Object] to the server!"}],"stream":false,"temperature":0}'
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: '112',
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [Socket],
+      _header: 'POST /api/chat HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/1.6.7\r\n' +
+        'Content-Length: 112\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: localhost:11434\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/api/chat',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'localhost',
+      protocol: 'http:',
+      _redirectable: [Writable],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: { error: 'model is required' }
+  }
+}
+(node:16481) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16481) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+TypeError: Cannot read properties of undefined (reading 'cache')
+    at module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:7:37)
+    at Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:39)
+    at Client.emit (node:events:518:28)
+    at module.exports [as GUILD_MEMBER_ADD] (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/handlers/GUILD_MEMBER_ADD.js:17:14)
+    at WebSocketManager.handlePacket (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:355:31)
+    at WebSocketManager.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:239:12)
+    at WebSocketManager.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+    at WebSocketShard.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/@discordjs/ws/dist/index.js:1173:51)
+    at WebSocketShard.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+    at WebSocketShard.onMessage (/home/g30ff/LFGDIscordbot/node_modules/@discordjs/ws/dist/index.js:988:14)
+(node:16502) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16502) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:16535) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16535) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+Error sending welcome message: ReferenceError: channel is not defined
+    at module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:35:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:33)
+(node:17999) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:17999) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+Error sending welcome message: ReferenceError: webhookClient is not defined
+    at module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:35:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:33)
+ReferenceError: webhookClient is not defined
+    at module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:38:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:33)
+(node:19206) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:19206) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:19247) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:19247) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+Error sending welcome message: ReferenceError: reply is not defined
+    at module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:36:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:33)
+(node:21070) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21070) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:22092) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:22092) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:22140) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:22140) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:23663) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23663) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+ReferenceError: user is not defined
+    at module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:6:32)
+    at Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:39)
+    at Client.emit (node:events:518:28)
+    at module.exports [as GUILD_MEMBER_ADD] (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/handlers/GUILD_MEMBER_ADD.js:17:14)
+    at WebSocketManager.handlePacket (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:355:31)
+    at WebSocketManager.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:239:12)
+    at WebSocketManager.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+    at WebSocketShard.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/@discordjs/ws/dist/index.js:1173:51)
+    at WebSocketShard.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+    at WebSocketShard.onMessage (/home/g30ff/LFGDIscordbot/node_modules/@discordjs/ws/dist/index.js:988:14)
+(node:23688) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23688) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:23771) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23771) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:23800) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23800) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:24961) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:24961) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:25043) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:25043) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:26816) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26816) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:27363) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:27363) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:29778) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:29778) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:30797) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30797) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:32648) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32648) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:34577) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:34577) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+Error sending welcome message: ReferenceError: Cannot access 'response' before initialization
+    at module.exports (/home/g30ff/LFGDIscordbot/events/guildMemberAdd/newMember.js:31:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:33)
+(node:35824) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:35824) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:38680) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38680) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:39005) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:39005) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:51487) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:51487) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:52849) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52849) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:53579) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:53579) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+TypeError: Cannot destructure property 'webhookId' of 'generateWebhookURL(...)' as it is undefined.
+    at module.exports (/home/g30ff/LFGDIscordbot/events/messageCreate/freeAI.js:98:10)
+    at Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:39)
+    at Client.emit (node:events:518:28)
+    at MessageCreateAction.handle (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/actions/MessageCreate.js:28:14)
+    at module.exports [as MESSAGE_CREATE] (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/handlers/MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:355:31)
+    at WebSocketManager.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:239:12)
+    at WebSocketManager.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+    at WebSocketShard.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/@discordjs/ws/dist/index.js:1173:51)
+    at WebSocketShard.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+(node:99482) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99482) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:99563) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99563) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+TypeError: Cannot destructure property 'webhookId' of 'generateWebhookURL(...)' as it is undefined.
+    at module.exports (/home/g30ff/LFGDIscordbot/events/messageCreate/freeAI.js:98:10)
+    at Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:39)
+    at Client.emit (node:events:518:28)
+    at MessageCreateAction.handle (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/actions/MessageCreate.js:28:14)
+    at module.exports [as MESSAGE_CREATE] (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/handlers/MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:355:31)
+    at WebSocketManager.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:239:12)
+    at WebSocketManager.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+    at WebSocketShard.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/@discordjs/ws/dist/index.js:1173:51)
+    at WebSocketShard.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+(node:99584) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99584) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+TypeError: Cannot destructure property 'webhookId' of 'generateWebhookURL(...)' as it is undefined.
+    at module.exports (/home/g30ff/LFGDIscordbot/events/messageCreate/freeAI.js:98:10)
+    at Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:39)
+    at Client.emit (node:events:518:28)
+    at MessageCreateAction.handle (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/actions/MessageCreate.js:28:14)
+    at module.exports [as MESSAGE_CREATE] (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/handlers/MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:355:31)
+    at WebSocketManager.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:239:12)
+    at WebSocketManager.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+    at WebSocketShard.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/@discordjs/ws/dist/index.js:1173:51)
+    at WebSocketShard.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+(node:99615) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99615) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:99647) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99647) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:99707) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99707) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:102131) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:102131) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+TypeError: Cannot destructure property 'webhookId' of 'generateWebhookURL(...)' as it is undefined.
+    at module.exports (/home/g30ff/LFGDIscordbot/events/messageCreate/freeAI.js:98:10)
+    at Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:39)
+    at Client.emit (node:events:518:28)
+    at MessageCreateAction.handle (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/actions/MessageCreate.js:28:14)
+    at module.exports [as MESSAGE_CREATE] (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/handlers/MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:355:31)
+    at WebSocketManager.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:239:12)
+    at WebSocketManager.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+    at WebSocketShard.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/@discordjs/ws/dist/index.js:1173:51)
+    at WebSocketShard.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+(node:102354) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:102354) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:122159) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+/home/g30ff/LFGDIscordbot/events/messageCreate/freeAI.js:243
+		const reply = response?.data?.message?.content && "`AI Disclaimer: Not representative of LFG`" ?? 'Oops! Something went wrong. Please try again later.';
+		                                                                                               ^^
+
+SyntaxError: Unexpected token '??'
+    at internalCompileFunction (node:internal/vm:128:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1280:20)
+    at Module._compile (node:internal/modules/cjs/loader:1332:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at cjsLoader (node:internal/modules/esm/translators:366:17)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:315:7)
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+(node:122216) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+/home/g30ff/LFGDIscordbot/events/messageCreate/freeAI.js:243
+		const reply = response?.data?.message?.content && "`AI Disclaimer: Not representative of LFG`" ?? 'Oops! Something went wrong. Please try again later.';
+		                                                                                               ^^
+
+SyntaxError: Unexpected token '??'
+    at internalCompileFunction (node:internal/vm:128:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1280:20)
+    at Module._compile (node:internal/modules/cjs/loader:1332:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at cjsLoader (node:internal/modules/esm/translators:366:17)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:315:7)
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+(node:122455) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+/home/g30ff/LFGDIscordbot/events/messageCreate/freeAI.js:243
+		const reply = response?.data?.message?.content && "`AI Disclaimer: Not representative of LFG`" ?? 'Oops! Something went wrong. Please try again later.';
+		                                                                                               ^^
+
+SyntaxError: Unexpected token '??'
+    at internalCompileFunction (node:internal/vm:128:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1280:20)
+    at Module._compile (node:internal/modules/cjs/loader:1332:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at cjsLoader (node:internal/modules/esm/translators:366:17)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:315:7)
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+(node:122591) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:122591) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+TypeError: Cannot destructure property 'webhookId' of 'generateWebhookURL(...)' as it is undefined.
+    at module.exports (/home/g30ff/LFGDIscordbot/events/messageCreate/freeAI.js:98:10)
+    at Client.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/commandkit/dist/index.js:731:39)
+    at Client.emit (node:events:518:28)
+    at MessageCreateAction.handle (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/actions/MessageCreate.js:28:14)
+    at module.exports [as MESSAGE_CREATE] (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/handlers/MESSAGE_CREATE.js:4:32)
+    at WebSocketManager.handlePacket (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:355:31)
+    at WebSocketManager.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/discord.js/src/client/websocket/WebSocketManager.js:239:12)
+    at WebSocketManager.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+    at WebSocketShard.<anonymous> (/home/g30ff/LFGDIscordbot/node_modules/@discordjs/ws/dist/index.js:1173:51)
+    at WebSocketShard.emit (/home/g30ff/LFGDIscordbot/node_modules/@vladfrangu/async_event_emitter/dist/index.cjs:282:31)
+(node:1278506) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1278506) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:1278711) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1278711) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:1278740) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1278740) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:1876) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1876) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:109263) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:109263) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:588344) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:588344) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 42, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 24, in search
+    hits = client.search(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 336, in search
+    return self._client.search(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/qdrant_remote.py", line 497, in search
+    search_result = self.http.points_api.search_points(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api/points_api.py", line 1388, in search_points
+    return self._build_for_search_points(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api/points_api.py", line 636, in _build_for_search_points
+    return self.api_client.request(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api_client.py", line 76, in request
+    return self.send(request, type_)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api_client.py", line 99, in send
+    raise UnexpectedResponse.for_response(response)
+qdrant_client.http.exceptions.UnexpectedResponse: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Wrong input: Vector inserting error: expected dim: 768, got 384"},"time":0.001106088}'
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 42, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 24, in search
+    hits = client.search(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 336, in search
+    return self._client.search(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/qdrant_remote.py", line 497, in search
+    search_result = self.http.points_api.search_points(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api/points_api.py", line 1388, in search_points
+    return self._build_for_search_points(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api/points_api.py", line 636, in _build_for_search_points
+    return self.api_client.request(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api_client.py", line 76, in request
+    return self.send(request, type_)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api_client.py", line 99, in send
+    raise UnexpectedResponse.for_response(response)
+qdrant_client.http.exceptions.UnexpectedResponse: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Wrong input: Vector inserting error: expected dim: 768, got 384"},"time":0.001106088}'
+
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> hi"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 42, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 24, in search
+    hits = client.search(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 336, in search
+    return self._client.search(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/qdrant_remote.py", line 497, in search
+    search_result = self.http.points_api.search_points(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api/points_api.py", line 1388, in search_points
+    return self._build_for_search_points(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api/points_api.py", line 636, in _build_for_search_points
+    return self.api_client.request(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api_client.py", line 76, in request
+    return self.send(request, type_)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api_client.py", line 99, in send
+    raise UnexpectedResponse.for_response(response)
+qdrant_client.http.exceptions.UnexpectedResponse: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Wrong input: Vector inserting error: expected dim: 768, got 384"},"time":0.000829072}'
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> hi"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 42, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 24, in search
+    hits = client.search(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/qdrant_client.py", line 336, in search
+    return self._client.search(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/qdrant_remote.py", line 497, in search
+    search_result = self.http.points_api.search_points(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api/points_api.py", line 1388, in search_points
+    return self._build_for_search_points(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api/points_api.py", line 636, in _build_for_search_points
+    return self.api_client.request(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api_client.py", line 76, in request
+    return self.send(request, type_)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/qdrant_client/http/api_client.py", line 99, in send
+    raise UnexpectedResponse.for_response(response)
+qdrant_client.http.exceptions.UnexpectedResponse: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Wrong input: Vector inserting error: expected dim: 768, got 384"},"time":0.000829072}'
+
+(node:664580) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:664580) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 6, in <module>
+    import nltk
+ModuleNotFoundError: No module named 'nltk'
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 6, in <module>
+    import nltk
+ModuleNotFoundError: No module named 'nltk'
+
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.0.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 7, in <module>
+    import spacy
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/__init__.py", line 6, in <module>
+    from .errors import setup_default_warnings
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/errors.py", line 3, in <module>
+    from .compat import Literal
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/compat.py", line 4, in <module>
+    from thinc.util import copy_array
+  File "/home/g30ff/.local/lib/python3.10/site-packages/thinc/__init__.py", line 5, in <module>
+    from .config import registry
+  File "/home/g30ff/.local/lib/python3.10/site-packages/thinc/config.py", line 5, in <module>
+    from .types import Decorator
+  File "/home/g30ff/.local/lib/python3.10/site-packages/thinc/types.py", line 25, in <module>
+    from .compat import cupy, has_cupy
+  File "/home/g30ff/.local/lib/python3.10/site-packages/thinc/compat.py", line 35, in <module>
+    import torch
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/__init__.py", line 1477, in <module>
+    from .functional import *  # noqa: F403
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/functional.py", line 9, in <module>
+    import torch.nn.functional as F
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at ../torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 26, in <module>
+    nlp = spacy.load('en_core_web_sm')
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.0.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 7, in <module>
+    import spacy
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/__init__.py", line 6, in <module>
+    from .errors import setup_default_warnings
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/errors.py", line 3, in <module>
+    from .compat import Literal
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/compat.py", line 4, in <module>
+    from thinc.util import copy_array
+  File "/home/g30ff/.local/lib/python3.10/site-packages/thinc/__init__.py", line 5, in <module>
+    from .config import registry
+  File "/home/g30ff/.local/lib/python3.10/site-packages/thinc/config.py", line 5, in <module>
+    from .types import Decorator
+  File "/home/g30ff/.local/lib/python3.10/site-packages/thinc/types.py", line 25, in <module>
+    from .compat import cupy, has_cupy
+  File "/home/g30ff/.local/lib/python3.10/site-packages/thinc/compat.py", line 35, in <module>
+    import torch
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/__init__.py", line 1477, in <module>
+    from .functional import *  # noqa: F403
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/functional.py", line 9, in <module>
+    import torch.nn.functional as F
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at ../torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 26, in <module>
+    nlp = spacy.load('en_core_web_sm')
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 26, in <module>
+    nlp = spacy.load('en_core_web_sm')
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 26, in <module>
+    nlp = spacy.load('en_core_web_sm')
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> hello?"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 26, in <module>
+    nlp = spacy.load('en_core_web_sm')
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> hello?"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 26, in <module>
+    nlp = spacy.load('en_core_web_sm')
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/home/g30ff/.local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 105, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 67, in search
+    question = preserve_case_tokenization(question)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 47, in preserve_case_tokenization
+    sentences = sent_tokenize(text)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1744, in __init__
+    self.load_lang(lang)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1749, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/g30ff/nltk_data'
+    - '/usr/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 105, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 67, in search
+    question = preserve_case_tokenization(question)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 47, in preserve_case_tokenization
+    sentences = sent_tokenize(text)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1744, in __init__
+    self.load_lang(lang)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1749, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/g30ff/nltk_data'
+    - '/usr/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 105, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 67, in search
+    question = preserve_case_tokenization(question)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 47, in preserve_case_tokenization
+    sentences = sent_tokenize(text)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1744, in __init__
+    self.load_lang(lang)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1749, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/g30ff/nltk_data'
+    - '/usr/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 105, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 67, in search
+    question = preserve_case_tokenization(question)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 47, in preserve_case_tokenization
+    sentences = sent_tokenize(text)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1744, in __init__
+    self.load_lang(lang)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1749, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/g30ff/nltk_data'
+    - '/usr/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+
+(node:668390) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:668390) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 105, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 67, in search
+    question = preserve_case_tokenization(question)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 47, in preserve_case_tokenization
+    sentences = sent_tokenize(text)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1744, in __init__
+    self.load_lang(lang)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1749, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/g30ff/nltk_data'
+    - '/usr/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 105, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 67, in search
+    question = preserve_case_tokenization(question)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 47, in preserve_case_tokenization
+    sentences = sent_tokenize(text)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1744, in __init__
+    self.load_lang(lang)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1749, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/g30ff/nltk_data'
+    - '/usr/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 105, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 67, in search
+    question = preserve_case_tokenization(question)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 47, in preserve_case_tokenization
+    sentences = sent_tokenize(text)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1744, in __init__
+    self.load_lang(lang)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1749, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/g30ff/nltk_data'
+    - '/usr/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 105, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 67, in search
+    question = preserve_case_tokenization(question)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 47, in preserve_case_tokenization
+    sentences = sent_tokenize(text)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1744, in __init__
+    self.load_lang(lang)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1749, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/g30ff/nltk_data'
+    - '/usr/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 106, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 68, in search
+    question = preserve_case_tokenization(question)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 52, in preserve_case_tokenization
+    tagged_words = nltk.pos_tag(words)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tag/__init__.py", line 168, in pos_tag
+    tagger = _get_tagger(lang)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tag/__init__.py", line 110, in _get_tagger
+    tagger = PerceptronTagger()
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tag/perceptron.py", line 183, in __init__
+    self.load_from_json(lang)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tag/perceptron.py", line 273, in load_from_json
+    loc = find(f"taggers/averaged_perceptron_tagger_{lang}/")
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93maveraged_perceptron_tagger_eng[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('averaged_perceptron_tagger_eng')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtaggers/averaged_perceptron_tagger_eng/[0m
+
+  Searched in:
+    - '/home/g30ff/nltk_data'
+    - '/usr/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> who is bezos"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 106, in <module>
+    results = search(query, model)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 68, in search
+    question = preserve_case_tokenization(question)
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 52, in preserve_case_tokenization
+    tagged_words = nltk.pos_tag(words)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tag/__init__.py", line 168, in pos_tag
+    tagger = _get_tagger(lang)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tag/__init__.py", line 110, in _get_tagger
+    tagger = PerceptronTagger()
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tag/perceptron.py", line 183, in __init__
+    self.load_from_json(lang)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/tag/perceptron.py", line 273, in load_from_json
+    loc = find(f"taggers/averaged_perceptron_tagger_{lang}/")
+  File "/home/g30ff/.local/lib/python3.10/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93maveraged_perceptron_tagger_eng[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('averaged_perceptron_tagger_eng')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtaggers/averaged_perceptron_tagger_eng/[0m
+
+  Searched in:
+    - '/home/g30ff/nltk_data'
+    - '/usr/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+
+exec error: Error: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> can you tell me about the lion's pride?"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 110, in <module>
+    model = load_model()
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 33, in load_model
+    encoder = SentenceTransformer(model_path)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 221, in __init__
+    self.to(device)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1152, in to
+    return self._apply(convert)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 802, in _apply
+    module._apply(fn)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 802, in _apply
+    module._apply(fn)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 802, in _apply
+    module._apply(fn)
+  [Previous line repeated 5 more times]
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 825, in _apply
+    param_applied = fn(param)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1150, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 2.95 GiB of which 3.62 MiB is free. Process 670822 has 2.62 GiB memory in use. Including non-PyTorch memory, this process has 318.62 MiB memory in use. Of the allocated memory 254.24 MiB is allocated by PyTorch, and 17.76 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+first tryError: Command failed: python3 "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py" "<@1192067991760814101> can you tell me about the lion's pride?"
+Traceback (most recent call last):
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 110, in <module>
+    model = load_model()
+  File "/home/g30ff/LFGDIscordbot/utils/langchainPythonRAG.py", line 33, in load_model
+    encoder = SentenceTransformer(model_path)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 221, in __init__
+    self.to(device)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1152, in to
+    return self._apply(convert)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 802, in _apply
+    module._apply(fn)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 802, in _apply
+    module._apply(fn)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 802, in _apply
+    module._apply(fn)
+  [Previous line repeated 5 more times]
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 825, in _apply
+    param_applied = fn(param)
+  File "/home/g30ff/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1150, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 2.95 GiB of which 3.62 MiB is free. Process 670822 has 2.62 GiB memory in use. Including non-PyTorch memory, this process has 318.62 MiB memory in use. Of the allocated memory 254.24 MiB is allocated by PyTorch, and 17.76 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+(node:676436) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:676436) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:676598) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:676598) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+first tryReferenceError: result is not defined
+first tryReferenceError: result is not defined
+first tryReferenceError: result is not defined
+(node:677034) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:677034) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:678536) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:678536) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:678586) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:678586) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+Error: Cannot find module 'express'
+Require stack:
+- /home/g30ff/LFGDIscordbot/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/g30ff/LFGDIscordbot/index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/g30ff/LFGDIscordbot/index.js' ]
+}
+(node:986881) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:986881) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:987685) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:987685) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:988558) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:988558) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:988763) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:988763) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+Error sending global event: AxiosError: Request failed with status code 404
+Error sending global event: AxiosError: Request failed with status code 404
+Error sending global event: AxiosError: Request failed with status code 404
+Error sending global event: AxiosError: Request failed with status code 404
+Error sending global event: AxiosError: Request failed with status code 404
+Error sending global event: AxiosError: Request failed with status code 404
+(node:1015528) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1015528) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:1054434) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1054434) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:1054489) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1054489) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:1459674) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1459674) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:1460009) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1460009) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:1460570) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1460570) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:1460715) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1460715) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(node:1462088) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1462088) Warning: Accessing non-existent property 'redis' of module exports inside circular dependency
