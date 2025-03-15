@@ -12,7 +12,7 @@
   "dependencies": {
     "@huggingface/inference": "^2.6.4",
     "@langchain/cohere": "^0.0.5",
-    "@langchain/community": "^0.0.24",
+    "@langchain/community": "^0.3.32",
     "@langchain/mongodb": "^0.0.1",
     "@langchain/openai": "^0.0.13",
     "@xenova/transformers": "^2.16.0",
