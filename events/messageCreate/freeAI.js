@@ -8,6 +8,8 @@ const axios = require('axios');
 const mongoClientPromise = require('../../utils/mongodb.js');
 const { exec } = require('child_process');
 const fs = require('fs');
+const os = require('os');
+const path = require('path');
 
 // Function to get conversation history
 async function getConversationHistory(discordThreadId) {
@@ -69,13 +71,13 @@ function parseQuery(message) {
 	const lowerMessage = message.toLowerCase();
 	let match;
 
-	if (match = lowerMessage.match(/(\d+)\s+(gold|moonstones)/)) {
+	if (match == lowerMessage.match(/(\d+)\s+(gold|moonstones)/)) {
 		result[match[2]] = parseInt(match[1]);
 	}
-	else if (match = lowerMessage.match(/what .*? can i buy with (\d+) (gold|moonstones)/)) {
+	else if (match == lowerMessage.match(/what .*? can i buy with (\d+) (gold|moonstones)/)) {
 		result[match[2]] = parseInt(match[1]);
 	}
-	else if (match = lowerMessage.match(/produce|effect|have|result/)) {
+	else if (match == lowerMessage.match(/produce|effect|have|result/)) {
 		result.description = lowerMessage.split('that ')[1];
 	}
 	console.log(result);
@@ -134,9 +136,18 @@ module.exports = async (message, client) => {
 
 	}
 
+	// Function to get the full path of the Python script
+	function getPythonScriptPath() {
+		const homeDirectory = os.homedir(); // Gets the home directory
+		return path.join(homeDirectory, 'LFGDIscordbot/utils/langchainPythonRAG.py'); // Constructs the full path
+	}
+
+	// Usage in your existing function
 	function askQuestion(question) {
+		const pythonScriptPath = getPythonScriptPath();
+		const pythonCommand = `python3 "${pythonScriptPath.replace(/"/g, '\\"')}" "${question.replace(/"/g, '\\"')}"`;
+
 		return new Promise((resolve, reject) => {
-			const pythonCommand = `python3 ./utils/langchainPythonRAG.py "${question.replace(/"/g, '\\"')}"`;
 			exec(pythonCommand, (error, stdout, stderr) => {
 				if (error) {
 					console.error(`exec error: ${error}`);
@@ -147,9 +158,13 @@ module.exports = async (message, client) => {
 					return reject(stderr);
 				}
 				try {
-					// Parse the JSON output from the Python script
 					const results = JSON.parse(stdout);
-					resolve(results);
+					if (Array.isArray(results)) {
+						resolve(results);
+					}
+					else {
+						throw new TypeError('Expected an array but got ' + typeof results);
+					}
 				}
 				catch (parseError) {
 					console.error(`Parsing error: ${parseError}`);
@@ -158,7 +173,6 @@ module.exports = async (message, client) => {
 			});
 		});
 	}
-
 
 	// const modelsToTest = ['oracle:latest', 'oracle-llama2:latest', 'oracle-mixtral:latest', 'oracle-mixtral-orca:latest', 'oracle-neural-chat:latest', 'oracle-noushermes2:latest' ];
 
@@ -182,7 +196,8 @@ module.exports = async (message, client) => {
 		history.push({ role: 'user', content: question });
 
 		console.log('Result in openAI.js:', JSON.stringify(result, null, 2));
-		const newMessage = { role: 'user', content: `You found this information in your tomes: ${result}.` };
+		const formattedResults = result.map(res => `${res.text} (Score: ${res.score})`).join(', ');
+		const newMessage = { role: 'user', content: `You found this information in your tomes: ${formattedResults} Use this information if it is relevant to the adventurers question` };
 		await message.channel.sendTyping();
 
 		const messagesPayload = [newMessage].concat(history.slice(-10));
@@ -198,7 +213,7 @@ module.exports = async (message, client) => {
 		};
 
 		// Make the POST request
-		const response = await axios.post('http://localhost:11434/api/chat', data, {
+		const response = await axios.post('http://192.168.1.118:11434/api/chat', data, {
 			headers: {
 				'Content-Type': 'application/json',
 			},
@@ -229,6 +244,7 @@ module.exports = async (message, client) => {
 	}
 	catch (error) {
 		logger.error({ err: error }, 'An error occurred');
+		console.error('first try' + error);
 		await webhookClient.send('Bot encountered an issue. Please wait a moment before trying again.');
 	}
 	finally {

@@ -3,3 +3,7 @@ node_modules
 config.json
 embedBuilder.js
 spaCy.py
+credentials.json
+output.csv
+.env.local
+.credentials.json
