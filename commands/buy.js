@@ -188,5 +188,7 @@ module.exports = {
 		interaction.respond(filtered.slice(0, 25));
 	},
 
-
+	options: {
+		deleted: true,
+	},
 };

@@ -134,4 +134,7 @@ module.exports = {
 	options: {
 		deleted: true,
 	},
+	options: {
+		deleted: true,
+	},
 };

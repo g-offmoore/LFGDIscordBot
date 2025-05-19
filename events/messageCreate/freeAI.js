@@ -1,8 +1,6 @@
 /* eslint-disable no-inline-comments */
 require('dotenv/config');
 const { WebhookClient } = require('discord.js');
-// const fs = require('fs');
-// const { handleDiscordMessage } = require('../../utils/route.js');
 const logger = require('../../utils/logger.js');
 const axios = require('axios');
 const mongoClientPromise = require('../../utils/mongodb.js');
@@ -14,7 +12,7 @@ const path = require('path');
 // Function to get conversation history
 async function getConversationHistory(discordThreadId) {
 	const client = await mongoClientPromise;
-	const db = client.db('LFGInventory'); // Replace with your actual database name
+	const db = client.db('LFGInventory'); 
 	const collection = db.collection('conversations');
 
 	const historyDocument = await collection.findOne({ discordThreadId: discordThreadId });
@@ -26,7 +24,7 @@ async function getConversationHistory(discordThreadId) {
 // Function to save conversation history
 async function saveConversationHistory(discordThreadId, history) {
 	const client = await mongoClientPromise;
-	const db = client.db('LFGInventory'); // Replace with your actual database name
+	const db = client.db('LFGInventory'); 
 	const collection = db.collection('conversations');
 
 	await collection.updateOne(
@@ -46,38 +44,38 @@ function logResponseTime(startTime, endTime) {
 	});
 }
 
-async function findItems(query) {
-	const client = await mongoClientPromise;
-	const db = client.db('LFGInventory');
-	const itemsCollection = db.collection('items');
+// async function findItems(query) {
+// 	const client = await mongoClientPromise;
+// 	const db = client.db('LFGInventory');
+// 	const itemsCollection = db.collection('items');
 
-	// Example query adjustment based on user's message
-	const searchQuery = {};
-	if (query.gold) {
-		searchQuery.price = { $lte: query.gold };
-	}
-	else if (query.moonstones) {
-		searchQuery.priceMoonstones = { $lte: query.moonstones };
-	}
-	else if (query.description) {
-		searchQuery.description = { $regex: query.description, $options: 'i' };
-	}
+// 	// Example query adjustment based on user's message
+// 	const searchQuery = {};
+// 	if (query.gold) {
+// 		searchQuery.price = { $lte: query.gold };
+// 	}
+// 	else if (query.moonstones) {
+// 		searchQuery.priceMoonstones = { $lte: query.moonstones };
+// 	}
+// 	else if (query.description) {
+// 		searchQuery.description = { $regex: query.description, $options: 'i' };
+// 	}
 
-	return itemsCollection.find(searchQuery).toArray();
-}
+// 	return itemsCollection.find(searchQuery).toArray();
+// }
 
-function parseQuery(message) {
-	const result = {};
-	const lowerMessage = message.toLowerCase();
-	let match;
+// function parseQuery(message) {
+// 	const result = {};
+// 	const lowerMessage = message.toLowerCase();
+// 	let match;
 
-	if (match == lowerMessage.match(/(\d+)\s+(gold|moonstones)/)) {
+	if (match = lowerMessage.match(/(\d+)\s+(gold|moonstones)/)) {
 		result[match[2]] = parseInt(match[1]);
 	}
-	else if (match == lowerMessage.match(/what .*? can i buy with (\d+) (gold|moonstones)/)) {
+	else if (match = lowerMessage.match(/what .*? can i buy with (\d+) (gold|moonstones)/)) {
 		result[match[2]] = parseInt(match[1]);
 	}
-	else if (match == lowerMessage.match(/produce|effect|have|result/)) {
+	else if (match = lowerMessage.match(/produce|effect|have|result/)) {
 		result.description = lowerMessage.split('that ')[1];
 	}
 	console.log(result);
@@ -85,6 +83,7 @@ function parseQuery(message) {
 }
 module.exports = async (message, client) => {
 	const startTime = Date.now();
+	logger.info('message location: ' + message.channel.id + '\n');
 	if (message.author.bot || message.content === '') {
 		return;
 	}
@@ -94,7 +93,7 @@ module.exports = async (message, client) => {
 	}
 
 	const discordThreadId = message.channel.id;
-	const { webhookId, webhookToken, AImodel, isShopChannel } = generateWebhookURL(discordThreadId);
+	const { webhookId, webhookToken, AImodel, isShopChannel, isWelcome } = generateWebhookURL(discordThreadId);
 	const webhookClient = new WebhookClient({ id: webhookId, token: webhookToken });
 
 	// eslint-disable-next-line no-shadow
@@ -136,13 +135,6 @@ module.exports = async (message, client) => {
 
 	}
 
-	// Function to get the full path of the Python script
-	function getPythonScriptPath() {
-		const homeDirectory = os.homedir(); // Gets the home directory
-		return path.join(homeDirectory, 'LFGDIscordbot/utils/langchainPythonRAG.py'); // Constructs the full path
-	}
-
-	// Usage in your existing function
 	function askQuestion(question) {
 		const pythonScriptPath = getPythonScriptPath();
 		const pythonCommand = `python3 "${pythonScriptPath.replace(/"/g, '\\"')}" "${question.replace(/"/g, '\\"')}"`;
@@ -174,36 +166,53 @@ module.exports = async (message, client) => {
 		});
 	}
 
+
 	// const modelsToTest = ['oracle:latest', 'oracle-llama2:latest', 'oracle-mixtral:latest', 'oracle-mixtral-orca:latest', 'oracle-neural-chat:latest', 'oracle-noushermes2:latest' ];
 
 	try {
 		const question = message.content.toLowerCase();
-		if (isShopChannel) {
-			const query = parseQuery(question);
-			const items = await findItems(query);
-			console.log(items);
-			let responseText = items.map(item => `${item.name}: ${item.price || item.priceMoonstones} (${item.price ? 'gold' : 'moonstones'}) - ${item.description}`).join('\n');
-			if (responseText === '') responseText = 'No items found matching your criteria.';
-			await webhookClient.send({ content: responseText });
-			return;
-		}
-		const result = await askQuestion(question);
+		let newMessage;
 
+		const typingInterval = setInterval(() => {
+			message.channel.sendTyping().catch(console.error);
+		  }, 5000);
+		// if (isShopChannel) {
+		// 	const query = parseQuery(question);
+		// 	const items = await findItems(query);
+		// 	console.log(items);
+		// 	let responseText = items.map(item => `${item.name}: ${item.price || item.priceMoonstones} (${item.price ? 'gold' : 'moonstones'}) - ${item.description}`).join('\n');
+		// 	if (responseText === '') responseText = 'No items found matching your criteria.';
+		// 	await webhookClient.send({ content: responseText });
+		// 	return;
 		// }
-
-
+		if (!isWelcome) {
+			const result = await askQuestion(question);
+		
+			console.log(`Result in freeAI.js:${result}`);
+		
+			if (result.length === 1 && result[0].text === 'no lore found') {
+			  // Assistant message when no lore is found
+			  newMessage = {
+				role: 'assistant',
+				content: `No information found, you must NOT make any up.`,
+			  };
+			} else {
+			  const formattedResults = result.map(res => res.text).join('\n\n---\n\n');
+			  newMessage = {
+				role: 'assistant',
+				content: `Here is the information from your tomes:\n\n${formattedResults}`,
+			  };
+			}
+		}		
 		const history = await getConversationHistory(discordThreadId);
 		history.push({ role: 'user', content: question });
 
 		console.log('Result in openAI.js:', JSON.stringify(result, null, 2));
-		const formattedResults = result.map(res => `${res.text} (Score: ${res.score})`).join(', ');
-		const newMessage = { role: 'user', content: `You found this information in your tomes: ${formattedResults} Use this information if it is relevant to the adventurers question` };
+		const newMessage = { role: 'user', content: `You found this information in your tomes: ${result}.` };
 		await message.channel.sendTyping();
 
 		const messagesPayload = [newMessage].concat(history.slice(-10));
-		// console.log('Payload message:', messagesPayload);
-
-		// for (const AImodel of modelsToTest) {
+	
 		// Construct the payload
 		const data = {
 			model: AImodel,
@@ -219,30 +228,34 @@ module.exports = async (message, client) => {
 			},
 		});
 
+		clearInterval(typingInterval);
 		const reply = response?.data?.message?.content ?? 'Oops! Something went wrong. Please try again later.';
+		const finalReply = reply !== 'Oops! Something went wrong. Please try again later.' ? reply + "`AI Disclaimer: Not representative of LFG`" : reply;
+
 
 		console.log(`Response from ${AImodel}: ${reply}\n\n`);
 
 
-		if (reply.length > 2000) {
+		if (finalReply.length > 2000) {
 			// Split reply into chunks and send each chunk separately
 			let index = 0;
 			const maxCharacters = 1995;
-			while (index < reply.length) {
-				const chunk = reply.slice(index, Math.min(index + maxCharacters, reply.length));
+			while (index < finalReply.length) {
+				const chunk = finalReply.slice(index, Math.min(index + maxCharacters, finalReply.length));
 				await webhookClient.send({ content: chunk });
 				index += maxCharacters;
 			}
 		}
 		else {
 			// Send reply if within Discord message character limit
-			await webhookClient.send({ content: reply });
+			await webhookClient.send({ content: finalReply });
 		}
 		// }
-		history.push({ role: 'assistant', content: reply });
+		history.push({ role: 'assistant', content: finalReply });
 		await saveConversationHistory(discordThreadId, history);
 	}
 	catch (error) {
+		clearInterval(typingInterval);
 		logger.error({ err: error }, 'An error occurred');
 		console.error('first try' + error);
 		await webhookClient.send('Bot encountered an issue. Please wait a moment before trying again.');
