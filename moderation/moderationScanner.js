@@ -9,7 +9,7 @@ const WEBHOOK_NAME        = 'ModBotRelay';
 const WEBHOOK_AVATAR_PATH = path.join(__dirname, '../assets/modbot_avatar.png');
 
 // Use absolute path based on this file's directory
-const RULE_FILE = path.join(__dirname, '../config/scam_rules.yaml');
+const RULE_FILE = path.join(__dirname, '../config/mod_rules.yaml');
 
 // Load and compile once at module import time
 let compiledRules = [];
