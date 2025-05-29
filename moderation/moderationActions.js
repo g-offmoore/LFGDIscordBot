@@ -1,12 +1,12 @@
 // moderation/moderationActions.js
-const { MessageFlags, EmbedBuilder } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const path = require('node:path');
 const fs   = require('fs');
 
-const LOG_CHANNEL_ID        = process.env.LOG_CHANNEL_ID || '983865514751320124';
-const WEBHOOK_NAME          = 'ModBot';
-const VIBE_AVATAR_PATH      = path.join(__dirname, '../assets/modbot_vibe.png');
-const HAMMER_AVATAR_PATH    = path.join(__dirname, '../assets/modbot_hammer.png');
+const LOG_CHANNEL_ID     = process.env.LOG_CHANNEL_ID || '983865514751320124';
+const WEBHOOK_NAME       = 'ModBot';
+const VIBE_AVATAR_PATH   = path.join(__dirname, '../assets/modbot_vibe.png');
+const HAMMER_AVATAR_PATH = path.join(__dirname, '../assets/modbot_hammer.png');
 
 // preload avatar buffers
 let vibeBuffer, hammerBuffer;
@@ -32,6 +32,7 @@ module.exports = async function handleModerationButtons(client, interaction) {
 
   let resultText = '';
 
+  // perform action
   switch (action) {
     case 'warn': {
       if (userId) {
@@ -41,18 +42,14 @@ module.exports = async function handleModerationButtons(client, interaction) {
             .setTitle('⚠️ Your message was flagged')
             .setColor(0xffa500)
             .addFields(
-              { name: 'Reason', value: reason, inline: false },
-              { name: 'Your message', value: content?.slice(0, 1000) || '', inline: false },
-              { name: 'Next steps', value: 'Please review our guidelines.', inline: false }
+              { name: 'Reason',        value: reason,                   inline: false },
+              { name: 'Your message',  value: content?.slice(0, 1000) || '', inline: false },
+              { name: 'Next steps',    value: 'Please review our guidelines.', inline: false }
             );
           await member.send({ embeds: [dmEmbed] }).catch(() => {});
         }
       }
-
-      await interaction.reply({
-        content: `⚠️ Warned ${userField}.`,
-        flags: MessageFlags.Ephemeral
-      });
+      await interaction.reply({ content: `⚠️ Warned ${userField}.`, ephemeral: true });
       resultText = `⚠️ **Warned** ${userField} by ${mod.tag}`;
       break;
     }
@@ -62,27 +59,18 @@ module.exports = async function handleModerationButtons(client, interaction) {
         const member = await interaction.guild.members.fetch(userId).catch(() => null);
         if (member) await member.ban({ reason: 'Scam/Spam auto-mod' }).catch(() => {});
       }
-      await interaction.reply({
-        content: '🔨 Banned user.',
-        flags: MessageFlags.Ephemeral
-      });
+      await interaction.reply({ content: '🔨 Banned user.', ephemeral: true });
       resultText = `🔨 **Banned** user by ${mod.tag}`;
       break;
     }
 
     case 'allow':
-      await interaction.reply({
-        content: '✅ Approved. Please ask the user to repost their message.',
-        flags: MessageFlags.Ephemeral
-      });
+      await interaction.reply({ content: '✅ Approved. Please ask the user to repost their message.', ephemeral: true });
       resultText = `✅ **Allowed** message by ${mod.tag}`;
       break;
 
     default:
-      await interaction.reply({
-        content: '❗ Unknown action.',
-        flags: MessageFlags.Ephemeral
-      });
+      await interaction.reply({ content: '❗ Unknown action.', ephemeral: true });
       return;
   }
 
@@ -98,11 +86,16 @@ module.exports = async function handleModerationButtons(client, interaction) {
       }).catch(() => null);
     }
     if (hook) {
-      const avatar = (action === 'ban') ? hammerBuffer : vibeBuffer;
-      if (avatar) {
-        await hook.edit({ avatar }).catch(() => {});
-      }
+      const avatar = action === 'ban' ? hammerBuffer : vibeBuffer;
+      if (avatar) await hook.edit({ avatar }).catch(() => {});
       await hook.send({ content: resultText, username: WEBHOOK_NAME }).catch(() => {});
     }
+  }
+
+  // remove the mod-alert message to avoid clutter
+  try {
+    await interaction.message.delete();
+  } catch (err) {
+    console.error('Failed to delete mod alert message:', err);
   }
 };
