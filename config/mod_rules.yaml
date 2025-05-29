@@ -1,315 +1,315 @@
 rules:
   # 🎁 Fake Giveaway / Free Item Phrases
   - id: scam_free_macbook
-    pattern: "(?i)free macbook"
+    pattern: "free macbook"
     action: flag_and_hide
     reason: "Fake giveaway: Free MacBook"
 
   - id: scam_giving_laptop
-    pattern: "(?i)giving away my laptop"
+    pattern: "giving away my laptop"
     action: flag_and_hide
     reason: "Suspicious giveaway: Laptop"
 
   - id: scam_macbook_air
-    pattern: "(?i)macbook air.*for free"
+    pattern: "macbook air.*for free"
     action: flag_and_hide
     reason: "MacBook Air scam"
 
   - id: scam_old_phone
-    pattern: "(?i)giving (out|away).*(free|anyone|who wants|first come|everyone).*(old phone)"
+    pattern: "giving (out|away).*(free|anyone|who wants|first come|everyone).*(old phone)"
     action: flag_and_hide
     reason: "Old phone giveaway"
 
   - id: scam_old_device_still_works
-    pattern: "(?i)my old one still works great"
+    pattern: "my old one still works great"
     action: flag_and_hide
     reason: "Too good to be true device condition"
 
   - id: scam_just_upgraded
-    pattern: "(?i)just upgraded.*giving (?:this(?: one)?|that)? away"
+    pattern: "just upgraded.*giving (?:this(?: one)?|that)? away"
     action: flag_and_hide
     reason: "Giveaway after upgrade"
 
   - id: scam_free_iphone
-    pattern: "(?i)free iphone|iphone.*for free"
+    pattern: "free iphone|iphone.*for free"
     action: flag_and_hide
     reason: "Free iPhone scam"
 
   - id: scam_free_laptop
-    pattern: "(?i)free (?:laptop|notebook|pc|computer)"
+    pattern: "free (?:laptop|notebook|pc|computer)"
     action: flag_and_hide
     reason: "Free laptop scam"
 
   - id: scam_device_giveaway
-    pattern: "(?i)^(?!.*friend).*giving (?:away|out).*(?:laptop|macbook|mac book|notebook|pc|computer|phone|iphone|ps5|console|tablet)"
+    pattern: "^(?!.*friend).*giving (?:away|out).*(?:laptop|macbook|mac book|notebook|pc|computer|phone|iphone|ps5|console|tablet)"
     action: flag_and_hide
     reason: "Device giveaway scam"
 
   - id: scam_setup
-    pattern: "(?i)(?:giving away|free).*(?:entire|full|complete).{0,10}setup(?!.*(?:friend|brother|sister|uncle|coworker|neighbor))"
+    pattern: "(?:giving away|free).*(?:entire|full|complete).{0,10}setup(?!.*(?:friend|brother|sister|uncle|coworker|neighbor))"
     action: flag_and_hide
     reason: "Free setup scam"
 
   - id: scam_first_come
-    pattern: "(?i)first come first serve"
+    pattern: "first come first serve"
     action: flag_and_hide
     reason: "Scam urgency phrase"
 
   - id: scam_dm_interest
-    pattern: "(?i)(free|giving away|just upgraded|my old one).*dm.*(interested|details)"
+    pattern: "(free|giving away|just upgraded|my old one).*dm.*(interested|details)"
     action: flag_and_hide
     reason: "Scam DM bait"
 
   - id: scam_grab_now
-    pattern: "(?i)grab it while you can"
+    pattern: "grab it while you can"
     action: flag_and_hide
     reason: "Urgency giveaway"
 
   - id: scam_brand_new
-    pattern: "(?i)brand new condition"
+    pattern: "brand new condition"
     action: flag_and_hide
     reason: "Condition exaggeration"
 
   - id: scam_still_like_new
-    pattern: "(?i)still like new"
+    pattern: "still like new"
     action: flag_and_hide
     reason: "Condition exaggeration"
 
   - id: scam_wont_last
-    pattern: "(?i)won't last long"
+    pattern: "won't last long"
     action: flag_and_hide
     reason: "Urgency scam"
 
   - id: scam_in_need
-    pattern: "(?i)giving it to someone in need"
+    pattern: "giving it to someone in need"
     action: flag_and_hide
     reason: "Emotional bait"
 
   - id: scam_cant_afford
-    pattern: "(?i)(can't afford (one|this|it)).*(free|giving|claim|grab|dm|message)"
+    pattern: "(can't afford (one|this|it)).*(free|giving|claim|grab|dm|message)"
     action: flag_and_hide
     reason: "Sympathy scam"
 
   - id: scam_bless_someone
-    pattern: "(?i)want to bless someone"
+    pattern: "want to bless someone"
     action: flag_and_hide
     reason: "Scam emotional appeal"
 
   - id: scam_no_catch
-    pattern: "(?i)no catch"
+    pattern: "no catch"
     action: flag_and_hide
     reason: "Too good to be true"
 
   - id: scam_absolutely_free
-    pattern: "(?i)absolutely free"
+    pattern: "absolutely free"
     action: flag_and_hide
     reason: "Too good to be true"
 
   # 💵 Crypto / Cash Phrases
   - id: scam_free_nitro
-    pattern: "(?i)free discord nitro|discord nitro generator"
+    pattern: "free discord nitro|discord nitro generator"
     action: flag_and_hide
     reason: "Fake Nitro scam"
 
   - id: scam_reward_claim
-    pattern: "(?i)claim your reward"
+    pattern: "claim your reward"
     action: flag_and_hide
     reason: "Reward scam"
 
   - id: scam_easy_money
-    pattern: "(?i)easy money"
+    pattern: "easy money"
     action: flag_and_hide
     reason: "Easy money scam"
 
   - id: scam_cash_giveaway
-    pattern: "(?i)cash giveaway"
+    pattern: "cash giveaway"
     action: flag_and_hide
     reason: "Cash scam"
 
   - id: scam_double_money
-    pattern: "(?i)double your money"
+    pattern: "double your money"
     action: flag_and_hide
     reason: "Double your crypto scam"
 
   - id: scam_bitcoin_airdrop
-    pattern: "(?i)bitcoin airdrop"
+    pattern: "bitcoin airdrop"
     action: flag_and_hide
     reason: "Bitcoin scam"
 
   - id: scam_crypto_giveaway
-    pattern: "(?i)crypto giveaway"
+    pattern: "crypto giveaway"
     action: flag_and_hide
     reason: "Crypto scam"
 
   - id: scam_make_money
-    pattern: "(?i)make money fast"
+    pattern: "make money fast"
     action: flag_and_hide
     reason: "Fast money scam"
 
   - id: scam_quick_payout
-    pattern: "(?i)quick payout"
+    pattern: "quick payout"
     action: flag_and_hide
     reason: "Financial bait"
 
   - id: scam_instant_reward
-    pattern: "(?i)instant reward"
+    pattern: "instant reward"
     action: flag_and_hide
     reason: "Too fast to be true"
 
   - id: scam_link_claim
-    pattern: "(?i)click.*claim"
+    pattern: "click.*claim"
     action: flag_and_hide
     reason: "Suspicious claim link"
 
   - id: scam_selected
-    pattern: "(?i)you.?ve been selected"
+    pattern: "you.?ve been selected"
     action: flag_and_hide
     reason: "Random selection scam"
 
   - id: scam_friend_got_one
-    pattern: "(?i)my friend got one too"
+    pattern: "my friend got one too"
     action: flag_and_hide
     reason: "Fake testimonial"
 
   - id: scam_join_and_claim
-    pattern: "(?i)join.*claim"
+    pattern: "join.*claim"
     action: flag_and_hide
     reason: "Join scam server"
 
   - id: scam_legit_giveaway
-    pattern: "(?i)legit giveaway"
+    pattern: "legit giveaway"
     action: flag_and_hide
     reason: "Scam self-validation"
 
   - id: scam_trust_me
-    pattern: "(?i)trust me it's real"
+    pattern: "trust me it's real"
     action: flag_and_hide
     reason: "Scam reassurance"
 
   # 🧠 Social Engineering / Urgency
   - id: scam_act_fast
-    pattern: "(?i)act fast"
+    pattern: "act fast"
     action: flag_and_hide
     reason: "Urgency pressure"
 
   - id: scam_limited_time
-    pattern: "(?i)limited time only"
+    pattern: "limited time only"
     action: flag_and_hide
     reason: "Time scam"
 
   - id: scam_send_address
-    pattern: "(?i)just send your address"
+    pattern: "just send your address"
     action: flag_and_hide
     reason: "Phishing attempt"
 
   - id: scam_need_gone
-    pattern: "(?i)need this gone asap"
+    pattern: "need this gone asap"
     action: flag_and_hide
     reason: "Urgency scam"
 
   - id: scam_dont_need_it
-    pattern: "(?i)i don.?t need it anymore"
+    pattern: "i don.?t need it anymore"
     action: flag_and_hide
     reason: "Scam sob story"
 
   - id: scam_give_back
-    pattern: "(?i)want to give back"
+    pattern: "want to give back"
     action: flag_and_hide
     reason: "Altruism scam"
 
   - id: scam_dms_open
-    pattern: "(?i)my dms are open"
+    pattern: "my dms are open"
     action: flag_and_hide
     reason: "DM bait"
 
   - id: scam_dont_tell_mods
-    pattern: "(?i)don.?t tell mods"
+    pattern: "don.?t tell mods"
     action: flag_and_hide
     reason: "Avoiding detection"
 
   - id: scam_secret
-    pattern: "(?i)just between us"
+    pattern: "just between us"
     action: flag_and_hide
     reason: "Social engineering"
 
   - id: scam_strictly_first
-    pattern: "(?i)strictly first come"
+    pattern: "strictly first come"
     action: flag_and_hide
     reason: "Urgency trap"
 
   - id: scam_real_ones
-    pattern: "(?i)real ones only"
+    pattern: "real ones only"
     action: flag_and_hide
     reason: "Scam exclusivity"
 
   # 🔗 Suspicious Link Phrases
   - id: scam_click_here
-    pattern: "(?i)click here"
+    pattern: "click here"
     action: flag_and_hide
     reason: "Suspicious link"
 
   - id: scam_join_now
-    pattern: "(?i)join now"
+    pattern: "join now"
     action: flag_and_hide
     reason: "Suspicious link"
 
   - id: scam_check_this_out
-    pattern: "(?i)check this out"
+    pattern: "check this out"
     action: flag_and_hide
     reason: "Suspicious prompt"
 
   - id: scam_link_in_bio
-    pattern: "(?i)link in bio"
+    pattern: "link in bio"
     action: flag_and_hide
     reason: "Suspicious bio link"
 
   - id: scam_click_invite
-    pattern: "(?i)click the invite"
+    pattern: "click the invite"
     action: flag_and_hide
     reason: "Scam server invite"
 
   - id: scam_external_link
-    pattern: "(?i)external link"
+    pattern: "external link"
     action: flag_and_hide
     reason: "Link scam"
 
   - id: scam_verify_account
-    pattern: "(?i)verify your account"
+    pattern: "verify your account"
     action: flag_and_hide
     reason: "Phishing prompt"
 
   - id: scam_scan_qr
-    pattern: "(?i)scan this qr"
+    pattern: "scan this qr"
     action: flag_and_hide
     reason: "QR scam"
 
   # 👥 Mention Bait / Spam Tactics
   - id: scam_everyone_free
-    pattern: "(?i)@everyone.*free"
+    pattern: "@everyone.*free"
     action: flag_and_hide
     reason: "Mass mention + scam"
 
   - id: scam_everyone_giveaway
-    pattern: "(?i)@everyone.*giveaway"
+    pattern: "@everyone.*giveaway"
     action: flag_and_hide
     reason: "Mass mention + giveaway scam"
 
   - id: scam_here_giveaway
-    pattern: "(?i)@here.*giveaway"
+    pattern: "@here.*giveaway"
     action: flag_and_hide
     reason: "Mass mention + giveaway"
 
   - id: scam_tag_friends
-    pattern: "(?i)tag your friends"
+    pattern: "tag your friends"
     action: flag_and_hide
     reason: "Engagement bait"
 
   - id: scam_invite_friends
-    pattern: "(?i)invite 3 people"
+    pattern: "invite 3 people"
     action: flag_and_hide
     reason: "Fake invite contest"
 
   - id: scam_boost_win
-    pattern: "(?i)(?:boost(?:ing)?(?: this)? server|server boost).*win"
+    pattern: "(?:boost(?:ing)?(?: this)? server|server boost).*win"
     action: flag_and_hide
     reason: "Boost bait scam"
