@@ -11,12 +11,12 @@ rules:
     reason: "Suspicious giveaway: Laptop"
 
   - id: scam_macbook_air
-    pattern: "(?i)macbook air for free"
+    pattern: "(?i)macbook air.*for free"
     action: flag_and_hide
     reason: "MacBook Air scam"
 
   - id: scam_old_phone
-    pattern: "(?i)giving (out|away).*old phone"
+    pattern: "(?i)giving (out|away).*(free|anyone|who wants|first come|everyone).*(old phone)"
     action: flag_and_hide
     reason: "Old phone giveaway"
 
@@ -26,22 +26,27 @@ rules:
     reason: "Too good to be true device condition"
 
   - id: scam_just_upgraded
-    pattern: "(?i)just upgraded.*giving this away"
+    pattern: "(?i)just upgraded.*giving (?:this(?: one)?|that)? away"
     action: flag_and_hide
     reason: "Giveaway after upgrade"
 
   - id: scam_free_iphone
-    pattern: "(?i)free iphone"
+    pattern: "(?i)free iphone|iphone.*for free"
     action: flag_and_hide
     reason: "Free iPhone scam"
 
   - id: scam_free_laptop
-    pattern: "(?i)free laptop"
+    pattern: "(?i)free (?:laptop|notebook|pc|computer)"
     action: flag_and_hide
     reason: "Free laptop scam"
 
+  - id: scam_device_giveaway
+    pattern: "(?i)^(?!.*friend).*giving (?:away|out).*(?:laptop|macbook|mac book|notebook|pc|computer|phone|iphone|ps5|console|tablet)"
+    action: flag_and_hide
+    reason: "Device giveaway scam"
+
   - id: scam_setup
-    pattern: "(?i)giving away.*setup"
+    pattern: "(?i)(?:giving away|free).*(?:entire|full|complete).{0,10}setup(?!.*(?:friend|brother|sister|uncle|coworker|neighbor))"
     action: flag_and_hide
     reason: "Free setup scam"
 
@@ -51,7 +56,7 @@ rules:
     reason: "Scam urgency phrase"
 
   - id: scam_dm_interest
-    pattern: "(?i)dm.*(interested|details)"
+    pattern: "(?i)(free|giving away|just upgraded|my old one).*dm.*(interested|details)"
     action: flag_and_hide
     reason: "Scam DM bait"
 
@@ -81,7 +86,7 @@ rules:
     reason: "Emotional bait"
 
   - id: scam_cant_afford
-    pattern: "(?i)can.?t afford one"
+    pattern: "(?i)(can't afford (one|this|it)).*(free|giving|claim|grab|dm|message)"
     action: flag_and_hide
     reason: "Sympathy scam"
 
@@ -284,6 +289,11 @@ rules:
     action: flag_and_hide
     reason: "Mass mention + scam"
 
+  - id: scam_everyone_giveaway
+    pattern: "(?i)@everyone.*giveaway"
+    action: flag_and_hide
+    reason: "Mass mention + giveaway scam"
+
   - id: scam_here_giveaway
     pattern: "(?i)@here.*giveaway"
     action: flag_and_hide
@@ -300,6 +310,6 @@ rules:
     reason: "Fake invite contest"
 
   - id: scam_boost_win
-    pattern: "(?i)server boost and win"
+    pattern: "(?i)(?:boost(?:ing)?(?: this)? server|server boost).*win"
     action: flag_and_hide
     reason: "Boost bait scam"

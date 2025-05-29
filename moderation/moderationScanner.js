@@ -5,7 +5,7 @@ const yaml = require('js-yaml');
 
 const MOD_CHANNEL_ID = '1008371145793351740';
 // Use absolute path based on this file's directory
-const RULE_FILE = path.join(__dirname, '../config/scam_rules.yaml');
+const RULE_FILE = path.join(__dirname, '../config/mod_rules.yaml');
 
 // Load and compile once at module import time
 let compiledRules = [];
