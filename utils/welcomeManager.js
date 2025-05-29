@@ -2,8 +2,8 @@
 require('dotenv/config');
 const { WebhookClient } = require('discord.js');
 const axios = require('axios');
-const logger = require('../../utils/logger.js');
-const { redis } = require('../../index');
+const logger = require('./logger');
+const { redis } = require('../index');
 
 // ─── Configuration ───────────────────────────────────────────────────────────
 const AI_ENDPOINT = process.env.AI_WELCOME_ENDPOINT;

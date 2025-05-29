@@ -1,29 +1,36 @@
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder } = require('discord.js');
-const yaml = require('js-yaml');
+const path = require('node:path');
 const fs = require('fs');
+const yaml = require('js-yaml');
 
 const MOD_CHANNEL_ID = '1008371145793351740';
-const RULE_FILE = './config/scam_rules.yaml'; // ✅ Updated path
+// Use absolute path based on this file's directory
+const RULE_FILE = path.join(__dirname, '../config/scam_rules.yaml');
 
-let scamRules = [];
-
+// Load and compile once at module import time
+let compiledRules = [];
 try {
-  const file = fs.readFileSync(RULE_FILE, 'utf8');
-  const parsed = yaml.load(file);
-  scamRules = parsed.rules || [];
-} catch (e) {
-  console.error('Error loading scam rules:', e);
+  const raw = fs.readFileSync(RULE_FILE, 'utf8');
+  const parsed = yaml.load(raw);
+  const scamRules = parsed.rules || [];
+  compiledRules = scamRules.map(rule => ({
+    id:     rule.id,
+    action: rule.action,
+    reason: rule.reason,
+    regex:  new RegExp(rule.pattern, 'i')
+  }));
+  console.log(`Loaded ${compiledRules.length} scam rules.`);
+} catch (err) {
+  console.error('❌ Error loading scam rules:', err);
+  process.exit(1);
 }
 
 module.exports = async function handleMessageModeration(client, message) {
+  // Ignore bots and DMs
   if (message.author.bot || !message.guild) return;
 
-  const content = message.content.toLowerCase();
-  const match = scamRules.find(rule => {
-    const regex = new RegExp(rule.pattern, 'i');
-    return regex.test(content);
-  });
-
+  const content = message.content;
+  const match = compiledRules.find(r => r.regex.test(content));
   if (!match) return;
 
   try {
@@ -34,10 +41,10 @@ module.exports = async function handleMessageModeration(client, message) {
       .setColor(0xff0000)
       .setTitle('🚨 Potential Scam Message Detected')
       .addFields(
-        { name: 'User', value: `${message.author.tag} (<@${message.author.id}>)`, inline: false },
-        { name: 'Reason', value: match.reason, inline: false },
-        { name: 'Message', value: message.content.slice(0, 1000), inline: false },
-        { name: 'Link', value: `[Jump to message](${message.url})`, inline: false }
+        { name: 'User',    value: `${message.author.tag} (<@${message.author.id}>)`, inline: false },
+        { name: 'Reason',  value: match.reason,                                     inline: false },
+        { name: 'Message', value: message.content.slice(0, 1000),                    inline: false },
+        { name: 'Link',    value: `[Jump to message](${message.url})`,                inline: false }
       )
       .setFooter({ text: `Rule ID: ${match.id}` })
       .setTimestamp();
@@ -50,7 +57,6 @@ module.exports = async function handleMessageModeration(client, message) {
     );
 
     await modChannel.send({ embeds: [embed], components: [row] });
-
   } catch (err) {
     console.error('Error sending mod message:', err);
   }

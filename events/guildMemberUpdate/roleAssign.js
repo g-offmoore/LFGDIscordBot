@@ -1,5 +1,5 @@
 // events/guildMemberUpdate/roleAssign.js
-const { processPendingWelcomes } = require('../utils/welcomeManager');
+const { processPendingWelcomes } = require('../../utils/welcomeManager');
 
 module.exports = async (oldMember, newMember, client) => {
 	// When a user gains any role besides @everyone

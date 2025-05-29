@@ -1,5 +1,5 @@
 const handleMessageModeration = require('../../moderation/moderationScanner');
 
-module.exports = async (message, client) => {
+module.exports = async (client, message) => {
   await handleMessageModeration(client, message);
 };
