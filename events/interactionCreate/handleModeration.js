@@ -1,4 +1,4 @@
-const handleModerationButtons = require('../moderation/moderationActions');
+const handleModerationButtons = require('../../moderation/moderationActions');
 
 module.exports = {
   name: 'interactionCreate',
