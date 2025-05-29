@@ -11,7 +11,7 @@ const adventurers = require('../../models/adventurers');
 module.exports = async (interaction, client) => {
 	if (!interaction.isButton() || !interaction.customId) return false;
 
-	const guild = await client.guilds.fetch(process.env.guildID);
+	const guild = interaction.guild;;
 	const member = interaction.guild.members.cache.get(interaction.user.id);
 	//   console.log(`Roles for ${interaction.user.tag}:`);
 	// member.roles.cache.forEach(role => {

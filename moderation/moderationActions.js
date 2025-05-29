@@ -16,86 +16,93 @@ try { hammerBuffer = fs.readFileSync(HAMMER_AVATAR_PATH); } catch {}
 module.exports = async function handleModerationButtons(client, interaction) {
   if (!interaction.isButton()) return;
 
-  const [action, messageId] = interaction.customId.split('_');
-  const mod = interaction.user;
-
-  // grab embed context
-  const embed = interaction.message.embeds[0];
-  const userField    = embed.fields.find(f => f.name === 'User')?.value;
-  const channelField = embed.fields.find(f => f.name === 'Channel')?.value;
-  const reason       = embed.fields.find(f => f.name === 'Reason')?.value;
-  const content      = embed.fields.find(f => f.name === 'Content')?.value;
-
-  // extract user ID
-  const userIdMatch = /<@(\d+)>/.exec(userField || '');
-  const userId = userIdMatch ? userIdMatch[1] : null;
-
-  let resultText = '';
-
-  // perform action
-  switch (action) {
-    case 'warn': {
-      if (userId) {
-        const member = await interaction.guild.members.fetch(userId).catch(() => null);
-        if (member) {
-          const dmEmbed = new EmbedBuilder()
-            .setTitle('⚠️ Your message was flagged')
-            .setColor(0xffa500)
-            .addFields(
-              { name: 'Reason',        value: reason,                   inline: false },
-              { name: 'Your message',  value: content?.slice(0, 1000) || '', inline: false },
-              { name: 'Next steps',    value: 'Please review our guidelines.', inline: false }
-            );
-          await member.send({ embeds: [dmEmbed] }).catch(() => {});
-        }
-      }
-      await interaction.reply({ content: `⚠️ Warned ${userField}.`, ephemeral: true });
-      resultText = `⚠️ **Warned** ${userField} by ${mod.tag}`;
-      break;
-    }
-
-    case 'ban': {
-      if (userId) {
-        const member = await interaction.guild.members.fetch(userId).catch(() => null);
-        if (member) await member.ban({ reason: 'Scam/Spam auto-mod' }).catch(() => {});
-      }
-      await interaction.reply({ content: '🔨 Banned user.', ephemeral: true });
-      resultText = `🔨 **Banned** user by ${mod.tag}`;
-      break;
-    }
-
-    case 'allow':
-      await interaction.reply({ content: '✅ Approved. Please ask the user to repost their message.', ephemeral: true });
-      resultText = `✅ **Allowed** message by ${mod.tag}`;
-      break;
-
-    default:
-      await interaction.reply({ content: '❗ Unknown action.', ephemeral: true });
-      return;
-  }
-
-  // log via webhook
-  const logChannel = await client.channels.fetch(LOG_CHANNEL_ID).catch(() => null);
-  if (logChannel && logChannel.isTextBased()) {
-    let hook = (await logChannel.fetchWebhooks().catch(() => null))?.find(h => h.name === WEBHOOK_NAME);
-    if (!hook) {
-      hook = await logChannel.createWebhook({
-        name:   WEBHOOK_NAME,
-        avatar: vibeBuffer || client.user.displayAvatarURL({ dynamic: true }),
-        reason: 'Mod log webhook'
-      }).catch(() => null);
-    }
-    if (hook) {
-      const avatar = action === 'ban' ? hammerBuffer : vibeBuffer;
-      if (avatar) await hook.edit({ avatar }).catch(() => {});
-      await hook.send({ content: resultText, username: WEBHOOK_NAME }).catch(() => {});
-    }
-  }
-
-  // remove the mod-alert message to avoid clutter
   try {
-    await interaction.message.delete();
+    const [action, messageId] = interaction.customId.split('_');
+    const mod = interaction.user;
+
+    // grab embed context
+    const embed = interaction.message.embeds[0];
+    const userField    = embed.fields.find(f => f.name === 'User')?.value;
+    const channelField = embed.fields.find(f => f.name === 'Channel')?.value;
+    const reason       = embed.fields.find(f => f.name === 'Reason')?.value;
+    const content      = embed.fields.find(f => f.name === 'Content')?.value;
+
+    // extract user ID
+    const userIdMatch = /<@(\d+)>/.exec(userField || '');
+    const userId = userIdMatch ? userIdMatch[1] : null;
+
+    let resultText = '';
+
+    // perform action
+    switch (action) {
+      case 'warn': {
+        if (userId) {
+          const member = await interaction.guild.members.fetch(userId).catch(() => null);
+          if (member) {
+            const dmEmbed = new EmbedBuilder()
+              .setTitle('⚠️ Your message was flagged')
+              .setColor(0xffa500)
+              .addFields(
+                { name: 'Reason',        value: reason,                   inline: false },
+                { name: 'Your message',  value: content?.slice(0, 1000) || '', inline: false },
+                { name: 'Next steps',    value: 'Please review our guidelines.', inline: false }
+              );
+            await member.send({ embeds: [dmEmbed] }).catch(() => {});
+          }
+        }
+        await interaction.reply({ content: `⚠️ Warned ${userField}.`, ephemeral: true });
+        resultText = `⚠️ **Warned** ${userField} by ${mod.tag}`;
+        break;
+      }
+
+      case 'ban': {
+        if (userId) {
+          const member = await interaction.guild.members.fetch(userId).catch(() => null);
+          if (member) await member.ban({ reason: 'Scam/Spam auto-mod' }).catch(() => {});
+        }
+        await interaction.reply({ content: '🔨 Banned user.', ephemeral: true });
+        resultText = `🔨 **Banned** user by ${mod.tag}`;
+        break;
+      }
+
+      case 'allow':
+        await interaction.reply({ content: '✅ Approved. Please ask the user to repost their message.', ephemeral: true });
+        resultText = `✅ **Allowed** message by ${mod.tag}`;
+        break;
+
+      default:
+        await interaction.reply({ content: '❗ Unknown action.', ephemeral: true });
+        return;
+    }
+
+    // log via webhook
+    const logChannel = await client.channels.fetch(LOG_CHANNEL_ID).catch(() => null);
+    if (logChannel && logChannel.isTextBased()) {
+      let hook = (await logChannel.fetchWebhooks().catch(() => null))?.find(h => h.name === WEBHOOK_NAME);
+      if (!hook) {
+        hook = await logChannel.createWebhook({
+          name:   WEBHOOK_NAME,
+          avatar: vibeBuffer || client.user.displayAvatarURL({ dynamic: true }),
+          reason: 'Mod log webhook'
+        }).catch(() => null);
+      }
+      if (hook) {
+        const avatar = action === 'ban' ? hammerBuffer : vibeBuffer;
+        if (avatar) await hook.edit({ avatar }).catch(() => {});
+        await hook.send({ content: resultText, username: WEBHOOK_NAME }).catch(() => {});
+      }
+    }
+
+    // remove the mod-alert message to avoid clutter
+    await interaction.message.delete().catch(err => {
+      console.error('Failed to delete mod alert message:', err);
+    });
+
   } catch (err) {
-    console.error('Failed to delete mod alert message:', err);
+    console.error('Moderation action error:', err);
+    // Optionally, notify the moderator of failure
+    if (!interaction.replied) {
+      await interaction.reply({ content: '⚠️ An error occurred during moderation.', ephemeral: true });
+    }
   }
 };
