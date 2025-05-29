@@ -22,13 +22,14 @@ module.exports = {
 				content: `Hey ${targetUser}!\nThis month we will be at the following levels:
                 \n\t_**Normal players**_ (Thursday, & Saturday players who have NOT completed the tower of trials):\n\t\tLevel: ${normieLevel}
                 \n\t_**Heroic & Afterdark players:**_\n\t\tLevel: ${heroicLevel}
-                \n\t_**Femme nights:**_\n\t\tPlease reach out to your DMs in <#1202722317059493938> as they use a special leveling system!`
+                \n\t_**Femme nights:**_\n\t\tPlease reach out to your DMs in <#1202722317059493938> as they use a special leveling system!`,
 			});
-		} catch (error) {
+		}
+		catch (error) {
 			console.error(error);
 
-			
-			await interaction.reply(`I'm sorry, something has gone wrong. <@mooreoff> will have a look at the issue.`);
+
+			await interaction.reply('I\'m sorry, something has gone wrong. <@mooreoff> will have a look at the issue.');
 		}
 	},
 	options: {

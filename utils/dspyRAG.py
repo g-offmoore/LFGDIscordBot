@@ -1,101 +1,73 @@
 import os
+from typing import List
+
+import numpy as np
 import torch
 from dspy import RAG, Signature, InputField, OutputField
 from dspy.retrieve.qdrant_rm import QdrantRM
 from qdrant_client import QdrantClient
-from transformers import AutoTokenizer, AutoModel
+from transformers import AutoModel, AutoTokenizer
 
-# Initialize the Qdrant client
-client = QdrantClient(host='localhost', port=6333)
+# ─── Configuration ────────────────────────────────────────────────────────────
+QDRANT_HOST       = os.getenv("QDRANT_HOST", "localhost")
+QDRANT_PORT       = int(os.getenv("QDRANT_PORT", 6333))
+COLLECTION_NAME   = "LFGCollect"
+MODEL_NAME        = "sentence-transformers/all-MiniLM-L6-v2"
+MAX_LENGTH        = 128
 
-# Load the MiniLM model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/all-MiniLM-L6-v2")
-model = AutoModel.from_pretrained("sentence-transformers/all-MiniLM-L6-v2")
+# ─── Initialization ───────────────────────────────────────────────────────────
+qdrant_client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
 
-def encode_text(text):
-    """Encodes text using the MiniLM model."""
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+model     = AutoModel.from_pretrained(MODEL_NAME)
+model.eval()
+
+# ─── Helper Functions ─────────────────────────────────────────────────────────
+def encode_text(text: str) -> np.ndarray:
+    """Encode text into embeddings using the MiniLM model."""
+    inputs = tokenizer(
+        text, 
+        return_tensors="pt", 
+        padding=True, 
+        truncation=True, 
+        max_length=MAX_LENGTH
+    )
     with torch.no_grad():
-        inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True, max_length=128)
         outputs = model(**inputs)
-        return outputs.last_hidden_state[:, 0, :].numpy()
+    # Use the [CLS] token embedding
+    return outputs.last_hidden_state[:, 0, :].cpu().numpy()
 
+# ─── DSPy Signature Definitions ───────────────────────────────────────────────
 class Question(Signature):
+    """Input signature for RAG queries."""
     text = InputField()
 
 class Answer(Signature):
+    """Output signature for RAG responses."""
     content = OutputField()
 
-# Configure DSPy RAG
+# ─── Configure RAG ────────────────────────────────────────────────────────────
 rag = RAG(
     retriever=QdrantRM(
-        qdrant_client=client,
-        qdrant_collection_name="LFGCollect",
-        vector_encoder=encode_text
+        qdrant_client=qdrant_client,
+        qdrant_collection_name=COLLECTION_NAME,
+        vector_encoder=encode_text,
     ),
-    generator=None,  # Assuming direct use of retrieved content for simplicity
+    generator=None,  # Directly return retrieved content
     input_signature=Question,
-    output_signature=Answer
+    output_signature=Answer,
 )
 
-def process_question(question_text):
-    """Processes a question and returns a generated answer."""
-    result = rag(Question(text=question_text))
-    if not result:
+# ─── Core Functionality ───────────────────────────────────────────────────────
+def process_question(question_text: str) -> str:
+    """Query the RAG system and format the results."""
+    documents = rag(Question(text=question_text))
+    if not documents:
         return "No relevant information found."
-    return " ".join([f"Found topic: {doc['title']}" for doc in result])
+    return " ".join(f"Found topic: {doc['title']}" for doc in documents)
 
-# Example usage
-question = "who is bezos?"
-answer = process_question(question)
-print(answer)
-
-import os
-import torch
-from dspy import RAG, Signature, InputField, OutputField
-from dspy.retrieve.qdrant_rm import QdrantRM
-from qdrant_client import QdrantClient
-from transformers import AutoTokenizer, AutoModel
-
-# Initialize the Qdrant client
-client = QdrantClient(host='localhost', port=6333)
-
-# Load the MiniLM model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/all-MiniLM-L6-v2")
-model = AutoModel.from_pretrained("sentence-transformers/all-MiniLM-L6-v2")
-
-def encode_text(text):
-    """Encodes text using the MiniLM model."""
-    with torch.no_grad():
-        inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True, max_length=128)
-        outputs = model(**inputs)
-        return outputs.last_hidden_state[:, 0, :].numpy()
-
-class Question(Signature):
-    text = InputField()
-
-class Answer(Signature):
-    content = OutputField()
-
-# Configure DSPy RAG
-rag = RAG(
-    retriever=QdrantRM(
-        qdrant_client=client,
-        qdrant_collection_name="LFGCollect",
-        vector_encoder=encode_text
-    ),
-    generator=None,  # Assuming direct use of retrieved content for simplicity
-    input_signature=Question,
-    output_signature=Answer
-)
-
-def process_question(question_text):
-    """Processes a question and returns a generated answer."""
-    result = rag(Question(text=question_text))
-    if not result:
-        return "No relevant information found."
-    return " ".join([f"Found topic: {doc['title']}" for doc in result])
-
-# Example usage
-question = "who is bezos?"
-answer = process_question(question)
-print(answer)
+# ─── Example Usage ────────────────────────────────────────────────────────────
+if __name__ == "__main__":
+    sample = "Who is Bezos?"
+    answer = process_question(sample)
+    print(answer)
