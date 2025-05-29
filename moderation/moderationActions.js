@@ -1,12 +1,12 @@
 // moderation/moderationActions.js
-const { InteractionResponseFlags, EmbedBuilder } = require('discord.js');
+const { MessageFlags, EmbedBuilder } = require('discord.js');
 const path = require('node:path');
 const fs   = require('fs');
 
-const LOG_CHANNEL_ID      = process.env.LOG_CHANNEL_ID || '983865514751320124';
-const WEBHOOK_NAME        = 'ModBot';
-const VIBE_AVATAR_PATH    = path.join(__dirname, '../assets/modbot_vibe.png');
-const HAMMER_AVATAR_PATH  = path.join(__dirname, '../assets/modbot_avatar.png');
+const LOG_CHANNEL_ID        = process.env.LOG_CHANNEL_ID || '983865514751320124';
+const WEBHOOK_NAME          = 'ModBot';
+const VIBE_AVATAR_PATH      = path.join(__dirname, '../assets/modbot_vibe.png');
+const HAMMER_AVATAR_PATH    = path.join(__dirname, '../assets/modbot_hammer.png');
 
 // preload avatar buffers
 let vibeBuffer, hammerBuffer;
@@ -17,18 +17,18 @@ module.exports = async function handleModerationButtons(client, interaction) {
   if (!interaction.isButton()) return;
 
   const [action, messageId] = interaction.customId.split('_');
-  const mod                = interaction.user;
+  const mod = interaction.user;
 
-  // grab our mod‐alert embed for context
-  const embed        = interaction.message.embeds[0];
+  // grab embed context
+  const embed = interaction.message.embeds[0];
   const userField    = embed.fields.find(f => f.name === 'User')?.value;
   const channelField = embed.fields.find(f => f.name === 'Channel')?.value;
   const reason       = embed.fields.find(f => f.name === 'Reason')?.value;
   const content      = embed.fields.find(f => f.name === 'Content')?.value;
 
-  // extract IDs
+  // extract user ID
   const userIdMatch = /<@(\d+)>/.exec(userField || '');
-  const userId      = userIdMatch ? userIdMatch[1] : null;
+  const userId = userIdMatch ? userIdMatch[1] : null;
 
   let resultText = '';
 
@@ -37,14 +37,13 @@ module.exports = async function handleModerationButtons(client, interaction) {
       if (userId) {
         const member = await interaction.guild.members.fetch(userId).catch(() => null);
         if (member) {
-          // send a DM with context
           const dmEmbed = new EmbedBuilder()
             .setTitle('⚠️ Your message was flagged')
             .setColor(0xffa500)
             .addFields(
-              { name: 'Reason',       value: reason,                   inline: false },
+              { name: 'Reason', value: reason, inline: false },
               { name: 'Your message', value: content?.slice(0, 1000) || '', inline: false },
-              { name: 'Next steps',   value: 'Please review our guidelines.', inline: false }
+              { name: 'Next steps', value: 'Please review our guidelines.', inline: false }
             );
           await member.send({ embeds: [dmEmbed] }).catch(() => {});
         }
@@ -52,12 +51,11 @@ module.exports = async function handleModerationButtons(client, interaction) {
 
       await interaction.reply({
         content: `⚠️ Warned ${userField}.`,
-        flags: InteractionResponseFlags.Ephemeral
+        flags: MessageFlags.Ephemeral
       });
       resultText = `⚠️ **Warned** ${userField} by ${mod.tag}`;
       break;
     }
-
 
     case 'ban': {
       if (userId) {
@@ -66,7 +64,7 @@ module.exports = async function handleModerationButtons(client, interaction) {
       }
       await interaction.reply({
         content: '🔨 Banned user.',
-        flags: InteractionResponseFlags.Ephemeral
+        flags: MessageFlags.Ephemeral
       });
       resultText = `🔨 **Banned** user by ${mod.tag}`;
       break;
@@ -75,19 +73,20 @@ module.exports = async function handleModerationButtons(client, interaction) {
     case 'allow':
       await interaction.reply({
         content: '✅ Approved. Please ask the user to repost their message.',
-        flags: InteractionResponseFlags.Ephemeral
+        flags: MessageFlags.Ephemeral
       });
       resultText = `✅ **Allowed** message by ${mod.tag}`;
       break;
 
     default:
-      return interaction.reply({
+      await interaction.reply({
         content: '❗ Unknown action.',
-        flags: InteractionResponseFlags.Ephemeral
+        flags: MessageFlags.Ephemeral
       });
+      return;
   }
 
-  // log the decision via webhook
+  // log via webhook
   const logChannel = await client.channels.fetch(LOG_CHANNEL_ID).catch(() => null);
   if (logChannel && logChannel.isTextBased()) {
     let hook = (await logChannel.fetchWebhooks().catch(() => null))?.find(h => h.name === WEBHOOK_NAME);
@@ -99,8 +98,7 @@ module.exports = async function handleModerationButtons(client, interaction) {
       }).catch(() => null);
     }
     if (hook) {
-      // pick avatar based on action
-      const avatar = (action === 'ban' || action === 'delete') ? hammerBuffer : vibeBuffer;
+      const avatar = (action === 'ban') ? hammerBuffer : vibeBuffer;
       if (avatar) {
         await hook.edit({ avatar }).catch(() => {});
       }
