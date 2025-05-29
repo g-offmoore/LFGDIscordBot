@@ -1,3 +1,4 @@
+// moderation/moderationScanner.js
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder } = require('discord.js');
 const path = require('node:path');
 const fs = require('fs');
@@ -57,21 +58,38 @@ module.exports = async function handleMessageModeration(client, message) {
     const modChannel = await client.channels.fetch(MOD_CHANNEL_ID).catch(() => null);
     if (!modChannel || !modChannel.isTextBased()) return;
 
+    // Find existing webhook
     let hook;
     const webhooks = await modChannel.fetchWebhooks().catch(() => null);
-    if (webhooks) hook = webhooks.find(h => h.name === WEBHOOK_NAME);
+    if (webhooks) {
+      hook = webhooks.find(h => h.name === WEBHOOK_NAME);
+    }
+
+    // Create webhook if none exists
     if (!hook) {
-      hook = await modChannel.createWebhook({
-        name:   WEBHOOK_NAME,
-        avatar: avatarBuffer || client.user.displayAvatarURL({ dynamic: true }),
-        reason: 'Auto-moderation alerts'
-      }).catch(err => {
+      const createOpts = { 
+        name: WEBHOOK_NAME, 
+        reason: 'Auto-moderation alerts' 
+      };
+      if (avatarBuffer) {
+        createOpts.avatar = avatarBuffer;
+      }
+      hook = await modChannel.createWebhook(createOpts).catch(err => {
         console.error('Failed to create mod webhook:', err);
         return null;
       });
     }
+
     if (!hook) return;
 
+    // Update existing webhook's avatar if we have a buffer
+    if (avatarBuffer) {
+      await hook.edit({ avatar: avatarBuffer }).catch(err => {
+        console.error('Failed to update mod webhook avatar:', err);
+      });
+    }
+
+    // Build embed and action row
     const embed = new EmbedBuilder()
       .setColor(0xff0000)
       .setTitle('🚨 Potential Scam Message Detected')
@@ -87,14 +105,14 @@ module.exports = async function handleMessageModeration(client, message) {
 
     const row = new ActionRowBuilder().addComponents(
       new ButtonBuilder().setCustomId(`warn_${message.id}`).setLabel('⚠️ Warn').setStyle(ButtonStyle.Primary),
-      new ButtonBuilder().setCustomId(`delete_${message.id}`).setLabel('❌ Delete').setStyle(ButtonStyle.Secondary),
       new ButtonBuilder().setCustomId(`ban_${message.id}`).setLabel('🔨 Ban').setStyle(ButtonStyle.Danger),
       new ButtonBuilder().setCustomId(`allow_${message.id}`).setLabel('✅ Allow').setStyle(ButtonStyle.Success)
     );
 
+    // Send via webhook, using the webhook's configured avatar
     await hook.send({
       username:  WEBHOOK_NAME,
-      avatarURL: null, // use avatar set on webhook
+      avatarURL: null,
       embeds:    [embed],
       components:[row]
     });
