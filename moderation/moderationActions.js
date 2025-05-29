@@ -5,7 +5,7 @@ const fs = require('fs');
 const LOG_CHANNEL_ID        = process.env.LOG_CHANNEL_ID || '983865514751320124';
 const WEBHOOK_NAME         = 'ModBotRelay';
 const VIBE_AVATAR_PATH     = path.join(__dirname, '../assets/modbot_vibe.png');
-const HAMMER_AVATAR_PATH   = path.join(__dirname, '../assets/modbot_hammer.png');
+const HAMMER_AVATAR_PATH   = path.join(__dirname, '../assets/modbot_avatar.png');
 
 // Preload avatar buffers
 let vibeBuffer, hammerBuffer;
