@@ -14,12 +14,12 @@ cron.schedule('0 2 1 * *', async () => {
 			const minItemsToAdd = 1; // Minimum number of items to add
 			const maxItemsToAdd = 10; // Maximum number of items to add
 
-			itemsToUpdate.forEach(async (item) => {
-				// Generate a pseudo-random number of items to add within the specified range
-				const qtyToAdd = Math.floor(Math.random() * (maxItemsToAdd - minItemsToAdd + 1)) + minItemsToAdd;
-				item.qty += qtyToAdd; // Update the quantity
-				await item.save(); // Save the updated item back to the database
-			});
+        for (const item of itemsToUpdate) {
+                // Generate a pseudo-random number of items to add within the specified range
+                const qtyToAdd = Math.floor(Math.random() * (maxItemsToAdd - minItemsToAdd + 1)) + minItemsToAdd;
+                item.qty += qtyToAdd; // Update the quantity
+                await item.save(); // Save the updated item back to the database
+        }
 
 			console.log(`Inventory updated for ${itemsToUpdate.length} items.`);
 		}

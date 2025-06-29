@@ -1,8 +1,12 @@
 import os
 import sys
 import json
+import logging
 from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # Initialize Qdrant client with environment variables
 qdrant_host = os.environ.get("QDRANT_HOST")
