@@ -91,10 +91,10 @@ function generateWebhookURL(discordThreadId) {
 // keep your existing Python‐script path helper exactly as is
 function getPythonScriptPath() {
 	const homeDirectory = os.homedir();
-	return path.join(
-		homeDirectory,
-		'LFGDIscordbot/utils/langchainPythonRAG.py',
-	);
+        return path.join(
+                homeDirectory,
+                'LFGDIscordBot/utils/langchainPythonRAG.py',
+        );
 }
 
 // askQuestion uses that helper
