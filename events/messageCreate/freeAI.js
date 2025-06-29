@@ -4,7 +4,7 @@ const { WebhookClient } = require('discord.js');
 const logger = require('../../utils/logger.js');
 const axios = require('axios');
 const mongoClientPromise = require('../../utils/mongodb.js');
-const { exec } = require('child_process');
+const { execFile } = require('child_process');
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
@@ -99,14 +99,12 @@ function getPythonScriptPath() {
 
 // askQuestion uses that helper
 function askQuestion(question) {
-	const pythonScriptPath = getPythonScriptPath();
-	const safeQuestion = question.replace(/"/g, '\\"');
-	const pythonCommand = `python3 "${pythonScriptPath.replace(/"/g, '\\"')}" "${safeQuestion}"`;
+        const pythonScriptPath = getPythonScriptPath();
 
-	return new Promise((resolve, reject) => {
-		exec(pythonCommand, (error, stdout, stderr) => {
-			if (error) return reject(error);
-			if (stderr) return reject(new Error(stderr));
+        return new Promise((resolve, reject) => {
+                execFile('python3', [pythonScriptPath, question], (error, stdout, stderr) => {
+                        if (error) return reject(error);
+                        if (stderr) return reject(new Error(stderr));
 
 			try {
 				const results = JSON.parse(stdout);
