@@ -316,6 +316,6 @@ rules:
 
   # 🔞 Adult / OnlyFans Scams
   - id: scam_onlyfans_leak_invite
-    pattern: "(?:🔞|18\+|adult)?\s*(?:[o0оОØØ]n?l?y?f[a@4]n[s5]?|олнyфaнs?)\s*leaks?\b.*join"
+    pattern: '(?:🔞|18\+|adult)?\s*(?:[o0оОØØ]n?l?y?f[a@4]n[s5]?|олнyфaнs?)\s*leaks?\b.*join'
     action: flag_and_hide
     reason: "OnlyFans leak server invite"
