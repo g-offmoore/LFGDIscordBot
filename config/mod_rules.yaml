@@ -254,7 +254,7 @@ rules:
     reason: "Suspicious link"
 
   - id: scam_check_this_out
-    pattern: "check this out"
+    pattern: "\\bcheck this out\\b.*(?:https?://|www\\.|discord\\.(?:gg|com))"
     action: flag_and_hide
     reason: "Suspicious prompt"
 
