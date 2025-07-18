@@ -1,6 +1,7 @@
 const recap = require('../../models/recap');
 const formatResults = require('../../utils/formatResults');
 const adventurers = require('../../models/adventurers');
+const { InteractionResponseFlags } = require('discord.js');
 
 
 /**
@@ -24,7 +25,7 @@ module.exports = async (interaction, client) => {
 		if (!type || !recapId || !action) return false;
 		if (type !== 'recap') return false;
 
-		await interaction.deferReply({ ephemeral: true });
+                await interaction.deferReply({ flags: InteractionResponseFlags.Ephemeral });
 
 		const targetrecap = await recap.findOne({ recapId });
 		const targetMessage = await interaction.channel.messages.fetch(targetrecap.messageId);
