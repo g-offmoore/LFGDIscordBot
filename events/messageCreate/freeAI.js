@@ -88,13 +88,9 @@ function generateWebhookURL(discordThreadId) {
 	}
 }
 
-// keep your existing Python‐script path helper exactly as is
+// Resolve the Python script path relative to the repository root
 function getPythonScriptPath() {
-	const homeDirectory = os.homedir();
-        return path.join(
-                homeDirectory,
-                'LFGDIscordBot/utils/langchainPythonRAG.py',
-        );
+        return path.join(__dirname, '..', '..', 'utils', 'langchainPythonRAG.py');
 }
 
 // askQuestion uses that helper
