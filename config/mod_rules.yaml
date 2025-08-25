@@ -3,6 +3,7 @@ rules:
   - id: scam_free_macbook
     pattern: "free macbook"
     action: flag_and_hide
+    priority: primary
     reason: "Fake giveaway: Free MacBook"
 
   - id: scam_giving_laptop
@@ -114,6 +115,7 @@ rules:
   - id: scam_reward_claim
     pattern: "claim your reward"
     action: flag_and_hide
+    priority: secondary
     reason: "Reward scam"
 
   - id: scam_easy_money

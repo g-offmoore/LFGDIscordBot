@@ -5,6 +5,7 @@ const helmet = require('helmet');
 const { Client, GatewayIntentBits } = require('discord.js');
 const mongoose = require('mongoose');
 const { CommandKit } = require('commandkit');
+const startAutoApproveWorker = require('./moderation/autoApproveWorker');
 
 // Discord Client Setup
 const client = new Client({
@@ -22,6 +23,10 @@ new CommandKit({
 	eventsPath:   path.join(__dirname, 'events'),
 	commandsPath: path.join(__dirname, 'commands'),
 	bulkRegister: false,
+});
+
+client.once('ready', () => {
+        startAutoApproveWorker(client);
 });
 
 // Mongoose Setup
