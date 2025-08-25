@@ -11,6 +11,7 @@ const MOD_CHANNEL_ID      = '1008371145793351740';
 const LOG_CHANNEL_ID      = process.env.LOG_CHANNEL_ID || '983865514751320124';
 const AUTO_APPROVE_HOURS  = parseInt(process.env.AUTO_APPROVE_HOURS || '24', 10);
 const RULE_FILE = path.join(__dirname, '../config/mod_rules.yaml');
+const WHITELIST_ROLE_ID   = '1261745811595989044';
 
 // Load rules with priority & action
 let compiledRules = [];
@@ -36,6 +37,31 @@ module.exports = async function handleMessageModeration(client, message) {
   const content = message.content;
   const matches = compiledRules.filter(r => r.regex.test(content));
   if (!matches.length) return;
+
+  // Skip auto moderation for whitelisted role, but notify admins
+  if (message.member?.roles.cache.has(WHITELIST_ROLE_ID)) {
+    const adminIds = (process.env.ADMIN_NOTIFY_USER_IDS || '').split(',').filter(Boolean);
+    if (adminIds.length) {
+      const notifyEmbed = new EmbedBuilder()
+        .setTitle('Whitelisted Message Flagged')
+        .setColor(0x5865f2)
+        .setDescription(content.slice(0, 1000) || '(none)')
+        .addFields(
+          { name: 'Author', value: `<@${message.author.id}>`, inline: true },
+          { name: 'Channel', value: `<#${message.channel.id}>`, inline: true },
+          { name: 'Reason(s)', value: matches.map(m => m.reason).join('; '), inline: false },
+          { name: 'Rules', value: matches.map(m => m.id).join(', '), inline: false }
+        )
+        .setTimestamp();
+      for (const id of adminIds) {
+        const user = await client.users.fetch(id).catch(() => null);
+        if (user) {
+          await user.send({ embeds: [notifyEmbed] }).catch(() => {});
+        }
+      }
+    }
+    return;
+  }
 
   const deleteMessage = matches.some(r => r.priority === 'primary' && r.action === 'flag_and_hide');
   const holdReview = matches.some(r => r.action === 'hold_for_review');
