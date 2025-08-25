@@ -1,5 +1,5 @@
 /* eslint-disable no-inline-comments */
-const { redis } = require('../../index'); // shared Redis client
+const redis = require('../../utils/redis'); // shared Redis client
 const Adventurer = require('../../models/adventurers');
 
 module.exports = {

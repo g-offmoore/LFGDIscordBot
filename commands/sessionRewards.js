@@ -1,7 +1,7 @@
 /* eslint-disable no-inline-comments */
 const { SlashCommandBuilder } = require('discord.js');
-// Assuming Redis setup is already done and client is available as redisClient
-const { redis } = require('../index');
+// Use the shared Redis client directly to avoid circular dependencies
+const redis = require('../utils/redis');
 
 module.exports = {
 	data: new SlashCommandBuilder()
