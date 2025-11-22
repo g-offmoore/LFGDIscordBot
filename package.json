@@ -37,7 +37,7 @@
     "mammoth": "1.11.0",
     "mongodb": "6.17.0",
     "mongodb-connection-string-url": "3.0.2",
-    "mongoose": "8.16.1",
+    "mongoose": "8.19.2",
     "nodemon": "3.1.10",
     "ollama": "0.5.15",
     "openai": "4.104.0",
