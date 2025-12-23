@@ -42,7 +42,7 @@
     "ollama": "0.5.15",
     "openai": "4.104.0",
     "pdf-parse": "1.1.1",
-    "pino": "9.7.0",
+    "pino": "9.14.0",
     "pino-pretty": "13.0.0",
     "redis": "5.5.6",
     "stopword": "3.1.4",
