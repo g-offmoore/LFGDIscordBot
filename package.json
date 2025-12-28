@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@huggingface/inference": "^2.8.1",
-    "@huggingface/transformers": "^3.5.1",
+    "@huggingface/transformers": "^3.8.1",
     "@langchain/cohere": "0.3.3",
     "@langchain/community": "1.0.2",
     "@langchain/mongodb": "0.1.0",
