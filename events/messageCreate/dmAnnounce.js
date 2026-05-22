@@ -45,7 +45,7 @@ async function sendLog(client, content) {
   const hook = await getOrCreateWebhook(logChannel);
   if (!hook) return;
 
-  await hook.send({ content, username: 'ModBotRelay' }).catch(() => {});
+  await hook.send({ content }).catch(() => {});
 }
 
 module.exports = async (message, client) => {
@@ -75,7 +75,7 @@ module.exports = async (message, client) => {
       return;
     }
 
-    await hook.send({ content: parsed.message, username: 'ModBotRelay' });
+    await hook.send({ content: parsed.message });
 
     await message.reply('Announcement sent.').catch(() => {});
     await sendLog(client, `✅ DM announce sent to <#${targetChannel.id}> by ${message.author.tag}.`).catch(() => {});

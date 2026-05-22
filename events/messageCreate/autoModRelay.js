@@ -42,7 +42,7 @@ module.exports = async message => {
 
     if (avatarBuffer) await hook.edit({ avatar: avatarBuffer }).catch(() => {});
 
-    await hook.send({ content: relayContent, username: WEBHOOK_NAME });
+    await hook.send({ content: relayContent });
   } catch (err) {
     console.error('Failed to relay Auto-Mod message:', err);
   }

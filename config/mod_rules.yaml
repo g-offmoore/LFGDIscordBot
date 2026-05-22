@@ -1,4 +1,11 @@
 rules:
+  # Targeted auto-ban rules
+  - id: scam_artstation_daichidoesart
+    pattern: '(?:https?://)?(?:www\.)?artstation\.com/daichidoesart(?:[/?#\s>.,)\]]|$)'
+    action: auto_ban
+    priority: primary
+    reason: "Known art commission scam: daichidoesart ArtStation"
+
   # 🎁 Fake Giveaway / Free Item Phrases
   - id: scam_free_macbook
     pattern: "free macbook"
@@ -52,9 +59,9 @@ rules:
     reason: "Free setup scam"
 
   - id: scam_first_come
-      pattern: "(?is)(?=.*\bfirst\s+come\s+first\s+serv(?:e|ed)\b)(?=.*\b(?:dm\s*me|pm\s*me|inbox\s*me|message\s*me|click(?:\s+here)?|link|claim|giveaway|gift|nitro|airdrop|crypto|cashapp|venmo|zelle|shipping|delivery|drop\s+your|limited\s+time|ends\s+soon)\b).*"
-      action: flag_and_hide
-      reason: "Scam urgency phrase (paired with call-to-action)"
+    pattern: '(?=[\s\S]*\bfirst\s+come\s+first\s+serv(?:e|ed)\b)(?=[\s\S]*\b(?:dm\s*me|pm\s*me|inbox\s*me|message\s*me|click(?:\s+here)?|link|claim|giveaway|gift|nitro|airdrop|crypto|cashapp|venmo|zelle|shipping|delivery|drop\s+your|limited\s+time|ends\s+soon)\b)[\s\S]*'
+    action: flag_and_hide
+    reason: "Scam urgency phrase (paired with call-to-action)"
 
   - id: scam_dm_interest
     pattern: "(free|giving away|just upgraded|my old one).*dm.*(interested|details)"

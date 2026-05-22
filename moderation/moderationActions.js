@@ -44,7 +44,7 @@ async function logAction(client, action, userField, mod, channelField, reason, c
     )
     .setFooter({ text: embedFooter || 'N/A' })
     .setTimestamp();
-  await hook.send({ embeds: [logEmbed], username: WEBHOOK_NAME }).catch(console.error);
+  await hook.send({ embeds: [logEmbed] }).catch(console.error);
 }
 
 module.exports = async function handleModerationInteractions(client, interaction) {
@@ -196,7 +196,6 @@ module.exports = async function handleModerationInteractions(client, interaction
         if (hook) {
           const msg = {
             content: `✅ Approved post from <@${flag.authorId}>:\n${flag.content}\n\n— Approved by <@${interaction.user.id}>${note ? `: ${note}` : ''}`,
-            username: WEBHOOK_NAME
           };
           if (flag.attachmentUrls && flag.attachmentUrls.length) {
             msg.files = flag.attachmentUrls;

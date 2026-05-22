@@ -22,10 +22,10 @@ module.exports = function startAutoApproveWorker(client) {
           await redis.zRem('autoApproveQueue', id);
           const channel = await client.channels.fetch(flag.channelId).catch(() => null);
           const hook = channel ? await getOrCreateWebhook(channel) : null;
-          if (hook) await hook.send({ content: '✅ Auto-approved after 24h.', username: 'ModBotRelay' });
+          if (hook) await hook.send({ content: '✅ Auto-approved after 24h.' });
           const logChannel = await client.channels.fetch(LOG_CHANNEL_ID).catch(() => null);
           const logHook = logChannel ? await getOrCreateWebhook(logChannel) : null;
-          if (logHook) await logHook.send({ content: `Auto-approved message ${id}`, username: 'ModBot' });
+          if (logHook) await logHook.send({ content: `Auto-approved message ${id}` });
         }
       }
     } catch (err) {

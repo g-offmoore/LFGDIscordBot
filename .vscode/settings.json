@@ -1,3 +1,5 @@
 {
-    "CodeGPT.apiKey": "Ollama"
+    "CodeGPT.apiKey": "Ollama",
+    "snyk.advanced.organization": "17952f00-1f70-43b9-8f46-5956022c4d6b",
+    "snyk.advanced.autoSelectOrganization": true
 }
